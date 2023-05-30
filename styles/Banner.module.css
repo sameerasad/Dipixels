@@ -66,6 +66,13 @@
   color: #9add3a;
   text-transform: uppercase;
 }
+.Banner_ButtonsDiv {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
 .Banner_section_content_links {
   transform: rotate(90deg);
   display: flex;
@@ -90,6 +97,10 @@
 }
 .Banner_section_content_links_facebook img {
   transform: rotate(-90deg);
+}
+
+.Banner_section_content_links_facebook a:hover {
+  color: #00f3f4;
 }
 
 .Banner_section_content_links_twitter img {
@@ -165,5 +176,27 @@
   }
   .dipixels_header_Reel {
     left: 44%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .Banner_section_content {
+    margin-top: 5em;
+  }
+  .Banner_section_content_links {
+    display: none;
+  }
+  .Banner_section_content h1 {
+    font-size: 2em;
+  }
+  .Banner_section_content p {
+    font-size: 1em;
+    margin-top: 1em;
+  }
+  .Banner_ButtonsDiv {
+    margin-top: 1em;
+  }
+  .dipixels_header_Reel{
+    top: 80px;
+    left: -30%;
   }
 }

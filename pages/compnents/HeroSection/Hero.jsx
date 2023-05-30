@@ -6,7 +6,7 @@ import StyledButton from '../Buttons/StyledButton/StyledButton'
 import PlayReel from './PlayReel'
 import VideoModal from '../VideoModal/VideoModal'
 
-const Hero = ({ title, description, company, videoLink}) => {
+const Hero = ({ title, description, company, videoLink }) => {
   const [isVideoModalOpen, setVideoModalOpen] = useState(false)
   const openVideoModal = () => {
     setVideoModalOpen(true)
@@ -38,9 +38,6 @@ const Hero = ({ title, description, company, videoLink}) => {
           </div>
           <div className='videoPlayReel'>
             <img src='/assets/Banner.gif' alt='' />
-            {/* <a href='#' className='playReel'>
-            PLAY <span className='colorBlue'> REEL</span>
-          </a> */}
             <div className='heroReel' onClick={openVideoModal}>
               <PlayReel />
             </div>

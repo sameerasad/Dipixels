@@ -1,0 +1,86 @@
+.dipixels_footer {
+ display: flex;
+ justify-content: center;
+ margin-top: 2rem;
+}
+.dipixels_footer_warpper {
+ width: 100%;
+ max-width: 85%;
+ display: flex;
+ flex-direction: column;
+}
+.dipixels-footer-content-logo {
+ display: flex;
+ justify-content: space-between;
+}
+.dipixels_footer_center_line {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 30%;
+ margin-top: 2em;
+}
+.center_line {
+ justify-content: center;
+ align-items: center;
+ display: flex;
+ width: 100%;
+ height: 3px;
+ background-color: #00f3f4;
+}
+.dipixels_footer_content {
+ display: flex;
+ justify-content: space-between;
+ font-family: 'Monument Extended Regular';
+ margin-top: 2rem;
+}
+.dipixels_footer_content_contact {
+ width: 20%;
+}
+.dipixels_footer_content_contact p {
+ color: #9add3a;
+ text-transform: uppercase;
+ font-size: 18px;
+}
+.dipixels_footer_content_contact h3 {
+ color: #ffffff;
+ text-transform: uppercase;
+ font-size: 24px;
+ margin-top: 10px;
+}
+.dipixels_footer_content_address {
+ width: 30%;
+}
+.dipixels_footer_content_address p {
+ color: #9add3a;
+ text-transform: uppercase;
+ font-size: 18px;
+}
+.dipixels_footer_content_address h3 {
+ color: #ffffff;
+ text-transform: uppercase;
+ font-size: 24px;
+ margin-top: 10px;
+}
+.dipixels_footer_content_line {
+ width: 100%;
+ border: 1px solid #707070;
+ margin-top: 2rem;
+}
+.dipixels_footer_content_end {
+ display: flex;
+ justify-content: space-between;
+ margin: 10px 0;
+ font-family: 'Monument Extended Regular';
+}
+.dipixels_footer_content_end_left p {
+ text-transform: uppercase;
+ font-size: 15px;
+}
+.dipixels_footer_content_end_left p span {
+ color: #00f3f4;
+}
+.dipixels_footer_content_end_right p {
+ text-transform: uppercase;
+ font-size: 15px;
+}

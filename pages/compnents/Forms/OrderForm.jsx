@@ -1,18 +1,15 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import Button from '../Buttons/Button/Button'
 import styles from '../../../styles/OrderForm.module.css'
 import Heading from '../Heading/Heading'
 import axios from 'axios'
-const OrderForm = ({orderPackage,closeModal}) => {
-
-
-
+const OrderForm = ({ orderPackage, closeModal }) => {
   const [state, setState] = useState({
     first_name: '',
-    last_name: '', 
+    last_name: '',
     email: '',
     phone_number: '',
-    package_type:orderPackage
+    package_type: orderPackage,
   })
 
   const handleInputChange = (event) => {
@@ -23,13 +20,7 @@ const OrderForm = ({orderPackage,closeModal}) => {
     }))
   }
   const handleSubmit = () => {
-    const {
-      first_name,
-      last_name,
-      phone_number,
-      email,
-     message,
-    } = state
+    const { first_name, last_name, phone_number, email, message } = state
     if (
       // first_name !== "" &&
       // last_name !== "" &&
@@ -56,12 +47,12 @@ const OrderForm = ({orderPackage,closeModal}) => {
           last_name: '',
           email: '',
           phone_number: '',
-          package_type: ''
+          package_type: '',
         })
-        document.getElementById("form").reset()
+        document.getElementById('form').reset()
         closeModal()
         const { email, name } = Response?.data?.data?.attributes
-      
+
         // };
 
         console.log(Response, 'Response', 'email', email)
@@ -73,85 +64,93 @@ const OrderForm = ({orderPackage,closeModal}) => {
   return (
     <>
       {/* <div className={styles.order_form_content_right_section}> */}
-        <Heading>start a project</Heading>
-        <p className={styles.orderform_Des}>
-          Thanks for your interest in working with us. Please complete the
-          details below and we’ll get back to you within one or two business
-          days.
-        </p>
-        <form  id="form">
-          <div className={styles.order_form_content_right_section_projectForm}>
+      <Heading>start a project</Heading>
+      <p className={styles.orderform_Des}>
+        Thanks for your interest in working with us. Please complete the details
+        below and we’ll get back to you within one or two business days.
+      </p>
+      <form id='form'>
+        <div className={styles.order_form_content_right_section_projectForm}>
+          <div
+            className={
+              styles.order_form_content_right_section_projectForm_fields
+            }
+          >
             <div
               className={
-                styles.order_form_content_right_section_projectForm_fields
+                styles.order_form_content_right_section_projectForm_fields_inputField
               }
             >
-              <div
-                className={
-                  styles.order_form_content_right_section_projectForm_fields_inputField
-                }
-              >
-                <input type='text' name='first_name' placeholder='First Name *' onChange={handleInputChange} id='' />
-              </div>
-              <div
-                className={
-                  styles.order_form_content_right_section_projectForm_fields_inputField
-                }
-              >
-                <input type='text' name='last_name' placeholder='Last Name *'
+              <input
+                type='text'
+                name='first_name'
+                placeholder='First Name *'
                 onChange={handleInputChange}
-                id='' />
-              </div>
+                id=''
+              />
             </div>
-
             <div
               className={
-                styles.order_form_content_right_section_projectForm_fields
+                styles.order_form_content_right_section_projectForm_fields_inputField
               }
             >
-              <div
-                className={
-                  styles.order_form_content_right_section_projectForm_fields_inputField
-                }
-              >
-                <input
-                  type='email'
-                  name='email'
-                  placeholder='Email Address *'
-                  onChange={handleInputChange}
-                  id=''
-                />
-              </div>
-              <div
-                className={
-                  styles.order_form_content_right_section_projectForm_fields_inputField
-                }
-              >
-                <input
-                  type='phone'
-                  name='phone_number'
-                  placeholder='Phone Number *'
-                  onChange={handleInputChange}
-                  id=''
-                />
-              </div>
+              <input
+                type='text'
+                name='last_name'
+                placeholder='Last Name *'
+                onChange={handleInputChange}
+                id=''
+              />
             </div>
           </div>
+
           <div
-           onClick={(e)=>{
+            className={
+              styles.order_form_content_right_section_projectForm_fields
+            }
+          >
+            <div
+              className={
+                styles.order_form_content_right_section_projectForm_fields_inputField
+              }
+            >
+              <input
+                type='email'
+                name='email'
+                placeholder='Email Address *'
+                onChange={handleInputChange}
+                id=''
+              />
+            </div>
+            <div
+              className={
+                styles.order_form_content_right_section_projectForm_fields_inputField
+              }
+            >
+              <input
+                type='phone'
+                name='phone_number'
+                placeholder='Phone Number *'
+                onChange={handleInputChange}
+                id=''
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          onClick={(e) => {
             e.preventDefault()
             handleSubmit()
-           }}
-
-            style={{
-              marginTop: '2em',
-              display: 'flex',
-              justifyContent: 'center',
-            }}
-          >
-            <Button>submit</Button>
-          </div>
-        </form>
+          }}
+          style={{
+            marginTop: '2em',
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
+          <Button>submit</Button>
+        </div>
+      </form>
       {/* </div> */}
     </>
   )

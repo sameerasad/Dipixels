@@ -9,25 +9,26 @@ import DesignProcess from './compnents/DesignProcess/DesignProcess'
 import WebsitePackages from './compnents/WebsitePackages/WebsitePackages'
 import ScrollHeadings from './compnents/Scroll/ScrollHeadings'
 import WebsitePackagesCard from './compnents/WebsitePackages/WebsitePackagesCard'
+import Video from '../public/assets/video/VideoAnimation.mp4'
 
-const LogoPortfolioData = [
+const VideoPortfolioData = [
   {
-    image: '/assets/LogoPortfolio1.png',
+    image: '/assets/VideoPortfolio1.png',
   },
   {
-    image: '/assets/LogoPortfolio2.png',
+    image: '/assets/VideoPortfolio2.png',
   },
   {
-    image: '/assets/LogoPortfolio3.png',
+    image: '/assets/VideoPortfolio3.png',
   },
   {
-    image: '/assets/LogoPortfolio4.png',
+    image: '/assets/VideoPortfolio4.png',
   },
   {
-    image: '/assets/LogoPortfolio5.png',
+    image: '/assets/VideoPortfolio5.png',
   },
   {
-    image: '/assets/LogoPortfolio6.png',
+    image: '/assets/VideoPortfolio6.png',
   },
 ]
 
@@ -110,9 +111,26 @@ const videoAnimationProduction = () => {
           title='video animation and'
           company='production'
           description='Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo.'
+          videoLink={Video}
         />
         <Technologies />
-
+        <Portfolio
+          marqueeText={marqueeText}
+          headingText={headingText}
+          company={company}
+        />
+        <div
+          style={{
+            width: '100%',
+            justifyContent: 'center',
+            display: 'flex',
+            alignItems: 'center',
+          }}
+        >
+          <div style={{ maxWidth: '85%' }}>
+            <PortfolioContent PortfolioData={VideoPortfolioData} />
+          </div>
+        </div>
         <DesignProcess title={title} description={description} />
         <WebsitePackages
           packagesHeading={packagesHeading}

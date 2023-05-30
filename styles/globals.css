@@ -17,141 +17,6 @@ body {
   margin-right: 0;
 }
 
-/* Footer */
-.dipixels-footer {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-}
-.dipixels-footer-warpper {
-  width: 100%;
-  max-width: 85%;
-  display: flex;
-  flex-direction: column;
-}
-.dipixels-footer-content-logo {
-  display: flex;
-  justify-content: space-between;
-}
-.dipixels-footer-center-line {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-}
-.center-line {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  width: 100%;
-  height: 3px;
-  background-color: #00f3f4;
-}
-.dipixels-footer-content {
-  display: flex;
-  justify-content: space-between;
-  font-family: 'Monument Extended Regular';
-  margin-top: 2rem;
-}
-.dipixels-footer-content-contact {
-  width: 20%;
-}
-.dipixels-footer-content-contact p {
-  color: #9add3a;
-  text-transform: uppercase;
-  font-size: 18px;
-}
-.dipixels-footer-content-contact h3 {
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 24px;
-  margin-top: 10px;
-}
-.dipixels-footer-content-address {
-  width: 30%;
-}
-.dipixels-footer-content-address p {
-  color: #9add3a;
-  text-transform: uppercase;
-  font-size: 18px;
-}
-.dipixels-footer-content-address h3 {
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 24px;
-  margin-top: 10px;
-}
-.dipixels-footer-content-line {
-  width: 100%;
-  border: 1px solid #707070;
-  margin-top: 2rem;
-}
-.dipixels-footer-content-end {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px 0;
-  font-family: 'Monument Extended Regular';
-}
-.dipixels-footer-content-end-left p {
-  text-transform: uppercase;
-  font-size: 15px;
-}
-.dipixels-footer-content-end-left p span {
-  color: #00f3f4;
-}
-.dipixels-footer-content-end-right p {
-  text-transform: uppercase;
-  font-size: 15px;
-}
-
-/* Banner */
-
-/* .Banner-section {
-  display: flex;
-  justify-content: center;
-  margin-top: 0em;
-  height: 500px;
-  margin-bottom: 10rem;
-}
-.Banner-section-wrapper {
-  width: 100%;
-  max-width: 85%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  height: 650px;
-  justify-content: center;
-  text-transform: uppercase;
-}
-.Banner-section-content {
-  margin-top: 20rem;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-.Banner-section-content h1 {
-  color: #00f3f4;
-  font-size: 70px;
-  text-transform: uppercase;
-  font-family: 'Monument Extended Regular';
-}
-.Banner-section-content h1 span {
-  color: #9add3a;
-}
-.Banner-section-content p {
-  width: 65%;
-  font-size: 24px;
-  margin-top: 2rem;
-  line-height: 2rem;
-  text-align: center;
-  letter-spacing: 0.5px;
-  text-transform: initial;
-}
-.Banner-section-content p span {
-  color: #9add3a;
-  text-transform: uppercase;
-} */
 
 /* Button */
 .simple-button {
@@ -451,6 +316,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 100%;
+  cursor: pointer;
   text-decoration: none;
 }
 .playReel h2 span{
@@ -1432,8 +1298,10 @@ width: 75%;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 5s ease !important;
  }
  .videoModal{
+  transition: all 5s ease !important;
   width: 75%;
   padding: 50px;
   border: 2px solid #9add3a;

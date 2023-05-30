@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
     ssr: false,
 });
   return( 
-  <main className={montserrat.className}>
+  <main className={montserrat.className} style={{color: '#fffff'}}>
     <Component {...pageProps} />
     {/* <AnimatedCursor
      innerSize={10}

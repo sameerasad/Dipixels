@@ -28,18 +28,21 @@
  /* padding: 30px; */
  align-items: center;
  justify-content: center;
+}
+.svg {
+ height: 200px;
  background-color: #171717;
 }
-
 .icons .svg img {
  /* width: min(280px, 80%);
  margin: auto;
  object-fit: cover; */
  object-fit: contain;
 }
-.filter_icon .svg img {
+
+/* .filter_icon .svg img {
  filter: invert(1);
-}
+} */
 .filter_icon .svg {
  background-color: #fff;
 }

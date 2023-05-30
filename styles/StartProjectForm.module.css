@@ -1,0 +1,285 @@
+.contact_form_container{
+ margin: 10em 0;
+ display: flex;
+ justify-content: center;
+}
+
+.contact_form_wrapper {
+ width: 100%;
+ max-width: 65%;
+}
+
+.formDes {
+ font-size: 24px;
+ color: #ffffff;
+ font-weight: 400;
+ padding-top: 5%;
+ padding-bottom: 5%;
+}
+.projectForm {
+ margin-bottom: 120px;
+}
+.projectForm input {
+ width: 100%;
+ padding: 20px 20px 20px 0;
+ background: transparent;
+ border: none;
+ border-bottom: 2px solid #9add3a;
+ color: #fff;
+ outline: 0;
+ font-size: 20px;
+ margin-top: 20px;
+}
+.inputField input::placeholder::after {
+ content: "*";
+ color: red;
+}
+.projectForm input::placeholder {
+ font-size: 20px;
+ color: #707070;
+}
+
+.projectForm .field50 {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ gap: 30px;
+}
+
+.projectForm .field50 > div {
+ flex: 1 1 48%;
+}
+.checkBoxesSection {
+ display: flex;
+ justify-content: space-between;
+ margin: 120px 0px 120px 0px;
+ flex-wrap: wrap;
+}
+.checkBoxesSection .checkBoxLft {
+ border: 1px solid #565656;
+ border-right: 0;
+ border-radius: 20px 0px 0px 20px;
+ padding: 10px 0px 0 0px;
+}
+.checkBoxesSection > div {
+ flex: 1 1 50%;
+}
+.checkBoxesSection .checkbox {
+ padding: 30px 40px 30px 40px;
+ border-bottom: 1px solid #565656;
+ display: flex;
+ align-items: center;
+}
+.checkBoxesSection .checkbox:last-child {
+ border: 0;
+}
+.checkBoxesSection .checkBoxRht {
+ border: 1px solid #565656;
+ border-radius: 0px 20px 20px 0px;
+ padding: 10px 0px 0 0px;
+}
+.checkBoxesSection input:checked ~ label {
+ color: #9add3a;
+}
+
+.checkBoxesSection label {
+ color: #fff;
+ font-size: 18px;
+ font-weight: 500;
+ padding-left: 20px;
+ font-family: "Monument Extended Regular";
+}
+
+.formTextarea {
+ font-size: 20px;
+ width: 100%;
+ padding: 27px 0px 0px 30px;
+ background: transparent;
+ border: none;
+ border: 2px solid #9add3a;
+ border-radius: 20px;
+ color: #fff;
+ outline: 0;
+ margin-top: 80px;
+ font-family: "poppins";
+ height: 500px;
+}
+
+.form-btn {
+ border: 1px solid #00f3f4;
+ padding: 20px 70px 20px 70px;
+ border-radius: 10px;
+ background: aqua;
+ margin-top: 50px;
+ font-size: 16px;
+ font-weight: 500;
+ font-family: "Monument Extended Regular";
+ cursor: pointer;
+ color: #000;
+}
+.form-btn:hover {
+ color: #ffffff;
+ background: transparent;
+ border: 2px solid #00f3f4;
+}
+
+.contact-form-container [type="checkbox"] {
+ appearance: none;
+ border-radius: 4px;
+ border: 2px solid #9add3a;
+ width: 30px;
+ height: 30px;
+}
+
+.contact-form-container [type="checkbox"]:checked {
+ appearance: auto;
+ accent-color: #85dc0c;
+}
+
+@media (max-width: 860px) {
+ .checkBoxesSection .checkbox {
+   padding: 20px ;
+}
+.checkBoxesSection label {
+   font-size: 15px;
+}
+ .contact-form-container{
+   margin: 5em 0;
+ }
+ .checkBoxesSection {
+   border: 1px solid #565656;
+   border-radius: 20px;
+   margin: 65px 0;
+}
+ .projectForm{
+   margin-bottom: 65px;
+ }
+ .projectForm input::placeholder {
+   font-size: 16px;
+ }
+ .projectForm input {
+   margin-top: 10px;
+   font-size: 15px;
+ }
+ .projectForm .field50 {
+   gap: 0;
+ }
+ .projectForm .field50 > div {
+   flex-basis: 100%;
+ }
+ .contact-form-wrapper {
+   max-width: 85%;
+ }
+ .contact-form-content-heading h1 {
+   font-size: 1.6em;
+ }
+ .contact-form-content-image img {
+   width: 2em;
+   height: 2em;
+ }
+ .formDes {
+   font-size: 1.1em;
+ }
+ .contact-form-content-heading {
+   width: 100% !important;
+ }
+ .formTextarea {
+   font-size: 1em;
+   padding: 20px;
+   margin-top: 50px;
+ }
+ .form-btn {
+   padding: 18px 34px 18px 34px;
+   font-size: 1em;
+   margin-top: 30px;
+ }
+ .checkBoxesSection .checkBoxLft, .checkBoxesSection .checkBoxRht {
+   border: none;
+ }
+ .checkBoxesSection .checkBoxLft .checkbox:last-child{
+   border-bottom: 1px solid #565656 !important;
+ }
+ .contact-form-container [type="checkbox"] {
+   width: 26px;
+   height: 26px;
+}
+.checkBoxesSection > div{
+ flex-basis: 100%;
+}
+}
+
+
+
+@media (min-width:861px) and (max-width: 1440px) {
+ .checkBoxLft,.checkBoxRht{
+   padding:15px 0!important;
+ }
+ .checkBoxesSection .checkbox {
+   padding: 0 20px;
+   height:70px
+}
+.checkBoxesSection label {
+   font-size: 15px;
+}
+ .contact-form-container{
+   margin: 5em 0;
+ }
+ .checkBoxesSection {
+   border: 1px solid #565656;
+   border-radius: 20px;
+   margin: 65px 0;
+}
+ .projectForm{
+   margin-bottom: 65px;
+ }
+ .projectForm input::placeholder {
+   font-size: 16px;
+ }
+ .projectForm input {
+   margin-top: 10px;
+   font-size: 15px;
+ }
+ .projectForm .field50 {
+   gap: 0;
+ }
+ .projectForm .field50 > div {
+   flex-basis: 100%;
+ }
+ .contact-form-wrapper {
+   max-width: 80%;
+ }
+ .contact-form-content-heading h1 {
+   font-size: 2.4em;
+ }
+ .contact-form-content-image img {
+   width: 2em;
+   height: 2em;
+ }
+ .formDes {
+   font-size: 1.1em;
+ }
+ .contact-form-content-heading {
+   width: 100% !important;
+ }
+ .formTextarea {
+   font-size: 1em;
+   padding: 20px;
+   margin-top: 50px;
+ }
+ .form-btn {
+   padding: 18px 34px 18px 34px;
+   font-size: 1em;
+   margin-top: 30px;
+ }
+}
+@media screen and (max-width: 1048px) {
+ .contact_form_wrapper {
+ max-width: 85%;
+ }
+}
+
+@media(min-width:1441px) and (max-width:1800px) {
+   .contact-form-content-heading h1 {
+   font-size: 3.6em !important;
+ }
+}

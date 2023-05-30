@@ -4,6 +4,7 @@ import axios, { isCancel, AxiosError } from 'axios'
 import Heading from '../Heading/Heading'
 import Button from '../Buttons/Button/Button'
 // import emailjs from "@emailjs/browser";
+import styles from '../../../styles/StartProjectForm.module.css'
 
 const StartProject = () => {
   // const [firstName, setFirstname] = useState(null);
@@ -68,8 +69,6 @@ const StartProject = () => {
     }
   }
 
-  
-
   const postOrder = async () => {
     try {
       const Response = await axios.post('http://localhost:1337/api/my-users', {
@@ -106,22 +105,22 @@ const StartProject = () => {
     <>
       <div
         style={{ backgroundColor: 'black' }}
-        className='contact-form-container'
+        className={styles.contact_form_container}
       >
         <div
-          className='contact-form-wrapper'
+          className={styles.contact_form_wrapper}
           style={{ justifyContent: 'center' }}
         >
-          <div id='form' method='post'>
+          <form id='form' method='post'>
             <Heading>start a project</Heading>
-            <h4 className='formDes'>
+            <h4 className={styles.formDes}>
               Thanks for your interest in working with us. Please complete the
               details below and we’ll get back to you within one or two business
               days.
             </h4>
-            <div className='projectForm'>
-              <div className='field50'>
-                <div className='inputField'>
+            <div className={styles.projectForm}>
+              <div className={styles.field50}>
+                <div className={styles.inputField}>
                   <input
                     type='text'
                     name='first_name'
@@ -131,7 +130,7 @@ const StartProject = () => {
                     id=''
                   />
                 </div>
-                <div className='inputField '>
+                <div className={styles.inputField}>
                   <input
                     autoComplete={false}
                     type='text'
@@ -143,7 +142,7 @@ const StartProject = () => {
                   />
                 </div>
               </div>
-              <div className='inputField'>
+              <div className={styles.inputField}>
                 <input
                   type='text'
                   name='company'
@@ -153,7 +152,7 @@ const StartProject = () => {
                   id=''
                 />
               </div>
-              <div className='inputField'>
+              <div className={styles.inputField}>
                 <input
                   type='text'
                   name='existing_website_url'
@@ -163,7 +162,7 @@ const StartProject = () => {
                   id=''
                 />
               </div>
-              <div className='inputField'>
+              <div className={styles.inputField}>
                 <input
                   type='email'
                   name='email'
@@ -172,7 +171,7 @@ const StartProject = () => {
                   id=''
                 />
               </div>
-              <div className='inputField'>
+              <div className={styles.inputField}>
                 <input
                   type='phone'
                   name='phone_number'
@@ -184,9 +183,9 @@ const StartProject = () => {
               </div>
             </div>
             <Heading> what can we help you with?</Heading>
-            <div className='checkBoxesSection'>
-              <div className='checkBoxLft'>
-                <div className='checkbox'>
+            <div className={styles.checkBoxesSection}>
+              <div className={styles.checkBoxLft}>
+                <div className={styles.checkbox}>
                   <input
                     type='checkbox'
                     value='Website Design'
@@ -194,7 +193,7 @@ const StartProject = () => {
                   />
                   <label htmlFor='Website Design'>Website Design</label>
                 </div>
-                <div className='checkbox'>
+                <div className={styles.checkbox}>
                   <input
                     type='checkbox'
                     value=' Website Development'
@@ -204,7 +203,7 @@ const StartProject = () => {
                     Website Development
                   </label>
                 </div>
-                <div className='checkbox'>
+                <div className={styles.checkbox}>
                   <input
                     type='checkbox'
                     value='Video animation'
@@ -214,7 +213,7 @@ const StartProject = () => {
                   />
                   <label htmlFor='Video Animation'>Video Animation</label>
                 </div>
-                <div className='checkbox'>
+                <div className={styles.checkbox}>
                   <input
                     type='checkbox'
                     value='Marketing'
@@ -224,7 +223,7 @@ const StartProject = () => {
                   />
                   <label htmlFor='Marketing'>Marketing</label>
                 </div>
-                <div className='checkbox'>
+                <div className={styles.checkbox}>
                   <input
                     type='checkbox'
                     value='Ecommerce Website'
@@ -236,8 +235,8 @@ const StartProject = () => {
                 </div>
               </div>
 
-              <div className='checkBoxRht'>
-                <div className='checkbox'>
+              <div className={styles.checkBoxRht}>
+                <div className={styles.checkbox}>
                   <input
                     type='checkbox'
                     value=' User Experience (UX) Design'
@@ -249,7 +248,7 @@ const StartProject = () => {
                     User Experience (UX) Design
                   </label>
                 </div>
-                <div className='checkbox'>
+                <div className={styles.checkbox}>
                   <input
                     type='checkbox'
                     value='Application Development'
@@ -259,7 +258,7 @@ const StartProject = () => {
                     Application Development
                   </label>
                 </div>
-                <div className='checkbox'>
+                <div className={styles.checkbox}>
                   <input
                     type='checkbox'
                     value='SEO'
@@ -267,7 +266,7 @@ const StartProject = () => {
                   />
                   <label htmlFor='SEO'>SEO</label>
                 </div>
-                <div className='checkbox'>
+                <div className={styles.checkbox}>
                   <input
                     type='checkbox'
                     value='Branding'
@@ -275,7 +274,7 @@ const StartProject = () => {
                   />
                   <label htmlFor='Branding'>Branding</label>
                 </div>
-                <div className='checkbox'>
+                <div className={styles.checkbox}>
                   <input
                     type='checkbox'
                     value='other'
@@ -286,27 +285,38 @@ const StartProject = () => {
               </div>
             </div>
             <Heading> tell us about the project</Heading>
-            <div className='formTextarea'>
-              <div className='inputField'>
-                <input
+            <textarea className={styles.formTextarea}
+            type='text'
+            name='project_description'
+            onChange={handleInputChange}
+            value={state.project_description}
+            placeholder='Requirements, goals, intentions, target audience etc *'>
+              {/* <textarea
+              type='text'
+              name='project_description'
+              onChange={handleInputChange}
+              value={state.project_description}
+              placeholder='Requirements, goals, intentions, target audience etc *'> */}
+                {/* <input
                   type='text'
                   name='project_description'
                   onChange={handleInputChange}
                   value={state.project_description}
                   placeholder='Requirements, goals, intentions, target audience etc *'
-                />
-              </div>
-            </div>
-            <div style={{ marginTop: '2em' }} 
-            // onClick={handleButtonClick}
-            onClick={(e) => {
-              // e.preventDefault()
+                /> */}
+              {/* </textarea> */}
+            </textarea>
+            <div
+              style={{ marginTop: '2em' }}
+              // onClick={handleButtonClick}
+              onClick={(e) => {
+                // e.preventDefault()
                 handleSubmit()
               }}
             >
               <Button>send inquiry</Button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </>

@@ -9,6 +9,7 @@ import DesignProcess from './compnents/DesignProcess/DesignProcess'
 import WebsitePackages from './compnents/WebsitePackages/WebsitePackages'
 import ScrollHeadings from './compnents/Scroll/ScrollHeadings'
 import WebsitePackagesCard from './compnents/WebsitePackages/WebsitePackagesCard'
+import Video from '../public/assets/video/LogoDesigning.mp4'
 
 const LogoPortfolioData = [
   {
@@ -109,6 +110,7 @@ const logoDesign = () => {
           title='logo'
           company='design'
           description='Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo.'
+          videoLink={Video}
         />
         <Technologies />
         <Portfolio

@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import Marquee from '../../compnents/Marquee/Marquee'
 import 'swiper/css'
+import 'swiper/css/pagination';
 import Button from '../Buttons/Button/Button'
 import Heading from '../Heading/Heading'
 
@@ -43,7 +44,11 @@ const FeaturedProject = ({ data, marqueeText, heading }) => {
                     spaceBetween={0}
                     slidesPerView={1}
                     onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
+                    // onSwiper={(swiper)}
+                    // pagination={{
+                    //   clickable: true,
+                    // }}
+                    pagination={true}
                     direction='horizontal'
                     onBeforeInit={(swiper) => {
                       swiperRef.current = swiper
@@ -57,6 +62,12 @@ const FeaturedProject = ({ data, marqueeText, heading }) => {
                     </SwiperSlide>
                     <SwiperSlide>
                       <img src='/assets/postfolio2.jpeg' alt='' />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src='/assets/LogoPortfolio5.png' alt='' />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src='/assets/VideoPortfolio5.png' alt='' />
                     </SwiperSlide>
                   </Swiper>
                 </div>

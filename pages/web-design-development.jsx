@@ -8,6 +8,7 @@ import WebsitePackages from './compnents/WebsitePackages/WebsitePackages'
 import ScrollHeadings from './compnents/Scroll/ScrollHeadings'
 import PortfolioContent from './compnents/Portfolio/PortfolioContent'
 import WebsitePackagesCard from './compnents/WebsitePackages/WebsitePackagesCard'
+import Video from '../public/assets/video/WebsiteDesign.mp4'
 
 const WebPortfolioData = [
   {
@@ -107,6 +108,7 @@ const WebDesignDevelopment = () => {
           title='web design and'
           description='An adequate website interface can bring great traffic towards your business. Allow dipixels to build an exemplary interface for you. Have a look at our amazing web design portfolio below.'
           company='development'
+          videoLink={Video}
         />
         <Technologies />
         <Portfolio
