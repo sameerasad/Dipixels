@@ -50,7 +50,7 @@ const Home =
         </Head>
         <Layout>
           <Banner />
-          <Aboutus />
+          {/* <Aboutus />
           <FeaturedProject
             data={projectData}
             marqueeText='Featured Projects'
@@ -59,7 +59,7 @@ const Home =
           <OurServices />
           <DesignSolutions />
           <ScrollBrands />
-          <ScrollHeadings /> 
+          <ScrollHeadings />  */}
         </Layout>
       </div>
     )

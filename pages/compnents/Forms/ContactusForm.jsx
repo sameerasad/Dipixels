@@ -4,78 +4,70 @@ import Button from '../Buttons/Button/Button'
 import axios from 'axios'
 // import Pin from '/public/assets/icon-location-address.png'
 // import Email from '/public/assets/icon-email.png'
+import toast from "react-hot-toast";
 const ContactusForm = () => {
   const [state, setState] = useState({
-    first_name: '',
-    last_name: '', 
-    email: '',
-    phone_number: '',
-    message:""
-  
-  })
+    first_name: "",
+    last_name: "",
+    email: "",
+    phone_number: "",
+    message: "",
+  });
 
-const handleInputChange = (event) => {
-    const { name, value } = event.target
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
     setState((prevProps) => ({
       ...prevProps,
       [name]: value,
-    }))
-  }
+    }));
+  };
   const handleSubmit = () => {
-    const {
-      first_name,
-      last_name,
-      phone_number,
-      email,
-     message,
-    } = state
+    const { first_name, last_name, phone_number, email, message } = state;
     if (
-      // first_name !== "" &&
-      // last_name !== "" &&
-      // phone_number !== "" &&
-      // email !== "" &&
-      // project_description !== "" &&
-      // option.length
-      true
+      first_name !== "" &&
+      last_name !== "" &&
+      phone_number !== "" &&
+      email !== ""
     ) {
-      postContact()
+      postContact();
     } else {
-      alert('kindly fill alll the required fields')
+      toast.error("kindly fill all the required fields");
     }
-  }
+  };
 
   const postContact = async () => {
     try {
-      const Response = await axios.post('http://localhost:1337/api/contactedusers', {
-        data: state,
-      })
+      const Response = await axios.post(
+        "http://localhost:1337/api/contactedusers",
+        {
+          data: state,
+        }
+      );
       if (Response.status == 200) {
         setState({
-          first_name: '',
-          last_name: '',
-          email: '',
-          phone_number: '',
-          message:"",
-        })
-        document.getElementById("form").reset()
-        const { email, name } = Response?.data?.data?.attributes
+          first_name: "",
+          last_name: "",
+          email: "",
+          phone_number: "",
+          message: "",
+        });
+        document.getElementById("form").reset();
+        toast.success("Thanks for contacting us");
+        const { email, name } = Response?.data?.data?.attributes;
         const templateParams = {
-          name: name,
-          email: 'sameer.asad@dipixels.com',
-          message:
-            'Thanks for approaching us. We are hopeful so that we will wonder you with our services',
-        }
-
+          to: email,
+          subject: `Best wishes to you from Dipixels`,
+          text: "Thanks for approaching Dipixels. We are hopeful so that we will wonder you with our services. For more information visit www.dipixels.com",
+        };
+        await axios.post("http://localhost:3000/api/sendEmail", templateParams);
         // };
 
-        console.log(Response, 'Response', 'email', email)
+        console.log(Response, "Response", "email", email);
       }
     } catch (error) {
-      alert(error?.response?.data?.error?.message)
+      toast.error(error?.response?.data?.error?.message);
     }
-  }
-  
-  
+  };
 
   return (
     <>

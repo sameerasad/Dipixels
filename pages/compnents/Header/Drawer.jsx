@@ -55,7 +55,7 @@ const Drawer = ({ setOpen }) => {
                   }`}
                 >
                   Services
-                  <Image src={DropdownArrow} alt='' width='10' height='10' />
+                  <Image src={DropdownArrow} alt='' width='10' height='10'/>
                 </div>
               </Link>
               {isDropdownOpen && (

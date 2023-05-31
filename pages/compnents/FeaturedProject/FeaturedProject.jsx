@@ -64,7 +64,7 @@ const FeaturedProject = ({ data, marqueeText, heading }) => {
                       <img src='/assets/postfolio2.jpeg' alt='' />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src='/assets/LogoPortfolio5.png' alt='' />
+                      <img src='/assets/LogoPortfolio3.png' alt='' />
                     </SwiperSlide>
                     <SwiperSlide>
                       <img src='/assets/VideoPortfolio5.png' alt='' />

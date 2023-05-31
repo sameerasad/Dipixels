@@ -54,14 +54,14 @@ const OurServices = () => {
   return (
     <>
       <div className={styles.our_services_section}>
-        <Marquee>Our Services Our Services</Marquee>
+        <Marquee> Our Services </Marquee>
         <div className={styles.our_services_wrapper}>
           <div className={styles.our_services_content}>
             <Heading>our services</Heading>
           </div>
           <Swiper
             slidesPerView={4}
-            spaceBetween= {10}
+            spaceBetween={10}
             pagination={{
               clickable: true,
             }}
@@ -89,7 +89,7 @@ const OurServices = () => {
               },
               1661: {
                 slidesPerView: 4,
-              }
+              },
             }}
           >
             <div className={styles.our_services_content_slider}>

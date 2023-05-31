@@ -70,12 +70,12 @@
   border: 1px solid #9add3a;
   border-radius: 20px;
 }
-
 .dropdown_menu li {
   border-bottom: 1px solid #9add3a;
   padding: 10px 20px;
   font-size: 14px;
 }
+
 .dropdown_menu li:nth-child(6) {
   border-bottom: none;
 }
@@ -170,7 +170,7 @@
   }
   .dipixels_header_Triggermenu img {
     background-color: #9add3a;
-    border-radius: 2px;
+    border-radius: 5px;
   }
   /* menubar */
   .dipixels_drawer_sidebar {
@@ -181,7 +181,7 @@
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 9;
+    z-index: 99;
     transition: width 0.3s ease;
   }
   .dipixels_drawer_moretoshow {
@@ -253,6 +253,9 @@
     cursor: pointer;
   }
   .dipixels_header_logo {
-    width: 50%;
+    width: 40%;
   }
+  .service_dropdown a div img {
+   margin-left: 5px;
+ }
 }

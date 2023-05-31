@@ -5,6 +5,7 @@ import Heading from '../Heading/Heading'
 import Button from '../Buttons/Button/Button'
 // import emailjs from "@emailjs/browser";
 import styles from '../../../styles/StartProjectForm.module.css'
+import toast from "react-hot-toast";
 
 const StartProject = () => {
   // const [firstName, setFirstname] = useState(null);
@@ -16,34 +17,34 @@ const StartProject = () => {
   // const [options, setOptions] = useState([]);
   // const [projectDescription, setProjectDescription] = useState(null);
   const [state, setState] = useState({
-    first_name: '',
-    last_name: '',
-    company: '',
-    existing_website_url: '',
-    email: '',
-    phone_number: '',
+    first_name: "",
+    last_name: "",
+    company: "",
+    existing_website_url: "",
+    email: "",
+    phone_number: "",
     option: [],
-    project_description: '',
-  })
+    project_description: "",
+  });
 
   const handleInputChange = (event) => {
-    const { name, value } = event.target
+    const { name, value } = event.target;
     setState((prevProps) => ({
       ...prevProps,
       [name]: value,
-    }))
-  }
+    }));
+  };
 
   const handleCheckBox = (e) => {
-    const { value } = e.target
-    const index = state.option.indexOf(value)
+    const { value } = e.target;
+    const index = state.option.indexOf(value);
     if (index == -1) {
-      state.option.push(value)
+      state.option.push(value);
     } else {
-      const updatedOptions = state.option.splice(index, 0)
-      state.option = updatedOptions
+      const updatedOptions = state.option.splice(index, 0);
+      state.option = updatedOptions;
     }
-  }
+  };
 
   const handleSubmit = () => {
     const {
@@ -53,54 +54,56 @@ const StartProject = () => {
       email,
       project_description,
       option,
-    } = state
+    } = state;
     if (
-      // first_name !== "" &&
-      // last_name !== "" &&
-      // phone_number !== "" &&
-      // email !== "" &&
-      // project_description !== "" &&
-      // option.length
-      true
+      first_name !== "" &&
+      last_name !== "" &&
+      phone_number !== "" &&
+      email !== "" &&
+      project_description !== "" &&
+      option.length
     ) {
-      postOrder()
+      postOrder();
     } else {
-      alert('kindly fill alll the required fields')
+      // alert("kindly fill alll the required fields");
+      toast.error("kindly fill all the required fields");
     }
-  }
+  };
 
   const postOrder = async () => {
     try {
-      const Response = await axios.post('http://localhost:1337/api/my-users', {
+      const Response = await axios.post("http://localhost:1337/api/my-users", {
         data: state,
-      })
+      });
       if (Response.status == 200) {
         setState({
-          first_name: '',
-          last_name: '',
-          company: '',
-          existing_website_url: '',
-          email: '',
-          phone_number: '',
+          first_name: "",
+          last_name: "",
+          company: "",
+          existing_website_url: "",
+          email: "",
+          phone_number: "",
           option: [],
-          project_description: '',
-        })
-        const { email, name } = Response?.data?.data?.attributes
+          project_description: "",
+        });
+        const { email, name } = Response?.data?.data?.attributes;
         const templateParams = {
-          name: name,
-          email: 'sameer.asad@dipixels.com',
-          message:
-            'Thanks for approaching us. We are hopeful so that we will wonder you with our services',
-        }
-
+          to: email,
+          subject: `Best wishes to you from Dipixels`,
+          text: "Thanks for approaching Dipixels and considering our service for you. We are hopeful so that we will wonder you with our services. For more information visit www.dipixels.com",
+        };
+        await axios.post("http://localhost:3000/api/sendEmail", templateParams);
         // };
-
-        console.log(Response, 'Response', 'email', email)
+        toast.success("thanks for your response.");
+        document.getElementById("form").reset();
+        console.log(Response, "Response", "email", email);
       }
     } catch (error) {
-      alert(error?.response?.data?.error?.message)
+      // alert(error?.response?.data?.error?.message);
+      toast.error(error?.response?.data?.error?.message);
     }
-  }
+  };
+  
   return (
     <>
       <div

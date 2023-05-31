@@ -18,10 +18,10 @@ const Banner = () => {
   return (
     <>
       <div className={styles.Banner_section}>
+        <div className={styles.Banner_section_wrapper}>
         <div className={styles.background_video_container}>
           <img src='/assets/Banner.gif' alt='' />
         </div>
-        <div className={styles.Banner_section_wrapper}>
           <div className={styles.Banner_section_content}>
             <h1>
               <span> we are </span> dipixels
