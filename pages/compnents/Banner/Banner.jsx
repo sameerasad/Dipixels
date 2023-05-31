@@ -3,7 +3,7 @@ import Button from '../Buttons/Button/Button'
 import styles from '../../../styles/Banner.module.css'
 import PlayReel from '../HeroSection/PlayReel'
 import VideoModal from '../VideoModal/VideoModal'
-import Video from '../../../public/assets/video/DipixelsAllServices.mp4'
+import Video from '../../../public/assets/video/HomePage.mp4'
 const Banner = () => {
   const [isVideoModalOpen, setVideoModalOpen] = useState(false)
 
@@ -14,13 +14,14 @@ const Banner = () => {
   const closeVideoModal = () => {
     setVideoModalOpen(false)
   }
+  
   return (
     <>
       <div className={styles.Banner_section}>
+        <div className={styles.Banner_section_wrapper}>
         <div className={styles.background_video_container}>
           <img src='/assets/Banner.gif' alt='' />
         </div>
-        <div className={styles.Banner_section_wrapper}>
           <div className={styles.Banner_section_content}>
             <h1>
               <span> we are </span> dipixels
@@ -34,28 +35,19 @@ const Banner = () => {
             </p>
           </div>
           <div
-            style={{
-              display: 'flex',
-              gap: '20px',
-              justifyContent: 'center',
-              alignItems: 'center',
-              marginTop: '2em',
-            }}
+            className={styles.Banner_ButtonsDiv}
           >
             <Button> get a quote </Button>
             <Button> case study </Button>
           </div>
-          <div
-            className={styles.dipixels_header_Reel}
-            onClick={openVideoModal}
-          >
-            <PlayReel/>
+          <div className={styles.dipixels_header_Reel} onClick={openVideoModal}>
+            <PlayReel />
           </div>
         </div>
         <div className={styles.Banner_section_content_links}>
           <div className={styles.Banner_section_content_links_facebook}>
             <a href=''>
-              <img src='/assets/facebook.png' alt='' />
+              <img src='/assets/facebook.svg' alt='' />
               <p>facebook</p>
             </a>
           </div>
@@ -91,7 +83,7 @@ const Banner = () => {
             <div onClick={closeVideoModal} className='modal_close'>
               <img src='/assets/CloseIcon.svg' alt='' />
             </div>
-            <VideoModal videoLink={Video}/>
+            <VideoModal videoLink={Video} />
           </div>
         </div>
       )}

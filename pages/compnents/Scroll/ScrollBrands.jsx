@@ -1,11 +1,14 @@
 import React from 'react'
-import Figma from '../../../public/assets/Figma.svg'
-import Adobe from '../../../public/assets/Adobe.svg'
-import Illustrator from '../../../public/assets/Illustrator.svg'
-import Photoshop from '../../../public/assets/Photoshop.svg'
-import XD from '../../../public/assets/XD.svg'
-import Wordpress from '../../../public/assets/Wordpress.svg'
-import Word from '../../../public/assets/word.png'
+import Figma from '../../../public/assets/Figma.png'
+import Adobe from '../../../public/assets/Adobe.png'
+import Illustrator from '../../../public/assets/Illustrator.png'
+import Photoshop from '../../../public/assets/Photoshop.png'
+import XD from '../../../public/assets/XD.png'
+import Wordpress from '../../../public/assets/Wordpress.png'
+import Shopify from '../../../public/assets/Shopify.png'
+import Laravel from '../../../public/assets/Laravel.png'
+import ReactImg from '../../../public/assets/ReactImg.png'
+import Angular from '../../../public/assets/Angular.png'
 import Image from 'next/image'
 import Marquee from '../Marquee/Marquee'
 import Heading from '../Heading/Heading'
@@ -34,30 +37,30 @@ const Brands = () => {
               <Image src={Adobe} alt='' width='200' height='200' />
             </div>
             <div className={styles.svg}>
-              <Image src={Illustrator} alt='' width='180' height='180' />
+              <Image src={Illustrator} alt='' width='170' height='170' />
             </div>
             <div className={styles.svg}>
-              <Image src={Photoshop} alt='' width='200' height='200' />
+              <Image src={Photoshop} alt='' width='190' height='190' />
             </div>
             <div className={styles.svg}>
-              <Image src={XD} alt='' width='160' height='160' />
+              <Image src={XD} alt='' width='150' height='150' />
             </div>
           </div>
           <div className={`${styles.icons} ${styles.filter_icon}`}>
             <div className={styles.svg}>
-              <Image src={XD} alt='' width='160' height='160' />
+              <Image src={Wordpress} alt='' width='150' height='150' />
             </div>
             <div className={styles.svg}>
-              <Image src={Photoshop} alt='' width='200' height='200' />
+              <Image src={Shopify} alt='' width='150' height='150' />
             </div>
             <div className={styles.svg}>
-              <Image src={Illustrator} alt='' width='180' height='180' />
+              <Image src={Laravel} alt='' width='150' height='150' />
             </div>
             <div className={styles.svg}>
-              <Image src={Adobe} alt='' width='200' height='200' />
+              <Image src={ReactImg} alt='' width='150' height='150' />
             </div>
             <div className={styles.svg}>
-              <Image src={Figma} alt='' width='150' height='150' />
+              <Image src={Angular} alt='' width='150' height='150' />
             </div>
           </div>
         </section>

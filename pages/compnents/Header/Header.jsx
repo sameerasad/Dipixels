@@ -4,19 +4,14 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import DropdownArrow from '/public/assets/dropdownArrow.svg'
 import Image from 'next/image'
-
+import Drawer from './Drawer'
 const Header = () => {
   const router = useRouter()
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
-
-  // const toggleDropdown = () => {
-  //   setIsDropdownOpen(!isDropdownOpen)
-  // }
-
-  // const closeDropdown = () => {
-  //   setIsDropdownOpen(false)
-  // }
-
+  const [open, setOpen] = useState(false)
+  const handleDropdownToggle = () => {
+    setIsDropdownOpen(!isDropdownOpen)
+  }
   return (
     <>
       <div className={styles.dipixels_header}>
@@ -50,7 +45,8 @@ const Header = () => {
             </li>
             <li
               className={styles.service_dropdown}
-              onMouseEnter={() => setIsDropdownOpen(true)}
+              onMouseEnter={handleDropdownToggle}
+              onMouseLeave={handleDropdownToggle}
             >
               <Link href='/services' passHref>
                 <div
@@ -63,7 +59,9 @@ const Header = () => {
                 </div>
               </Link>
               {isDropdownOpen && (
-                <ul className={styles.dropdown_menu} onMouseLeave={() => setIsDropdownOpen(false)}>
+                <ul
+                className={`${styles.dropdown_menu} ${isDropdownOpen ? 'open' : ''}`}
+                >
                   <li>
                     <Link href='/web-design-development' passHref>
                       <div
@@ -185,6 +183,16 @@ const Header = () => {
               <button>Start a project</button>
             </Link>
           </div>
+          <div className={styles.dipixels_header_Triggermenu}>
+            <img
+              src='/assets/menu.svg'
+              alt=''
+              onClick={() => {
+                setOpen((prevState) => !open)
+              }}
+            />
+          </div>
+          {open ? <Drawer setOpen={setOpen} open={open} /> : null}
         </div>
       </div>
     </>

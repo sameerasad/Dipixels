@@ -9,6 +9,7 @@ import DesignProcess from './compnents/DesignProcess/DesignProcess'
 import WebsitePackages from './compnents/WebsitePackages/WebsitePackages'
 import ScrollHeadings from './compnents/Scroll/ScrollHeadings'
 import WebsitePackagesCard from './compnents/WebsitePackages/WebsitePackagesCard'
+import Video from '../public/assets/video/ContentWriting.mp4'
 
 const LogoPortfolioData = [
   {
@@ -110,6 +111,7 @@ const contentWriting = () => {
           title='content'
           company='writing'
           description='Vibrant and Unique website content that drives search results'
+          videoLink={Video}
         />
         <Technologies />
         <DesignProcess title={title} description={description} />

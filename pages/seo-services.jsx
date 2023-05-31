@@ -9,6 +9,7 @@ import DesignProcess from './compnents/DesignProcess/DesignProcess'
 import WebsitePackages from './compnents/WebsitePackages/WebsitePackages'
 import ScrollHeadings from './compnents/Scroll/ScrollHeadings'
 import WebsitePackagesCard from './compnents/WebsitePackages/WebsitePackagesCard'
+import Video from '../public/assets/video/SEO.mp4'
 
 const LogoPortfolioData = [
   {
@@ -98,9 +99,10 @@ const seoServices = () => {
   const company = 'portfolio'
   const title = 'seo'
   const description =
-  'On page optimization (AKA on-page SEO) refers to all measures that can be taken directly within the website in order to improve its position in the search rankings. Examples of this include measures to optimize the content or improve the meta description and title tags.'
+    'On page optimization (AKA on-page SEO) refers to all measures that can be taken directly within the website in order to improve its position in the search rankings. Examples of this include measures to optimize the content or improve the meta description and title tags.'
   const packagesHeading = 'seo'
-  const packagesDescription = 'Search engine optimization (SEO) helps to bring your website in the limelight. All the efforts you do to make a catchy website are fruitful only when it is able to receive traffic. The basic precursor for having a successful site is that more people are visiting and taking benefits from its contents, which in turn is profitable for you. SEO plays an important role in order to bring the vagrant net surfers on your website.'
+  const packagesDescription =
+    'Search engine optimization (SEO) helps to bring your website in the limelight. All the efforts you do to make a catchy website are fruitful only when it is able to receive traffic. The basic precursor for having a successful site is that more people are visiting and taking benefits from its contents, which in turn is profitable for you. SEO plays an important role in order to bring the vagrant net surfers on your website.'
 
   return (
     <>
@@ -109,10 +111,14 @@ const seoServices = () => {
           title='seo'
           company='services'
           description='Achieve higher search engine rankings and boost your online visibility with our proven SEO strategies.'
+          videoLink={Video}
         />
         <Technologies />
         <DesignProcess title={title} description={description} />
-        <WebsitePackages packagesHeading={packagesHeading} packagesDescription={packagesDescription}/>
+        <WebsitePackages
+          packagesHeading={packagesHeading}
+          packagesDescription={packagesDescription}
+        />
         <div
           style={{
             width: '100%',

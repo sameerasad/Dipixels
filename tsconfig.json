@@ -21,6 +21,6 @@
     "**/*.tsx",
     "pages/index.jsx",
     "pages/compnents/_ourServices/_ourServices.jsx"
-, "pages/services.jsx", "pages/compnents/Header/Header.jsx", "pages/_app.jsx"  ],
+, "pages/services.jsx", "pages/compnents/Header/Header.jsx", "pages/_app.jsx", "pages/compnents/Footer/Footer.jsx"  ],
   "exclude": ["node_modules"]
 }

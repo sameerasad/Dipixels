@@ -5,6 +5,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 // import Pin from '/public/assets/icon-location-address.png'
 // import Email from '/public/assets/icon-email.png'
+import toast from "react-hot-toast";
 const ContactusForm = () => {
   const [state, setState] = useState({
     first_name: "",

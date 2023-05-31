@@ -3,28 +3,46 @@ import Layout from './compnents/Layout/Layout'
 import Hero from './compnents/HeroSection/Hero'
 import FeaturedProject from './compnents/FeaturedProject/FeaturedProject'
 import ScrollHeadings from './compnents/Scroll/ScrollHeadings'
-
+import Video from '../public/assets/video/DipixelsAllServices.mp4'
 const Ourservices = () => {
   const projectData = [
     {
-      title: 'web design and',
-      subtitle: 'development',
+      title: '712 Creative website',
+      subtitle: 'Redesign & Development',
       description:
-        'In today’s world, where every aspect of life is influenced by technology, progress can only be achieved if your company moves forward in compliance with modern times. A company doesn’t just need a website to be successful; it needs unique web designing and development that creates ease for the target audience, engages the people, and makes you stand out. At Dipixels, our web developers can come up with a functional yet attractive website for your company. We focus on creating personalized designs for you that tell the world what your brand is about, drive traffic, and increase your sales. Our web designers do their research to grasp the objectives of your business and come up with great solutions.',
-      heading: 'Design & Development',
+        'To increase website engagement, the best way is to provide your users with stand-out UI/UX designs. A good user interface and experience will not only make your users happy, but also benefit you in making a distinctive business identity.',
       // image1: '/assets/Portfolio1.jpeg',
       // image2: '/assets/Portfolio2.jpeg',
+      heading: 'Design & Development',
     },
     {
       title: 'Innovative Mobile Apps',
       subtitle: 'Redesign & Development',
       description:
-        'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.',
+        'DiPixels enlightens to provide you with a slick, smooth, and responsive user interface while significantly reducing load time. We stuff your business with faster and cheaper ways to build apps in React Native.',
+      // image1: '/assets/Portfolio3.jpeg',
+      // image2: '/assets/Portfolio4.jpeg',
       heading: 'Mobile App Development',
+    },
+    {
+      title: 'Innovative Logo Designs',
+      subtitle: 'Logo Designing',
+      description:
+        'Create your brand’s identity with unique and attractive corporate design that define your purpose. Here’s our corporate design portfolio that showcases our most recent work.',
+      heading: 'Logo Design',
       // image1: '/assets/Portfolio3.jpeg',
       // image2: '/assets/Portfolio4.jpeg',
     },
-  ]
+    {
+      title: 'Video animation and ',
+      subtitle: 'Production',
+      description:
+        'At Dipixels, we bring you the most advanced and promising video animation technology and production. Our work speaks more than anything. Visit our portfolio and convince yourself of our incredible work.',
+      heading: 'Video Animation',
+      // image1: '/assets/Portfolio3.jpeg',
+      // image2: '/assets/Portfolio4.jpeg',
+    },
+  ]  
 
   return (
     <>
@@ -33,6 +51,7 @@ const Ourservices = () => {
           title='discover your digital'
           company='journey'
           description='Instead of a generic services page, create an interactive experience where visitors can embark on a digital journey. Each step of the journey represents a service you offer, showcasing its benefits, features, and success stories.'
+          videoLink={Video}
         />
         <FeaturedProject
           data={projectData}
