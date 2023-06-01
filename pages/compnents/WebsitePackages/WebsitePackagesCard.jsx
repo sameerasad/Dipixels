@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Button from '../Buttons/Button/Button'
 import OrderForm from '../Forms/OrderForm'
-
+import styles from '../../../styles/WebsitePackagesCard.module.css'
 const WebsitePackagesCard = ({ dataPackage }) => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [packageType,setPackageType] =useState("")
@@ -12,22 +12,22 @@ const WebsitePackagesCard = ({ dataPackage }) => {
 
   return (
     <>
-      <div className='packagesCards'>
+      <div className={styles.packagesCards}>
         {dataPackage?.map((item) => {
           return (
-            <div className='card'>
-              <div className='packagetitle'>
+            <div className={styles.card}>
+              <div className={styles.packagetitle}>
                 <h2>
                   {item.title}
-                  <span className='colorBlue'> {item.packageBlue}</span>
+                  <span className={styles.colorBlue}> {item.packageBlue}</span>
                 </h2>
               </div>
-              <div className='packagePrice'>
-                <h4 className='salePrice'>{item.regularPrice}</h4>
-                <p className='regularPrice'>{item.salePrice}</p>
+              <div className={styles.packagePrice}>
+                <h4 className={styles.salePrice}>{item.regularPrice}</h4>
+                <p className={styles.regularPrice}>{item.salePrice}</p>
               </div>
 
-              <div className='packageListing'>
+              <div className={styles.packageListing}>
                 <ul>
                   <li>{item.listItem1}</li>
                   <li>{item.listItem2}</li>
@@ -37,16 +37,16 @@ const WebsitePackagesCard = ({ dataPackage }) => {
                 </ul>
               </div>
 
-              <div className='packagecontact'>
-                <div className='speakWithUS'>
+              <div className={styles.packagecontact}>
+                <div className={styles.speakWithUS}>
                   <h3>{item.speakWithUs}</h3>
                   <a href={item.contactNumberLink}>{item.contactNumber}</a>
                 </div>
-                <div className='chatNow'>
+                <div className={styles.chatNow}>
                   <a href={item.chatNowLink}>{item.chatNow}</a>
                 </div>
                 <div
-                  className='packagebtn'
+                  className={styles.packagebtn}
                   onClick={() =>{ setIsModalOpen(true);setPackageType(item.title)}}
                 >
                   <button
@@ -59,9 +59,9 @@ const WebsitePackagesCard = ({ dataPackage }) => {
         })}
       </div>
       {isModalOpen && (
-        <div className='overlay'>
-        <div className='modal'>
-          <div onClick={closeModal} className='modal_close'>
+        <div className={styles.overlay}>
+        <div className={styles.modal}>
+          <div onClick={closeModal} className={styles.modal_close}>
             <img src='/assets/CloseIcon.svg' alt='' />
           </div>
           <OrderForm

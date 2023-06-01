@@ -48,3 +48,33 @@
  max-width: 96%;
  }
 }
+@media screen and (max-width: 800px) {
+ .content {
+ margin-top: 3em;
+ gap: 10px;
+ }
+ .content h2 {
+  font-size: 1.5em;
+ }
+ .content_list ul li {
+ font-size: 1em;
+ }
+}
+@media screen and (max-width: 600px) {
+ .content {
+  margin-top: 2em;
+ }
+ .content {
+ display: flex;
+ flex-direction: column;
+ }
+ .content h2 {
+  line-height: 40px;
+ }
+ .content_list ul li {
+ margin-bottom: 20px;
+ }
+ .content div {
+ width: 100%;
+ }
+}

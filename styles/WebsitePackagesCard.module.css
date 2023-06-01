@@ -1,0 +1,248 @@
+
+.webPackage {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+.webpackages_section_content_heading {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+ z-index: 9;
+ margin-top: -50px;
+}
+.webpackages_section_content_heading h1 {
+ color: #00f3f4;
+ font-size: 70px;
+ text-transform: uppercase;
+ font-family: 'Monument Extended Regular';
+}
+.webpackages_section_content_heading h1 span {
+ color: #9add3a;
+}
+.package_section_content_para {
+ margin-top: 2em;
+ text-align: center;
+}
+.package_section_content_para p {
+ font-size: 24px;
+}
+
+.wrapper {
+ width: 85%;
+ margin: 0 auto;
+}
+.packagesCards {
+ margin-top: 100px;
+ display: flex;
+ justify-content: space-between;
+ gap: 1.5rem;
+ flex-wrap: wrap;
+ position: relative;
+}
+.packagesCards .card {
+ position: relative;
+ flex: 1 1 30%;
+ background-color: #171717;
+ border-radius: 21px;
+ min-height: 280px;
+ padding: 40px 30px;
+}
+
+.packagesCards .card .packagetitle h2 {
+ color: #9add3a;
+ width: 80%;
+ font-size: 28px;
+ font-weight: 500;
+ margin-bottom: 20px;
+ font-family: 'Monument Extended Regular';
+}
+
+.packagePrice {
+ display: flex;
+ gap: 15px;
+}
+.packagePrice h4 {
+ color: #ffffff;
+ font-size: 46px;
+ font-weight: 600;
+}
+.packagePrice p {
+ color: #9add3a;
+ text-decoration: line-through;
+ font-size: 30px;
+ font-weight: 600;
+}
+
+.packageListing {
+ border-top: 2px solid #9add3a;
+ border-bottom: 1px solid #9add3a;
+ padding: 25px 0 25px 0;
+ margin: 25px 0 30px 0;
+}
+.packageListing ul {
+ margin: 0;
+ padding: 0;
+}
+.packageListing ul li {
+ margin-left: -15px;
+ list-style: none;
+ color: #fff;
+ font-size: 18px;
+ line-height: 1rem;
+ font-weight: 600;
+}
+.packageListing ul li::before {
+ content: url('../public/assets/check-png.png');
+ transform: scale(0.35);
+ vertical-align: middle;
+ display: inline-block;
+}
+.packagecontact {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.packagecontact .chatNow a {
+ color: #00f3f4;
+ font-size: 22px;
+ text-transform: uppercase;
+}
+.packagecontact h3 {
+ text-transform: uppercase;
+ font-size: 22px;
+ color: #9add3a;
+ line-height: 34px;
+ font-family: 'Monument Extended Regular';
+}
+.packagecontact a {
+ font-size: 25px;
+ color: #fff;
+ line-height: 30px;
+ font-family: 'Monument Extended Regular';
+ text-decoration: none;
+}
+.packagecontact {
+ margin: 30px 0px 30px 0;
+}
+
+.packagesCards .packagebtn button {
+ text-align: center;
+ background-color: #9add3a;
+ font-family: 'Monument Extended Regular';
+ padding: 18px 36px;
+ color: #171717;
+ font-size: 18px;
+ text-transform: uppercase;
+ line-height: 19px;
+ border-radius: 10px;
+ border: none;
+ cursor: pointer;
+}
+
+.packagesCards .packagebtn {
+ display: flex;
+ width: 100% !important;
+ justify-content: center;
+ position: absolute;
+ bottom: -25px;
+ left: 50%;
+ transform: translate(-50%);
+}
+
+.packageListing {
+ height: 275px;
+ overflow-y: scroll;
+}
+
+.packageListing::-webkit-scrollbar {
+ width: 4px;
+}
+
+.packageListing::-webkit-scrollbar-thumb {
+ background-color: #00f3f4;
+ border-radius: 5px;
+}
+
+.packageListing::-webkit-scrollbar-track {
+ background-color: #2f2f2f;
+ border-radius: 5px;
+}
+
+.packageListing::-webkit-scrollbar-button {
+ background-color: #171717;
+ border-radius: 5px;
+}
+
+.packageListing::-webkit-scrollbar-button:hover {
+ background-color: #555;
+}
+
+
+@media (max-width: 800px) {
+   .Heading_main_heading__92XkJ h1{
+       font-size:2em;
+   }
+  
+  .packagetitle h2{
+   font-size:1.4em !important;
+  }
+   .card {
+    min-width:100%;
+   }
+  
+   h4.salePrice {
+    font-size:1.6em;
+   }
+  
+   p.regularPrice {
+    font-size:1.5em;
+   }
+  
+   .packageListing li{
+    font-size:1.1em !important;
+   }
+  
+  .speakWithUS h3  {
+   font-size:1em;
+   line-height:24px;
+  }
+   
+  .speakWithUS a  {
+   font-size:1em;
+   line-height:24px;
+  }
+   
+  .chatNow a{
+   font-size:1.2em !important;
+   line-height:30px;
+  }
+  
+  .packagebtn button {
+   font-size:0.9em !important;
+   position:relative;
+   top:-25px;
+   margin-bottom: 8px;
+  }
+  
+  .packagesCards {
+   flex-wrap:nowrap;
+   width:133%;
+   overflow-x:auto;
+   overflow-y:hidden;
+  }
+  
+      .packagesCards::-webkit-scrollbar{
+          height: 6px;
+          background: transparent;
+          margin-top: 20px;
+
+      }
+      .packagesCards::-webkit-scrollbar-thumb{
+          background: #D5FF40;
+          border-radius: 10px;
+
+      }
+   
+  }

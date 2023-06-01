@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import WebsitePackagesCard from '../WebsitePackages/WebsitePackagesCard'
+import styles from '../../../styles/PackagesTabber.module.css'
 
 const WebDataPackage = [
   {
@@ -350,26 +351,25 @@ function PackagesTabber() {
   ]
 
   return (
-    <div className='tabber-section'>
-      <div className='tabber-warpper'>
-        <div className='tab-buttons'>
+    <div className={styles.tabber_section}>
+      <div className={styles.tabber_warpper}>
+        <div className={styles.tab_buttons}>
           {tabs.map((tab, index) => (
             <div
               style={{
                 color: isActive === index ? '#00F3F4' : '',
-                // fontFamily: 'Monument Extended Regula',
               }}
               key={index}
               onClick={() => {
                 setIsActive(index)
               }}
-              className={`tab-button ${isActive === index ? 'active' : ''}`}
+              className={`${styles.tab_button} ${isActive === index ? 'active' : ''}`}
             >
               {tab.label}
             </div>
           ))}
         </div>
-        <div className='tab-content'>{tabs[isActive].content}</div>
+        <div className={styles.tab_content}>{tabs[isActive].content}</div>
       </div>
     </div>
   )

@@ -107,3 +107,25 @@
   width: 360px;
  }
 }
+@media screen and (max-width: 767px) {
+  .our_services_wrapper {
+    max-width: 96%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  .our_services_slider_wrapper {
+  max-width: 75% !important;
+}
+}
+@media screen and (max-width: 500px) {
+  .our_services_slider_wrapper {
+    max-width: 100% !important;
+  }
+}
+@media screen and (max-width: 375px) {
+  .our_services_content_sliders_images {
+   width: 100%;
+  }
+  }

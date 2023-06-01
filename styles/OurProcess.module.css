@@ -1,0 +1,82 @@
+.our_process_section_wrapper .minContainer {
+  width: 72%;
+  margin: 0 auto;
+}
+
+.our_process_section_wrapper .description {
+  margin-top: 1em;
+  font-size: 24px;
+  line-height: 1.5em;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.our_process_section_wrapper .processCards {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 10em;
+}
+.our_process_section_wrapper .processCards .card {
+  flex: 1 1 22%;
+  background-color: #171717;
+  border-radius: 21px;
+  min-height: 280px;
+  padding: 20px 20px 30px 20px;
+}
+.our_process_section_wrapper .processCards .card img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+.our_process_section_wrapper .processCards .card h3 {
+  color: #00f3f4;
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-family: "Monument Extended Regular";
+}
+.our_process_section_wrapper .processCards .card p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+@media (max-width: 1400px) {
+  .our_process_section_wrapper .processCards {
+    margin-bottom: 0em;
+  }
+  .our_process_section_wrapper .processCards .card {
+    flex: 1 1 48%;
+  }
+  .our_process_section_wrapper .minContainer {
+    width: 96%;
+  }
+}
+@media (max-width: 800px) {
+  .our_process_section_wrapper .minContainer {
+    width: 96%;
+  }
+  .our_process_section_wrapper .description {
+    margin-top: 0.6em;
+    font-size: 1em;
+    line-height: 1.4em;
+    margin-bottom: 30px;
+  }
+  .our_process_section_wrapper .processCards .card {
+    flex: 1 1 48%;
+  }
+  .our_process_section_wrapper .processCards {
+    margin:0;
+  }
+  .our_process_section_wrapper .processCards .card h3 {
+    font-size: 1em;
+  }
+  .our_process_section_wrapper .processCards .card p {
+    color: #fff;
+    font-size: 15px;
+  }
+  .our_process_section {
+    margin: 3em 0 !important;
+  }
+}

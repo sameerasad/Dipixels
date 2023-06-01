@@ -20,7 +20,7 @@ const Banner = () => {
       <div className={styles.Banner_section}>
         <div className={styles.Banner_section_wrapper}>
         <div className={styles.background_video_container}>
-          <img src='/assets/Banner.gif' alt='' />
+          <img src='/assets/Banner_new.gif' alt='' />
         </div>
           <div className={styles.Banner_section_content}>
             <h1>

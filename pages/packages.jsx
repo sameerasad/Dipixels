@@ -16,7 +16,7 @@ const packages = () => {
           videoLink={Video}
         />
         <PackagesTabber />
-        <ScrollHeadings />
+        {/* <ScrollHeadings /> */}
       </Layout>
     </>
   )

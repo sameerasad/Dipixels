@@ -3,7 +3,7 @@
  display: flex;
  align-items: center;
  flex-direction: column;
- margin-top: 20em;
+ margin-top: 15em;
 }
 .aboutus_wrapper {
  width: 100%;
@@ -72,8 +72,36 @@
 .play_container:hover .play_text {
  display: flex;
 }
+@media screen and (max-width: 1440px) {
+ .aboutus_section {
+ margin-top: 10em;
+ }
+}
 @media screen and (max-width: 1048px) {
  .aboutus_content_para p {
  font-size: 1.2em;
  }
+}
+
+@media screen and (max-width: 768px) {
+ .aboutus_content_para p {
+ font-size: 1em;
+ }
+ .play_container {
+ height: 60px;
+ padding: 0 0 0 20px;
+ width: 100px;
+ }
+ .play_container:hover {
+  width: 260px;
+  padding-left: 20px;
+ }
+ .play_icon img{
+  width: 50%;
+  height: 50%;
+ }
+ .play_text {
+  display: none;
+  font-size: 1.5em;
+}
 }

@@ -1,0 +1,121 @@
+.design_process_section {
+  margin-top: 5em;
+  height: 800px;
+}
+.design_process_section_content {
+  margin-top: -50px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.design_process_section_content_wrapper {
+  width: 100%;
+  max-width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+}
+.design_process_section_content_para {
+  margin: 3em 0;
+  text-align: center;
+}
+.design_process_section_content_para p {
+  font-size: 24px;
+}
+.design_process_content_image {
+  margin-left: 20px;
+}
+.design_process_content_cards {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+.design_process_content_card {
+  width: 360px;
+  background-color: #171717;
+  padding: 0 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Monument Extended Regular';
+  position: relative;
+}
+.design_process_content_card_left {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+}
+.design_process_content_card_left h2 {
+  color: #9add3a;
+  font-size: 42px;
+}
+.design_process_content_card_left p {
+  font-size: 24px;
+  color: #00f3f4;
+  text-transform: uppercase;
+  margin-top: 2em;
+}
+.design_process_content_card_right {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: -40px;
+}
+.design_process_content_card_right h1 {
+  font-size: 42px;
+  font-weight: 400;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #9add3a;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  letter-spacing: 3px;
+}
+@media screen and (max-width: 1048px) {
+  .design_process_section_content_wrapper {
+    max-width: 96% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .design_process_section_content_para p {
+    font-size: 1.2em;
+  }
+  /* .design_process_section_content_wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .design_process_content_card_left h2 {
+ font-size: 2em;
+ }
+ .design_process_content_card_left p {
+ font-size: 1.5em;
+ }
+ .design_process_content_card_right h1 {
+  font-size: 2em;
+ } */
+}
+@media screen and (max-width: 375px) {
+  .design_process_content_card {
+    width: 100%;
+  }
+  .design_process_section_content_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .design_process_content_card_left h2 {
+    font-size: 2em;
+  }
+  .design_process_content_card_left p {
+    font-size: 1.5em;
+  }
+  .design_process_content_card_right h1 {
+    font-size: 2em;
+  }
+}

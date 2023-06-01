@@ -59,6 +59,7 @@ const OurServices = () => {
           <div className={styles.our_services_content}>
             <Heading>our services</Heading>
           </div>
+          <div className={styles.our_services_slider_wrapper}>
           <Swiper
             slidesPerView={4}
             spaceBetween={10}
@@ -68,8 +69,8 @@ const OurServices = () => {
             modules={[Pagination]}
             breakpoints={{
               // When window width is >= 640px
-              640: {
-                slidesPerView: 2,
+              320: {
+                slidesPerView: 1,
               },
               // When window width is >= 768px
               768: {
@@ -129,6 +130,7 @@ const OurServices = () => {
               })}
             </div>
           </Swiper>
+          </div>
         </div>
       </div>
     </>

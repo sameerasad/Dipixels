@@ -13,7 +13,7 @@ const Footer = () => {
               <div className={styles.center_line}></div>
             </div>
 
-            <div className={styles.dipixels_footer_content}>
+            <div className={styles.dipixels_footer_content_image}>
               <Image src={Logo} alt='' width='400' height='100' />
             </div>
 

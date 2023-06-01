@@ -1,10 +1,10 @@
-// import './Hero.css'
 import React, { useState } from 'react'
 import Gif from '../../../public/assets/Banner.gif'
 import Button from '../Buttons/Button/Button'
 import StyledButton from '../Buttons/StyledButton/StyledButton'
 import PlayReel from './PlayReel'
 import VideoModal from '../VideoModal/VideoModal'
+import styles from '../../../styles/Hero.module.css'
 
 const Hero = ({ title, description, company, videoLink }) => {
   const [isVideoModalOpen, setVideoModalOpen] = useState(false)
@@ -17,37 +17,36 @@ const Hero = ({ title, description, company, videoLink }) => {
   }
   return (
     <>
-      <div className='hero'>
-        <div className='container'>
-          <div className='heroContent'>
-            <h1 className='colorGreen'>
-              {title} <span className='colorBlue'>{company}</span>
+      <div className={styles.hero}>
+        <div className={styles.container}>
+          <div className={styles.heroContent}>
+            <h1 className={styles.colorGreen}>
+              {title} <span className={styles.colorBlue}>{company}</span>
             </h1>
             <p>{description}</p>
-            <div
+            <div  className={styles.button_Wrapper}
               style={{
                 display: 'flex',
                 gap: '20px',
                 // marginTop: '2em',
-                height: '60px',
+                // height: '60px',
               }}
             >
               <Button>View Our Portfolio</Button>
               <Button>View Our Services</Button>
             </div>
           </div>
-          <div className='videoPlayReel'>
-            <img src='/assets/Banner.gif' alt='' />
-            <div className='heroReel' onClick={openVideoModal}>
+          <div className={styles.videoPlayReel}>
+            <div className={styles.heroReel} onClick={openVideoModal}>
               <PlayReel />
             </div>
           </div>
         </div>
       </div>
       {isVideoModalOpen && (
-        <div className='videoOverlay'>
-          <div className='videoModal'>
-            <div onClick={closeVideoModal} className='modal_close'>
+        <div className={styles.videoOverlay}>
+          <div className={styles.videoModal}>
+            <div onClick={closeVideoModal} className={styles.modal_close}>
               <img src='/assets/CloseIcon.svg' alt='' />
             </div>
             <VideoModal videoLink={videoLink} />

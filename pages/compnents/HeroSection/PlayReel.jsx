@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import VideoModal from '../VideoModal/VideoModal'
+import styles from '../../../styles/Hero.module.css'
 
 const PlayReel = () => {
   // const [VideoModalOpen, setVideoModalOpen] = useState(false)
@@ -14,7 +15,7 @@ const PlayReel = () => {
 
   return (
     <>
-      <div className='playReel'>
+      <div className={styles.playReel}>
         {/* <a href='#'> */}
           <h2 
           // onClick={openVideoModal}

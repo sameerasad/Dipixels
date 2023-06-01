@@ -179,8 +179,16 @@
   }
 }
 @media screen and (max-width: 800px) {
+  .background_video_container {
+    top: 0;
+    left: 0px;
+  }
   .background_video_container img {
     width: 60%;
+  }
+  .Banner_section_content p {
+    line-height: 1.5em;
+    width: 90%;
   }
   .Banner_section_content {
     margin-top: 5em;
@@ -198,8 +206,67 @@
   .Banner_ButtonsDiv {
     margin-top: 1em;
   }
-  .dipixels_header_Reel{
+  .dipixels_header_Reel {
     top: 80px;
-    left: -30%;
+    left: -230px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .dipixels_header_Reel {
+  left: -160px !important;
+  }
+}
+@media screen and (max-width: 640px) {
+  .background_video_container img {
+    width: 75%;
+  }
+  .dipixels_header_Reel {
+    top: 160px;
+  }
+  .Banner_section_content {
+    margin-top: 6em;
+  }
+}
+@media screen and (max-width: 610px) {
+  .Banner_section_content {
+    margin-top: 3em;
+  }
+}
+@media screen and (max-width: 530px) {
+  .dipixels_header_Reel {
+  left: -100px !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  .dipixels_header_Reel {
+    top: 80px;
+    left: -60px !important;
+  }
+  .background_video_container img {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .Banner_section {
+    margin-top: 1em;
+  }
+  .dipixels_header_Reel {
+    top: 80px;
+    left: -40px;
+  }
+  .Banner_section_content h1 {
+    font-size: 1.5em;
+  }
+  .Banner_section_content p {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 320px) {
+  .Banner_section_content {
+    margin-top: 1em;
+  }
+  .dipixels_header_Reel {
+    top: 70px;
+    left: -50px !important;
   }
 }

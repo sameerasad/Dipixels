@@ -1,6 +1,7 @@
 import Heading from '../Heading/Heading'
 import Marquee from '../Marquee/Marquee'
 // import './OurProcess.css'
+import styles from '../../../styles/OurProcess.module.css';
 
 function OurProcess() {
   const OurProcess = [
@@ -27,23 +28,23 @@ function OurProcess() {
   ]
   return (
     <>
-      <div class='our-process-section' style={{marginTop: '5em'}}>
+      <div class={styles.our_process_section} style={{marginTop: '5em'}}>
         <Marquee>our process</Marquee>
-        <div class='our-process-section-wrapper'>
-          <div style={{ marginTop: '-50px' }}>
+        <div class={styles.our_process_section_wrapper}>
+          <div className={styles.minContainer}>
+          <div style={{ marginTop: '-50px', justifyContent:'flex-start' }}>
             <Heading>our process</Heading>
           </div>
-          <div className='minContainer'>
-            <p className='description '>
+            <p className={styles.description}>
               We work with a talented team of professionals who prioritize your
               requirements. Our optimism and persistence allow us to deliver
               projects on time and that fully meet our client’s expectations.
             </p>
 
-            <div className='processCards'>
+            <div className={styles.processCards}>
               {OurProcess.map((item) => {
                 return (
-                  <div className='card'>
+                  <div className={styles.card}>
                     <img src={item.img} alt='' />
                     <h3>{item.title}</h3>
                     <p>{item.des}</p>

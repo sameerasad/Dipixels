@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 // import './Counter.module.css'
+import styles from '../../../styles/Counter.module.css';
 
 function Counter() {
   const [counter1, setCounter1] = useState(0)
@@ -47,21 +48,21 @@ function Counter() {
   }, [counter4])
 
   return (
-    <div className='counter '>
-      <div className='minContainer'>
-        <div className='counterItem'>
+    <div className={styles.counter}>
+      <div className={styles.minContainer}>
+        <div className={styles.counterItem}>
           <h3>{counter1}+</h3>
-          <h5>Years in business</h5>
+          <h5>Years in <br /> business</h5>
         </div>
-        <div className='counterItem'>
+        <div className={styles.counterItem}>
           <h3>{counter2}+</h3>
           <h5>Clients</h5>
         </div>
-        <div className='counterItem'>
+        <div className={styles.counterItem}>
           <h3>{counter3}+</h3>
           <h5>Projects</h5>
         </div>
-        <div className='counterItem'>
+        <div className={styles.counterItem}>
           <h3>{counter4}%</h3>
           <h5>Success Rate</h5>
         </div>

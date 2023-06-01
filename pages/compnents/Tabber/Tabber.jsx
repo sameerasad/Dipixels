@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import PortfolioContent from '../Portfolio/PortfolioContent'
+import styles from '../../../styles/PackagesTabber.module.css'
 
 const AllPortfolioData = [
   {
@@ -166,9 +167,9 @@ function Tabber() {
   ]
 
   return (
-    <div className='tabber-section'>
-      <div className='tabber-warpper'>
-        <div className='tab-buttons'>
+    <div className={styles.tabber_section}>
+      <div className={styles.tabber_warpper}>
+        <div className={styles.tab_buttons}>
           {tabs.map((tab, index) => (
             <div
               style={{
@@ -179,13 +180,13 @@ function Tabber() {
               onClick={() => {
                 setIsActive(index)
               }}
-              className={`tab-button ${isActive === index ? 'active' : ''}`}
+              className={`${styles.tab_button} ${isActive === index ? 'active' : ''}`}
             >
               {tab.label}
             </div>
           ))}
         </div>
-        <div className='tab-content'>{tabs[isActive].content}</div>
+        <div className={styles.tab_content}>{tabs[isActive].content}</div>
       </div>
     </div>
   )

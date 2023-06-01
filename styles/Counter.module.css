@@ -1,0 +1,62 @@
+    .counter .minContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 3rem;
+    }
+  .counter {
+    padding: 6em 0 5em 0;
+  }
+  
+  .counter .minContainer .counterItem {
+    flex: 1 1 22%;
+  }
+  .minContainer {
+    max-width: 72%;
+    margin: 0 auto;
+  }
+  .counter .counterItem h3 {
+    font-size: 45px;
+    font-weight: 500;
+    color: #9add3a;
+    margin-bottom: 10px;
+    font-family: 'Monument Extended Regular';
+}
+.counter .counterItem h5 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Monument Extended Regular';
+  }
+
+
+  @media (max-width:1300px) {
+    .counter .minContainer {
+        gap: 1rem;
+    }
+    .minContainer {
+        max-width: 96%;
+      }
+  }
+  @media (max-width:800px) {
+    .counter {
+        padding: 2em 0;
+      }
+      .counter .counterItem h3 {
+        font-size: 1.8em;
+    }
+    .counter .counterItem h5 {
+        font-size: 1em;
+      }
+      .counter .minContainer {
+     text-align: center;
+    }
+ 
+  }
+
+  @media (max-width:600px) {
+    .counter .minContainer .counterItem {
+        flex: 1 1 45%;
+      }
+  }

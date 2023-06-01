@@ -11,7 +11,7 @@ import { Pagination } from 'swiper'
 import 'swiper/swiper.min.css'
 import Button from '../Buttons/Button/Button'
 import Heading from '../Heading/Heading'
-
+import styles from '../../../styles/Technologies.module.css'
 const TechnologiesData = [
   {
     title: 'UI/UX Design',
@@ -41,7 +41,7 @@ const TechnologiesData = [
   {
     title: 'Web Content',
     image: '/assets/arrow-up-right.png',
-    para: 'Website content plays an important role in attracting audiences and increasing business engagement. Dipixels creates unique, informative, and engaging content that comprehensively provide content that visitors are interested in when browsing your site. The quality level of your content affects how long your visitors stay on your site, how many pages they visit, and whether their attention is diverted immediately. Our professional content writers can fulfil your expectations of quality and SEO-driven content, that enhances your distinctive identity in the market.',
+    para: 'Website content plays an important role in attracting audiences and increasing business engagement. Dipixels creates unique, informative, and engaging content that comprehensively provide content that visitors are interested in when browsing your site. The quality level of your content affects how long your visitors stay on your site, how many pages they visit, and whether their attention is diverted immediately. ',
   },
 ]
 
@@ -49,13 +49,13 @@ const Technologies = () => {
   SwiperCore.use([Autoplay])
   return (
     <>
-      <div className='Technologies-section'>
+      <div className={styles.Technologies_section}>
         <div style={{ paddingTop: '6em' }}>
           <Marquee>technologies</Marquee>
         </div>
-        <div className='Technologies-section-content'>
+        <div className={styles.Technologies_section_content}>
           <Swiper
-            style={{ width: '100%', height: '350px' }}
+            style={{ width: '100%', height: '450px' }}
             loop={true} // Enable looped swiping
             slidesPerView={1}
             autoplay={{ delay: 3000, disableOnInteraction: false }} // Set autoplay options here
@@ -65,13 +65,13 @@ const Technologies = () => {
             }}
             modules={[Pagination]}
           >
-            <div className='Technologies-section-content-wrapper'>
+            <div className={styles.Technologies_section_content_wrapper}>
               {TechnologiesData.map((item, index) => {
                 return (
                   <SwiperSlide>
                     <>
                       <Heading>{item.title}</Heading>
-                      <div className='Technologies-section-content-heading-para'>
+                      <div className={styles.Technologies_section_content_heading_para}>
                         <p>{item.para}</p>
                       </div>
                     </>

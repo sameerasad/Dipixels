@@ -45,6 +45,11 @@
 }
 @media screen and (max-width: 1280px){
   .marquee h1 {
-   font-size: 7em;
+   font-size: 8em;
+  }
+ }
+@media screen and (max-width: 800px){
+  .marquee h1 {
+   font-size: 6em;
   }
  }

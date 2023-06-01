@@ -5,21 +5,13 @@
   -webkit-text-stroke: 3px rgba(213, 255, 64, 0.3);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  font-family: 'Monument Extended Regular';
+  background-clip: text;
+  font-family: "Monument Extended Regular";
 }
 .font_vw {
   font-size: 9.65vw;
 }
-.headingScroll.second {
-  transform: translate(-8%);
-  margin-left: -8%;
-}
-.ScrollingHeadings:hover .headingScroll {
-  transform: translate(-8%);
-}
-.ScrollingHeadings:hover .headingScroll.second {
-  transform: translate(8%);
-}
+
 .ScrollingHeadings {
   overflow: hidden;
   padding: 100px 0 120px 0;
@@ -31,8 +23,45 @@
   transition: all 0.4s ease;
   margin-left: -8%;
 }
-@media screen and (max-width: 1280px){
- .stoke_h1 {
-  font-size: 7em;
- }
+@media screen and (max-width: 1280px) {
+  .stoke_h1 {
+    font-size: 7em;
+  }
+  .headingArrowScroll {
+    margin-left: 2%;
+  }
+  .ScrollingHeadings {
+    margin: 4em 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: 801px) {
+  .headingScroll.second {
+    transform: translate(-8%);
+    margin-left: -8%;
+  }
+  .ScrollingHeadings:hover .headingScroll {
+    transform: translate(-8%);
+  }
+  .ScrollingHeadings:hover .headingScroll.second {
+    transform: translate(8%);
+  }
+}
+
+@media (max-width: 800px) {
+  .ScrollingHeadings {
+    margin: 4em 0;
+    padding: 0;
+  }
+  .stoke_h1 {
+    font-size: 4em;
+    -webkit-text-stroke: 1px rgba(213, 255, 64, 0.3);
+  }
+  .font_vw {
+    font-size: 20vw;
+  }
+  .ScrollingHeadings .hScroll:first-child{
+    display: none;
+  }
 }

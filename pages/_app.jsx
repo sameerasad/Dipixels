@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <main
       className={montserrat.className}
-      style={{ backgroundColor: "#000000", color: "#ffff" }}
+      style={{ color: "#ffff" }}
     >
       <Toaster position="top-right" reverseOrder={false} />
       <Component {...pageProps} />
