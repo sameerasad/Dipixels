@@ -54,7 +54,7 @@ const Ourservices = () => {
           videoLink={Video}
         />
         <FeaturedProject
-          data={projectData}
+          data={projectData[0]}
           marqueeText='our services'
           heading={<h1>our services</h1>}
         />

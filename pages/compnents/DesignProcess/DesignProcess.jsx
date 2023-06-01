@@ -85,8 +85,10 @@ const DesignProcess = ({ title, description}) => {
               >
                 {DesignProcessData.map((item) => {
                   return (
-                    <SwiperSlide>
-                      <div className={styles.design_process_content_card}>
+                    <SwiperSlide
+                    key={item.id}
+                    >
+                      <div  className={styles.design_process_content_card}>
                         <div className={styles.design_process_content_card_left}>
                           <h2>{item.number}</h2>
                           <p>{item.title}</p>

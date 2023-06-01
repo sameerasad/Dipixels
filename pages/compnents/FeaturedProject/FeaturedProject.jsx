@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import styles from '../../../styles/FeaturedProject.module.css'
 import Arrow from '../../../public/assets/arrow-up-right.png'
 import Image from 'next/image'
@@ -11,11 +11,9 @@ import Heading from '../Heading/Heading'
 
 const FeaturedProject = ({ data, marqueeText, heading }) => {
   const swiper = useSwiper()
-  const [dataIndex, setDataIndex] = useState(0)
   const swiperRef = useRef()
-  const projectData = data[dataIndex] || {}
-
-  return (
+  const projectData = data
+return (
     <>
       <div className={styles.featured_project_section}>
         <Marquee>{marqueeText}</Marquee>
@@ -28,15 +26,15 @@ const FeaturedProject = ({ data, marqueeText, heading }) => {
                   className={styles.featured_project_content_two_left_heading}
                 >
                   <h2>
-                    <span>{projectData.title || ''}</span> <br />
-                    {projectData.subtitle || ''}
+                    <span>{projectData?.title || ''}</span> <br />
+                    {projectData?.subtitle || ''}
                   </h2>
-                  <p>{projectData.description || ''}</p>
+                  <p>{projectData?.description || ''}</p>
                 </div>
                 <Button>our featured themes</Button>
               </div>
               <div className={styles.featured_project_content_two_right}>
-                <h1>{projectData.heading || ''}</h1>
+                <h1>{projectData?.heading || ''}</h1>
                 <div
                   className={styles.featured_project_content_two_right_image}
                 >
