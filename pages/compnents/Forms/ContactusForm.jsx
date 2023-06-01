@@ -62,6 +62,7 @@ const ContactusForm = () => {
         }
         await axios.post('http://localhost:3000/api/sendEmail', templateParams)
         // };
+        // sendMail(email, templateParams.subject, templateParams.text);
 
         console.log(Response, 'Response', 'email', email)
       }
@@ -238,10 +239,10 @@ const ContactusForm = () => {
                       }
                     >
                       <input
-                        type='phone'
-                        name='phone_number'
-                        placeholder='Phone Number *'
-                        id=''
+                        type="tel"
+                        name="phone_number"
+                        placeholder="Phone Number *"
+                        id=""
                         onChange={handleInputChange}
                       />
                     </div>

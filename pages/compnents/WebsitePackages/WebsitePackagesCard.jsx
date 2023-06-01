@@ -3,12 +3,12 @@ import Button from '../Buttons/Button/Button'
 import OrderForm from '../Forms/OrderForm'
 import styles from '../../../styles/WebsitePackagesCard.module.css'
 const WebsitePackagesCard = ({ dataPackage }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false)
-  const [packageType,setPackageType] =useState("")
- 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [packageType, setPackageType] = useState("");
+
   const closeModal = () => {
-    setIsModalOpen(false)
-  }
+    setIsModalOpen(false);
+  };
 
   return (
     <>
@@ -49,13 +49,11 @@ const WebsitePackagesCard = ({ dataPackage }) => {
                   className={styles.packagebtn}
                   onClick={() =>{ setIsModalOpen(true);setPackageType(item.title)}}
                 >
-                  <button
-                  
-                  >{item.btnTxt}</button>
+                  <button>{item.btnTxt}</button>
                 </div>
               </div>
             </div>
-          )
+          );
         })}
       </div>
       {isModalOpen && (
@@ -73,15 +71,15 @@ const WebsitePackagesCard = ({ dataPackage }) => {
 
       <div
         style={{
-          marginTop: '8em',
-          display: 'flex',
-          justifyContent: 'center',
+          marginTop: "8em",
+          display: "flex",
+          justifyContent: "center",
         }}
       >
-        <Button>view more packages</Button>
+        {/* <Button>view more packages</Button> */}
       </div>
     </>
-  )
-}
+  );
+};
 
-export default WebsitePackagesCard
+export default WebsitePackagesCard;

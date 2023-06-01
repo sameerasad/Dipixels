@@ -1,5 +1,5 @@
-import React from 'react'
-import Button from '../Buttons/Button/Button'
+import React from "react";
+import Button from "../Buttons/Button/Button";
 
 // const PortfolioData = [
 //   {
@@ -22,31 +22,31 @@ import Button from '../Buttons/Button/Button'
 //   },
 // ]
 
-const PortfolioContent = ({PortfolioData}) => {
+const PortfolioContent = ({ PortfolioData }) => {
   return (
     <>
-      <div className='portfolio-section-content-images'>
+      <div className="portfolio-section-content-images">
         {PortfolioData?.map((item) => {
           return (
             <>
-              <div className='portfolio-section-content-images-img'>
-                <img src={item.image} alt='' />
+              <div className="portfolio-section-content-images-img">
+                <img src={item.image} alt="" />
               </div>
             </>
-          )
+          );
         })}
       </div>
       <div
-              style={{
-                marginTop: '8em',
-                display: 'flex',
-                justifyContent: 'center',
-              }}
-            >
-              <Button>view more</Button>
-            </div>
+        style={{
+          marginTop: "8em",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        {/* <Button>view more</Button> */}
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default PortfolioContent
+export default PortfolioContent;

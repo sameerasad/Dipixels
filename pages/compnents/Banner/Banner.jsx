@@ -1,22 +1,40 @@
-import React, { useState } from 'react'
-import Button from '../Buttons/Button/Button'
-import styles from '../../../styles/Banner.module.css'
-import PlayReel from '../HeroSection/PlayReel'
-import VideoModal from '../VideoModal/VideoModal'
-import Video from '../../../public/assets/video/HomePage.mp4'
+import React, { useState } from "react";
+import Button from "../Buttons/Button/Button";
+import styles from "../../../styles/Banner.module.css";
+import PlayReel from "../HeroSection/PlayReel";
+import VideoModal from "../VideoModal/VideoModal";
+import Video from "../../../public/assets/video/DipixelsAllServices.mp4";
+import OrderForm from "../../compnents/Forms/OrderForm";
 const Banner = () => {
-  const [isVideoModalOpen, setVideoModalOpen] = useState(false)
-
+  const [isVideoModalOpen, setVideoModalOpen] = useState(false);
+  const [isFormModalOpen, setIsFormModalOpen] = useState(false);
   const openVideoModal = () => {
-    setVideoModalOpen(true)
-  }
-
+    setVideoModalOpen(true);
+  };
   const closeVideoModal = () => {
-    setVideoModalOpen(false)
-  }
-  
+    setVideoModalOpen(false);
+  };
+  const openFormModal = () => {
+    setIsFormModalOpen(true);
+  };
+  const closeFormModal = () => {
+    setIsFormModalOpen(false);
+  };
   return (
     <>
+      {isFormModalOpen && (
+        <div className="overlay">
+          <div className="modal">
+            <div onClick={closeFormModal} className="modal_close">
+              <img src="/assets/CloseIcon.svg" alt="" />
+            </div>
+            <OrderForm
+              closeModal={closeFormModal}
+              isUserComingFromHome={true}
+            />
+          </div>
+        </div>
+      )}
       <div className={styles.Banner_section}>
         <div className={styles.Banner_section_wrapper}>
         <div className={styles.background_video_container}>
@@ -37,8 +55,15 @@ const Banner = () => {
           <div
             className={styles.Banner_ButtonsDiv}
           >
-            <Button> get a quote </Button>
-            <Button> case study </Button>
+            <div
+              onClick={() => {
+                openFormModal();
+              }}
+            >
+              <Button> get a quote </Button>
+            </div>
+
+            <Button>case study </Button>
           </div>
           <div className={styles.dipixels_header_Reel} onClick={openVideoModal}>
             <PlayReel />
@@ -52,24 +77,24 @@ const Banner = () => {
             </a>
           </div>
           <div className={styles.Banner_section_content_links_twitter}>
-            <a href=''>
-              <img src='/assets/twitter.png' alt='' />
+            <a href="">
+              <img src="/assets/twitter.png" alt="" />
               <p>twitter</p>
             </a>
           </div>
           <div className={styles.Banner_section_content_links_instagram}>
-            <a href=''>
-              <img src='/assets/instagram.png' alt='' />
+            <a href="">
+              <img src="/assets/instagram.png" alt="" />
               <p>instagram</p>
             </a>
           </div>
           <div className={styles.Banner_section_content_links_linkedin}>
-            <a href=''>
+            <a href="">
               <img
-                src='/assets/linkedin-in.png'
-                alt=''
-                width='15'
-                height='15'
+                src="/assets/linkedin-in.png"
+                alt=""
+                width="15"
+                height="15"
               />
               <p>linkedin</p>
             </a>
@@ -78,20 +103,20 @@ const Banner = () => {
       </div>
 
       {isVideoModalOpen && (
-        <div className='videoOverlay'>
-          <div className='videoModal'>
-            <div onClick={closeVideoModal} className='modal_close'>
-              <img src='/assets/CloseIcon.svg' alt='' />
+        <div className="videoOverlay">
+          <div className="videoModal">
+            <div onClick={closeVideoModal} className="modal_close">
+              <img src="/assets/CloseIcon.svg" alt="" />
             </div>
             <VideoModal videoLink={Video} />
           </div>
         </div>
       )}
     </>
-  )
-}
+  );
+};
 
-export default Banner
+export default Banner;
 
 // import React from 'react';
 // import Button from '../Buttons/Button/Button';
@@ -117,7 +142,7 @@ export default Banner
 //         </div>
 //         <div className={styles.Banner_section_buttons}>
 //           <Button>get a quote</Button>
-//           <Button>case study</Button>
+//           <Button></Button>
 //         </div>
 //       </div>
 //       <div className={styles.Banner_section_content_links}>

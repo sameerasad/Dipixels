@@ -4,15 +4,30 @@ import styles from "../../../styles/OrderForm.module.css";
 import Heading from "../Heading/Heading";
 import axios from "axios";
 import toast from "react-hot-toast";
-const OrderForm = ({ orderPackage, closeModal }) => {
+
+const OrderForm = ({
+  orderPackage = false,
+  closeModal,
+  isUserComingFromHome = false,
+}) => {
+  const [orderPackages, setorderPackages] = useState("");
   const [state, setState] = useState({
     name: "",
     last_name: "",
     email: "",
     phone_number: "",
-    package_type: orderPackage,
+    package_type: isUserComingFromHome ? orderPackages : orderPackage,
+    message: "",
   });
+  const [domain, setDomain] = useState("");
 
+  const handleChange = (event) => {
+    setDomain(event.target.value);
+  };
+
+  const handleOderType = (event) => {
+    setorderPackages(event.target.value);
+  };
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setState((prevProps) => ({
@@ -48,6 +63,7 @@ const OrderForm = ({ orderPackage, closeModal }) => {
           email: "",
           phone_number: "",
           package_type: "",
+          message: "",
         });
         document.getElementById("form").reset();
         closeModal();
@@ -137,11 +153,82 @@ const OrderForm = ({ orderPackage, closeModal }) => {
               }
             >
               <input
-                type="phone"
+                type="tel"
                 name="phone_number"
                 placeholder="Phone Number *"
                 onChange={handleInputChange}
                 id=""
+              />
+            </div>
+
+            {isUserComingFromHome && (
+              <>
+                {" "}
+                <div style={{ marginTop: "3em", width: "48%" }}>
+                  <select
+                    style={{
+                      width: "100%",
+                      height: "50px",
+                      fontFamily: "Monument Extended Regular",
+                      background: "#000000",
+                      color: "#ffffff",
+                      border: "2px solid #9add3a",
+                    }}
+                    value={domain}
+                    onChange={handleChange}
+                  >
+                    <option value="WEB DESIGN AND DEVELOPMENT">
+                      {" "}
+                      WEB DESIGN AND DEVELOPMENT
+                    </option>
+
+                    <option value="MOBILE APPS">MOBILE APPS</option>
+
+                    <option value="VIDEO ANIMATIONS">VIDEO ANIMATIONS</option>
+                    <option value="LOGO DESIGNS">LOGO DESIGNS</option>
+                    <option value="SEO">SEO</option>
+                  </select>
+                </div>
+                <div style={{ marginTop: "3em", width: "48%" }}>
+                  <select
+                    style={{
+                      width: "100%",
+                      height: "50px",
+                      width: "100%",
+                      height: "50px",
+                      fontFamily: "Monument Extended Regular",
+                      background: "#000000",
+                      color: "#ffffff",
+                      border: "2px solid #9add3a",
+                    }}
+                    value={orderPackage}
+                    onChange={handleOderType}
+                  >
+                    <option
+                      value={`STARTER ${domain} PACKAGE`}
+                    >{`STARTER ${domain} PACKAGE`}</option>
+
+                    <option
+                      value={`PROFESSIONAL ${domain} PACKAGE`}
+                    >{`PROFESSIONAL  ${domain} PACKAGE`}</option>
+
+                    <option
+                      value={`PREMIUM ${domain} PACKAGE`}
+                    >{`PREMIUM  ${domain} PACKAGE`}</option>
+                  </select>
+                </div>
+              </>
+            )}
+            <div
+              className="contactus-form-content-right-section-projectForm-fields-inputField-message"
+              style={{ width: "100%" }}
+            >
+              <input
+                type="text"
+                name="message"
+                placeholder="Your Message here..."
+                id=""
+                onChange={handleInputChange}
               />
             </div>
           </div>
