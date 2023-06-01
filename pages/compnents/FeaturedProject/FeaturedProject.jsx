@@ -10,10 +10,10 @@ import Heading from "../Heading/Heading";
 
 const FeaturedProject = ({ data, marqueeText, heading }) => {
   const swiper = useSwiper();
-  const [dataIndex, setDataIndex] = useState(0);
+
   const [count, setCount] = useState(0);
   const swiperRef = useRef();
-  const projectData = data[dataIndex] || {};
+  // const projectData = data[dataIndex] || {};
 
   return (
     <>
@@ -28,20 +28,21 @@ const FeaturedProject = ({ data, marqueeText, heading }) => {
                   className={styles.featured_project_content_two_left_heading}
                 >
                   <h2>
-                    <span>{projectData.title || ""}</span> <br />
-                    {projectData.subtitle || ""}
+                    <span>{data?.[count]?.title || ""}</span> <br />
+                    {data?.[count]?.subtitle || ""}
                   </h2>
-                  <p>{projectData.description || ""}</p>
+                  <p>{data?.[count]?.description || ""}</p>
                 </div>
                 <Button>our featured themes</Button>
               </div>
               <div className={styles.featured_project_content_two_right}>
-                <h1>{projectData.heading || ""}</h1>
+                <h1>{data?.[count]?.heading || ""}</h1>
                 <div
                   className={styles.featured_project_content_two_right_image}
                 >
                   <Swiper
                     spaceBetween={0}
+                    loop={true}
                     slidesPerView={1}
                     onSlideChange={() => console.log("slide change")}
                     onSwiper={(swiper) => console.log(swiper)}
@@ -50,7 +51,6 @@ const FeaturedProject = ({ data, marqueeText, heading }) => {
                       swiperRef.current = swiper;
                     }}
                     onRealIndexChange={(e) => {
-                      setDataIndex(e.activeIndex);
                       if (count < 3) {
                         setCount(() => count + 1);
                       } else {
@@ -58,6 +58,12 @@ const FeaturedProject = ({ data, marqueeText, heading }) => {
                       }
                     }}
                   >
+                    <SwiperSlide>
+                      <img src="/assets/portfolio1.jpeg" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src="/assets/postfolio2.jpeg" alt="" />
+                    </SwiperSlide>
                     <SwiperSlide>
                       <img src="/assets/portfolio1.jpeg" />
                     </SwiperSlide>
