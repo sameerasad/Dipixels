@@ -10,7 +10,7 @@ import PortfolioContent from './compnents/Portfolio/PortfolioContent'
 import StyledButton from './compnents/Buttons/StyledButton/StyledButton'
 import Button from './compnents/Buttons/Button/Button'
 import WebsitePackagesCard from './compnents/WebsitePackages/WebsitePackagesCard'
-import Video from '../public/assets/video/MobileApplications.mp4'
+import styles from '../styles/portfolio.module.css'
 
 const MobilePortfolioData = [
   {
@@ -114,15 +114,8 @@ const MobileappDesignAndDevelopment = () => {
           headingText={headingText}
           company={company}
         />
-        <div
-          style={{
-            width: "100%",
-            justifyContent: "center",
-            display: "flex",
-            alignItems: "center",
-          }}
-        >
-          <div style={{ maxWidth: "85%" }}>
+      <div className={styles.portfolioContent_wrapper_section}>
+          <div className={styles.portfolioContent_wrapper}>
             <PortfolioContent PortfolioData={MobilePortfolioData} />
           </div>
         </div>
@@ -141,7 +134,7 @@ const MobileappDesignAndDevelopment = () => {
           }}
         >
           <div style={{ maxWidth: "85%" }}>
-            <WebsitePackagesCard dataPackage={MobileDataPackage} />
+            {/* <WebsitePackagesCard dataPackage={MobileDataPackage} /> */}
           </div>
         </div>
         <ScrollHeadings />

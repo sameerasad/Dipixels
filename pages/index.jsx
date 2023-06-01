@@ -58,6 +58,7 @@ const Home =
           />
           <OurServices />
           <DesignSolutions />
+
           <ScrollBrands />
           <ScrollHeadings />  
         </Layout>

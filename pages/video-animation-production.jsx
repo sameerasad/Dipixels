@@ -10,6 +10,7 @@ import WebsitePackages from './compnents/WebsitePackages/WebsitePackages'
 import ScrollHeadings from './compnents/Scroll/ScrollHeadings'
 import WebsitePackagesCard from './compnents/WebsitePackages/WebsitePackagesCard'
 import Video from '../public/assets/video/VideoAnimation.mp4'
+import styles from '../styles/portfolio.module.css' 
 
 const VideoPortfolioData = [
   {
@@ -119,15 +120,8 @@ const videoAnimationProduction = () => {
           headingText={headingText}
           company={company}
         />
-        <div
-          style={{
-            width: '100%',
-            justifyContent: 'center',
-            display: 'flex',
-            alignItems: 'center',
-          }}
-        >
-          <div style={{ maxWidth: '85%' }}>
+          <div className={styles.portfolioContent_wrapper_section}>
+          <div className={styles.portfolioContent_wrapper}>
             <PortfolioContent PortfolioData={VideoPortfolioData} />
           </div>
         </div>

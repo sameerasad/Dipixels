@@ -30,6 +30,11 @@
  font-weight: bold;
  font-family: 'Monument Extended Regular';
 }
+@media screen and (max-width: 1280px) {
+.PackagesTabber_tab_buttons{
+ margin-bottom: 2em;
+}
+}
 @media screen and (max-width: 1048px) {
  .tabber_warpper {
   width: 100%;

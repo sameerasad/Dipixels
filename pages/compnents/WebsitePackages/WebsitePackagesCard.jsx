@@ -42,9 +42,9 @@ const WebsitePackagesCard = ({ dataPackage }) => {
                   <h3>{item.speakWithUs}</h3>
                   <a href={item.contactNumberLink}>{item.contactNumber}</a>
                 </div>
-                <div className={styles.chatNow}>
+                {/* <div className={styles.chatNow}>
                   <a href={item.chatNowLink}>{item.chatNow}</a>
-                </div>
+                </div> */}
                 <div
                   className={styles.packagebtn}
                   onClick={() =>{ setIsModalOpen(true);setPackageType(item.title)}}

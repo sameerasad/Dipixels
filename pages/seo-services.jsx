@@ -9,6 +9,7 @@ import DesignProcess from "./compnents/DesignProcess/DesignProcess";
 import WebsitePackages from "./compnents/WebsitePackages/WebsitePackages";
 import ScrollHeadings from "./compnents/Scroll/ScrollHeadings";
 import WebsitePackagesCard from "./compnents/WebsitePackages/WebsitePackagesCard";
+import styles from '../styles/portfolio.module.css' 
 
 const LogoPortfolioData = [
   {

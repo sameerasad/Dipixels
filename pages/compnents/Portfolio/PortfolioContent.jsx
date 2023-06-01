@@ -1,35 +1,15 @@
 import React from "react";
 import Button from "../Buttons/Button/Button";
-
-// const PortfolioData = [
-//   {
-//     image: '/assets/WebPortfolio1.png',
-//   },
-//   {
-//     image: '/assets/WebPortfolio2.png',
-//   },
-//   {
-//     image: '/assets/WebPortfolio3.png',
-//   },
-//   {
-//     image: '/assets/WebPortfolio4.png',
-//   },
-//   {
-//     image: '/assets/WebPortfolio5.png',
-//   },
-//   {
-//     image: '/assets/WebPortfolio6.png',
-//   },
-// ]
+import styles from '../../../styles/portfolio.module.css'
 
 const PortfolioContent = ({ PortfolioData }) => {
   return (
     <>
-      <div className="portfolio-section-content-images">
+      <div className={styles.portfolio_section_content_images}>
         {PortfolioData?.map((item) => {
           return (
             <>
-              <div className="portfolio-section-content-images-img">
+              <div className={styles.portfolio_section_content_images_img}>
                 <img src={item.image} alt="" />
               </div>
             </>
