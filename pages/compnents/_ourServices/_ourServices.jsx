@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import Marquee from '../../compnents/Marquee/Marquee'
 import 'swiper/css'
 import Button from '../Buttons/Button/Button'
+import Heading from '../Heading/Heading'
 
 const _OurServices = () => {
   const swiper = useSwiper()

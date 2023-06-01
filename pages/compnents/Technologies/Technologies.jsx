@@ -68,7 +68,7 @@ const Technologies = () => {
             <div className={styles.Technologies_section_content_wrapper}>
               {TechnologiesData.map((item, index) => {
                 return (
-                  <SwiperSlide>
+                  <SwiperSlide key={item.id}>
                     <>
                       <Heading>{item.title}</Heading>
                       <div className={styles.Technologies_section_content_heading_para}>

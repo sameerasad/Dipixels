@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-import React from 'react'
-import Layout from './compnents/Layout/Layout'
-import Hero from './compnents/HeroSection/Hero'
-import Technologies from './compnents/Technologies/Technologies'
-import Portfolio from './compnents/Portfolio/Portfolio'
-import PortfolioContent from './compnents/Portfolio/PortfolioContent'
-import Button from './compnents/Buttons/Button/Button'
-import DesignProcess from './compnents/DesignProcess/DesignProcess'
-import WebsitePackages from './compnents/WebsitePackages/WebsitePackages'
-import ScrollHeadings from './compnents/Scroll/ScrollHeadings'
-import WebsitePackagesCard from './compnents/WebsitePackages/WebsitePackagesCard'
-import Video from '../public/assets/video/ContentWriting.mp4'
-=======
 import React from "react";
 import Layout from "./compnents/Layout/Layout";
 import Hero from "./compnents/HeroSection/Hero";
@@ -23,7 +9,6 @@ import DesignProcess from "./compnents/DesignProcess/DesignProcess";
 import WebsitePackages from "./compnents/WebsitePackages/WebsitePackages";
 import ScrollHeadings from "./compnents/Scroll/ScrollHeadings";
 import WebsitePackagesCard from "./compnents/WebsitePackages/WebsitePackagesCard";
->>>>>>> 6861d57eb042424c2329e409ab1c05053799978f
 
 const LogoPortfolioData = [
   {
@@ -122,16 +107,9 @@ const contentWriting = () => {
     <>
       <Layout>
         <Hero
-<<<<<<< HEAD
-          title='content'
-          company='writing'
-          description='Vibrant and Unique website content that drives search results'
-          videoLink={Video}
-=======
           title="content"
           company="writing"
           description="Vibrant and Unique website content that drives search results"
->>>>>>> 6861d57eb042424c2329e409ab1c05053799978f
         />
         <Technologies />
         <DesignProcess title={title} description={description} />

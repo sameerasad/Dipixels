@@ -15,7 +15,7 @@ const WebsitePackagesCard = ({ dataPackage }) => {
       <div className={styles.packagesCards}>
         {dataPackage?.map((item) => {
           return (
-            <div className={styles.card}>
+            <div key={item.id} className={styles.card}>
               <div className={styles.packagetitle}>
                 <h2>
                   {item.title}

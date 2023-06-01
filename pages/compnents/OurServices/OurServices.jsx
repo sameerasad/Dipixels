@@ -6,6 +6,7 @@ import { Pagination } from 'swiper'
 import Marquee from '../../compnents/Marquee/Marquee'
 import Heading from '../Heading/Heading'
 import styles from '../../../styles/OurServices.module.css'
+import Image from 'next/image'
 const servicesData = [
   {
     title: 'app designs',
@@ -97,7 +98,7 @@ const OurServices = () => {
               {servicesData.map((item, index) => {
                 const isEvenIndex = index % 2 === 0
                 return (
-                  <SwiperSlide>
+                  <SwiperSlide key={item.id}>
                     <div
                       className={`${
                         styles.our_services_content_sliders_images

@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-import React from 'react'
-import Layout from './compnents/Layout/Layout'
-import Hero from './compnents/HeroSection/Hero'
-import Technologies from './compnents/Technologies/Technologies'
-import Portfolio from './compnents/Portfolio/Portfolio'
-import PortfolioContent from './compnents/Portfolio/PortfolioContent'
-import Button from './compnents/Buttons/Button/Button'
-import DesignProcess from './compnents/DesignProcess/DesignProcess'
-import WebsitePackages from './compnents/WebsitePackages/WebsitePackages'
-import ScrollHeadings from './compnents/Scroll/ScrollHeadings'
-import WebsitePackagesCard from './compnents/WebsitePackages/WebsitePackagesCard'
-import Video from '../public/assets/video/LogoDesigning.mp4'
-=======
 import React from "react";
 import Layout from "./compnents/Layout/Layout";
 import Hero from "./compnents/HeroSection/Hero";
@@ -23,7 +9,6 @@ import DesignProcess from "./compnents/DesignProcess/DesignProcess";
 import WebsitePackages from "./compnents/WebsitePackages/WebsitePackages";
 import ScrollHeadings from "./compnents/Scroll/ScrollHeadings";
 import WebsitePackagesCard from "./compnents/WebsitePackages/WebsitePackagesCard";
->>>>>>> 6861d57eb042424c2329e409ab1c05053799978f
 
 const LogoPortfolioData = [
   {
@@ -122,16 +107,9 @@ const logoDesign = () => {
     <>
       <Layout>
         <Hero
-<<<<<<< HEAD
-          title='logo'
-          company='design'
-          description='Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo.'
-          videoLink={Video}
-=======
           title="logo"
           company="design"
           description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo."
->>>>>>> 6861d57eb042424c2329e409ab1c05053799978f
         />
         <Technologies />
         <Portfolio

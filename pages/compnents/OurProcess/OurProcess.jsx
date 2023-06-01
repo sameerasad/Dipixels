@@ -44,7 +44,7 @@ function OurProcess() {
             <div className={styles.processCards}>
               {OurProcess.map((item) => {
                 return (
-                  <div className={styles.card}>
+                  <div key={item.id} className={styles.card}>
                     <img src={item.img} alt='' />
                     <h3>{item.title}</h3>
                     <p>{item.des}</p>

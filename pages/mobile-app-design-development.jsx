@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react'
 import Hero from './compnents/HeroSection/Hero'
 import Layout from './compnents/Layout/Layout'
@@ -12,20 +11,6 @@ import StyledButton from './compnents/Buttons/StyledButton/StyledButton'
 import Button from './compnents/Buttons/Button/Button'
 import WebsitePackagesCard from './compnents/WebsitePackages/WebsitePackagesCard'
 import Video from '../public/assets/video/MobileApplications.mp4'
-=======
-import React from "react";
-import Hero from "./compnents/HeroSection/Hero";
-import Layout from "./compnents/Layout/Layout";
-import Technologies from "./compnents/Technologies/Technologies";
-import Portfolio from "./compnents/Portfolio/Portfolio";
-import DesignProcess from "./compnents/DesignProcess/DesignProcess";
-import WebsitePackages from "./compnents/WebsitePackages/WebsitePackages";
-import ScrollHeadings from "./compnents/Scroll/ScrollHeadings";
-import PortfolioContent from "./compnents/Portfolio/PortfolioContent";
-import StyledButton from "./compnents/Buttons/StyledButton/StyledButton";
-import Button from "./compnents/Buttons/Button/Button";
-import WebsitePackagesCard from "./compnents/WebsitePackages/WebsitePackagesCard";
->>>>>>> 6861d57eb042424c2329e409ab1c05053799978f
 
 const MobilePortfolioData = [
   {
@@ -119,16 +104,9 @@ const MobileappDesignAndDevelopment = () => {
     <>
       <Layout>
         <Hero
-<<<<<<< HEAD
-          title='Mobile App Design And'
-          company='development'
-          description='An adequate website interface can bring great traffic towards your business. Allow dipixels to build an exemplary interface for you. Have a look at our amazing web design portfolio below.'
-          videoLink={Video}
-=======
           title="Mobile App Design And"
           company="development"
           description="An adequate website interface can bring great traffic towards your business. Allow dipixels to build an exemplary interface for you. Have a look at our amazing web design portfolio below."
->>>>>>> 6861d57eb042424c2329e409ab1c05053799978f
         />
         <Technologies />
         <Portfolio
