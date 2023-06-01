@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
     >
       <Toaster position="top-right" reverseOrder={false} />
       <Component {...pageProps} />
-      {/* <AnimatedCursor
+      <AnimatedCursor
         innerSize={10}
         outerSize={35}
         color="255,255,255"
@@ -41,7 +41,7 @@ function MyApp({ Component, pageProps }) {
           "button",
           ".link",
         ]}
-      /> */}
+      />
     </main>
   );
 }

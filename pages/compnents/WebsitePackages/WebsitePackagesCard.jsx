@@ -34,6 +34,9 @@ const WebsitePackagesCard = ({ dataPackage }) => {
                   <li>{item.listItem3}</li>
                   <li>{item.listItem4}</li>
                   <li>{item.listItem5}</li>
+
+                  {item?.listItem6 && <li>{item?.listItem6}</li>}
+                  {item?.listItem7 && <li>{item?.listItem7}</li>}
                 </ul>
               </div>
 
