@@ -174,7 +174,7 @@ const StartProject = () => {
               </div>
               <div className="inputField">
                 <input
-                  type="phone"
+                  type="tel"
                   name="phone_number"
                   value={state.phone_number}
                   onChange={handleInputChange}

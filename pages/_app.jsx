@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import { Montserrat } from "@next/font/google";
-import AnimatedCursor from "react-animated-cursor";
+// import AnimatedCursor from "react-animated-cursor";
 import dynamic from "next/dynamic";
 import { Toaster } from "react-hot-toast";
 
@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
     >
       <Toaster position="top-right" reverseOrder={false} />
       <Component {...pageProps} />
-      <AnimatedCursor
+      {/* <AnimatedCursor
         innerSize={10}
         outerSize={35}
         color="255,255,255"
@@ -41,7 +41,7 @@ function MyApp({ Component, pageProps }) {
           "button",
           ".link",
         ]}
-      />
+      /> */}
     </main>
   );
 }

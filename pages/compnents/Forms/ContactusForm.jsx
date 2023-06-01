@@ -3,6 +3,7 @@ import Image from "next/image";
 import Button from "../Buttons/Button/Button";
 import axios from "axios";
 import toast from "react-hot-toast";
+
 // import Pin from '/public/assets/icon-location-address.png'
 // import Email from '/public/assets/icon-email.png'
 const ContactusForm = () => {
@@ -61,6 +62,7 @@ const ContactusForm = () => {
         };
         await axios.post("http://localhost:3000/api/sendEmail", templateParams);
         // };
+        // sendMail(email, templateParams.subject, templateParams.text);
 
         console.log(Response, "Response", "email", email);
       }
@@ -167,7 +169,7 @@ const ContactusForm = () => {
                     </div>
                     <div className="contactus-form-content-right-section-projectForm-fields-inputField">
                       <input
-                        type="phone"
+                        type="tel"
                         name="phone_number"
                         placeholder="Phone Number *"
                         id=""

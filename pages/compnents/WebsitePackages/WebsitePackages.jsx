@@ -1,27 +1,25 @@
 // import './WebsitePackages.css'
-import StyledButton from '../Buttons/StyledButton/StyledButton'
-import Marquee from '../../compnents/Marquee/Marquee'
-import Arrow from '../../../public/assets/arrow-up-right.png'
-import Image from 'next/image'
-import WebsitePackagesCard from './WebsitePackagesCard'
-import Button from '../Buttons/Button/Button'
-import Heading from '../Heading/Heading'
+import StyledButton from "../Buttons/StyledButton/StyledButton";
+import Marquee from "../../compnents/Marquee/Marquee";
+import Arrow from "../../../public/assets/arrow-up-right.png";
+import Image from "next/image";
+import WebsitePackagesCard from "./WebsitePackagesCard";
+import Button from "../Buttons/Button/Button";
+import Heading from "../Heading/Heading";
 
-function WebsitePackages({packagesHeading, packagesDescription}) {
+function WebsitePackages({ packagesHeading, packagesDescription }) {
   return (
     <>
-        <Marquee>best</Marquee>
-      <section className='webPackage wrapper'>
-        <div
-          className='webpackages-section-content-heading'
-        >
+      <Marquee>best</Marquee>
+      <section className="webPackage wrapper">
+        <div className="webpackages-section-content-heading">
           <Heading>
             <span> {packagesHeading} </span> packages
           </Heading>
         </div>
-        <div className='package-section-content-para'>
-              <p>{packagesDescription}</p>
-            </div>
+        <div className="package-section-content-para">
+          <p>{packagesDescription}</p>
+        </div>
         {/* <div className='packagesCards'>
           {dataPackage.map((item) => {
             return (
@@ -69,7 +67,7 @@ function WebsitePackages({packagesHeading, packagesDescription}) {
         </div> */}
       </section>
     </>
-  )
+  );
 }
 
-export default WebsitePackages
+export default WebsitePackages;
