@@ -4,6 +4,7 @@ import styles from "../../../styles/OrderForm.module.css";
 import Heading from "../Heading/Heading";
 import axios from "axios";
 import toast from "react-hot-toast";
+import { baseUrl } from "../../../api/config";
 
 const OrderForm = ({
   orderPackage = false,
@@ -53,7 +54,7 @@ const OrderForm = ({
 
   const postOrders = async () => {
     try {
-      const Response = await axios.post("http://localhost:1337/api/my-orders", {
+      const Response = await axios.post(`${baseUrl}/my-orders`, {
         data: state,
       });
       if (Response.status == 200) {

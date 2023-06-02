@@ -4,6 +4,7 @@ import axios, { isCancel, AxiosError } from "axios";
 import Heading from "../Heading/Heading";
 import Button from "../Buttons/Button/Button";
 import toast from "react-hot-toast";
+import { baseUrl } from "../../../api/config";
 // import emailjs from "@emailjs/browser";
 
 const StartProject = () => {
@@ -71,7 +72,7 @@ const StartProject = () => {
 
   const postOrder = async () => {
     try {
-      const Response = await axios.post("http://localhost:1337/api/my-users", {
+      const Response = await axios.post(`${baseUrl}/my-users`, {
         data: state,
       });
       if (Response.status == 200) {

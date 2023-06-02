@@ -3,6 +3,7 @@ import Image from "next/image";
 import Button from "../Buttons/Button/Button";
 import axios from "axios";
 import toast from "react-hot-toast";
+import { baseUrl } from "../../../api/config";
 
 // import Pin from '/public/assets/icon-location-address.png'
 // import Email from '/public/assets/icon-email.png'
@@ -38,12 +39,9 @@ const ContactusForm = () => {
 
   const postContact = async () => {
     try {
-      const Response = await axios.post(
-        "http://localhost:1337/api/contactedusers",
-        {
-          data: state,
-        }
-      );
+      const Response = await axios.post(`${baseUrl}/contactedusers`, {
+        data: state,
+      });
       if (Response.status == 200) {
         setState({
           first_name: "",

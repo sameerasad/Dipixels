@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
-import styles from '../../../styles/Header.module.css'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
-import DropdownArrow from '/public/assets/dropdownArrow.svg'
-import Image from 'next/image'
+import React, { useState } from "react";
+import styles from "../../../styles/Header.module.css";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import DropdownArrow from "/public/assets/dropdownArrow.svg";
+import Image from "next/image";
 
 const Header = () => {
-  const router = useRouter()
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+  const router = useRouter();
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   // const toggleDropdown = () => {
   //   setIsDropdownOpen(!isDropdownOpen)
@@ -22,15 +22,15 @@ const Header = () => {
       <div className={styles.dipixels_header}>
         <div className={styles.wrapper}>
           <div className={styles.dipixels_header_logo}>
-            <img src='/assets/dipixelsLogo.png' alt='' />
+            <img src="/assets/dipixelsLogo.png" alt="" />
           </div>
 
           <ul className={styles.dipixels_header_navbar}>
             <li>
-              <Link href='/' passHref>
+              <Link href="/" passHref>
                 <div
                   className={`${styles.nav_link} ${
-                    router.pathname === '/' ? styles.active : ''
+                    router.pathname === "/" ? styles.active : ""
                   }`}
                 >
                   Home
@@ -38,10 +38,10 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href='/about' passHref>
+              <Link href="/about" passHref>
                 <div
                   className={`${styles.nav_link} ${
-                    router.pathname === '/about' ? styles.active : ''
+                    router.pathname === "/about" ? styles.active : ""
                   }`}
                 >
                   About
@@ -52,25 +52,28 @@ const Header = () => {
               className={styles.service_dropdown}
               onMouseEnter={() => setIsDropdownOpen(true)}
             >
-              <Link href='/services' passHref>
+              <Link href="/services" passHref>
                 <div
                   className={`${styles.nav_link} ${
-                    router.pathname === '/services' ? styles.active : ''
+                    router.pathname === "/services" ? styles.active : ""
                   }`}
                 >
                   Services
-                  <Image src={DropdownArrow} alt='' width='10' height='10' />
+                  <Image src={DropdownArrow} alt="" width="10" height="10" />
                 </div>
               </Link>
               {isDropdownOpen && (
-                <ul className={styles.dropdown_menu} onMouseLeave={() => setIsDropdownOpen(false)}>
+                <ul
+                  className={styles.dropdown_menu}
+                  onMouseLeave={() => setIsDropdownOpen(false)}
+                >
                   <li>
-                    <Link href='/web-design-development' passHref>
+                    <Link href="/web-design-development" passHref>
                       <div
                         className={`${styles.dropdown_link} ${
-                          router.pathname === '/web-design-development'
+                          router.pathname === "/web-design-development"
                             ? styles.active
-                            : ''
+                            : ""
                         }`}
                       >
                         Web Design and Development
@@ -78,12 +81,12 @@ const Header = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href='/mobile-app-design-development' passHref>
+                    <Link href="/mobile-app-design-development" passHref>
                       <div
                         className={`${styles.dropdown_link} ${
-                          router.pathname === '/mobile-app-design-development'
+                          router.pathname === "/mobile-app-design-development"
                             ? styles.active
-                            : ''
+                            : ""
                         }`}
                       >
                         Mobile App Design and Development
@@ -91,12 +94,12 @@ const Header = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href='/logo-design' passHref>
+                    <Link href="/logo-design" passHref>
                       <div
                         className={`${styles.dropdown_link} ${
-                          router.pathname === '/logo-design'
+                          router.pathname === "/logo-design"
                             ? styles.active
-                            : ''
+                            : ""
                         }`}
                       >
                         Logo Design
@@ -104,12 +107,12 @@ const Header = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href='/video-animation-production' passHref>
+                    <Link href="/video-animation-production" passHref>
                       <div
                         className={`${styles.dropdown_link} ${
-                          router.pathname === '/video-animation-production'
+                          router.pathname === "/video-animation-production"
                             ? styles.active
-                            : ''
+                            : ""
                         }`}
                       >
                         Video Animation and Production
@@ -117,12 +120,12 @@ const Header = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href='/seo-services' passHref>
+                    <Link href="/seo-services" passHref>
                       <div
                         className={`${styles.dropdown_link} ${
-                          router.pathname === '/seo-services'
+                          router.pathname === "/seo-services"
                             ? styles.active
-                            : ''
+                            : ""
                         }`}
                       >
                         SEO
@@ -130,12 +133,12 @@ const Header = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href='/content-writing' passHref>
+                    <Link href="/content-writing" passHref>
                       <div
                         className={`${styles.dropdown_link} ${
-                          router.pathname === '/content-writing'
+                          router.pathname === "/content-writing"
                             ? styles.active
-                            : ''
+                            : ""
                         }`}
                       >
                         Content Writing
@@ -146,10 +149,10 @@ const Header = () => {
               )}
             </li>
             <li>
-              <Link href='/work' passHref>
+              <Link href="/work" passHref>
                 <div
                   className={`${styles.nav_link} ${
-                    router.pathname === '/work' ? styles.active : ''
+                    router.pathname === "/work" ? styles.active : ""
                   }`}
                 >
                   Work
@@ -157,10 +160,10 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href='/packages' passHref>
+              <Link href="/packages" passHref>
                 <div
                   className={`${styles.nav_link} ${
-                    router.pathname === '/packages' ? styles.active : ''
+                    router.pathname === "/packages" ? styles.active : ""
                   }`}
                 >
                   Packages
@@ -168,10 +171,10 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href='/contact-us' passHref>
+              <Link href="/contact-us" passHref>
                 <div
                   className={`${styles.nav_link} ${
-                    router.pathname === '/contact-us' ? styles.active : ''
+                    router.pathname === "/contact-us" ? styles.active : ""
                   }`}
                 >
                   Contact us
@@ -181,14 +184,14 @@ const Header = () => {
           </ul>
 
           <div className={styles.dipixels_header_button}>
-            <Link href='./start-project'>
+            <Link href="./start-project">
               <button>Start a project</button>
             </Link>
           </div>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
