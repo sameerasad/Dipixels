@@ -42,8 +42,8 @@ const OrderForm = ({
       name !== "" &&
       last_name !== "" &&
       phone_number !== "" &&
-      email !== "" &&
-      package_type !== ""
+      email !== ""
+      // package_type !== ""
     ) {
       postOrders();
     } else {
@@ -67,6 +67,8 @@ const OrderForm = ({
           message: "",
         });
         document.getElementById("form").reset();
+
+        toast.success("Form submitted successfully.");
         closeModal();
         const { email, name } = Response?.data?.data?.attributes;
 
@@ -79,7 +81,6 @@ const OrderForm = ({
 
         // };
 
-        toast.success("Form submitted successfully.");
         console.log(Response, "Response", "email", email);
       }
     } catch (error) {
