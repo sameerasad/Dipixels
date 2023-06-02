@@ -75,7 +75,7 @@ const OrderForm = ({
           subject: `Best wishes to you from Dipixels`,
           text: "Thanks for approaching Dipixels and considering our service for you. We are hopeful so that we will wonder you with our services. For more information visit www.dipixels.com",
         };
-        await axios.post("http://localhost:3000/api/sendEmail", templateParams);
+        await axios.post("https://dipixels.com/api/sendEmail", templateParams);
 
         // };
 
