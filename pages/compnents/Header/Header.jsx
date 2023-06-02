@@ -193,6 +193,11 @@ const Header = () => {
     </>
   );
 };
+<<<<<<< HEAD
 
 export default Header;
 
+=======
+
+export default Header;
+>>>>>>> c4e2891116a2ae8a13461ef539c90eb216b79ef8

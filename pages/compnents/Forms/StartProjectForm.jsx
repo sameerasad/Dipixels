@@ -4,6 +4,7 @@ import axios, { isCancel, AxiosError } from "axios";
 import Heading from "../Heading/Heading";
 import Button from "../Buttons/Button/Button";
 import toast from "react-hot-toast";
+import { baseUrl } from "../../../api/config";
 // import emailjs from "@emailjs/browser";
 
 const StartProject = () => {
@@ -71,7 +72,11 @@ const StartProject = () => {
 
   const postOrder = async () => {
     try {
+<<<<<<< HEAD
       const Response = await axios.post("htttps://api.dipixels.com/api/my-users", {
+=======
+      const Response = await axios.post(`${baseUrl}/my-users`, {
+>>>>>>> c4e2891116a2ae8a13461ef539c90eb216b79ef8
         data: state,
       });
       if (Response.status == 200) {

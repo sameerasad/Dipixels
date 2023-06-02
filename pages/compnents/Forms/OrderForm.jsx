@@ -4,6 +4,7 @@ import styles from "../../../styles/OrderForm.module.css";
 import Heading from "../Heading/Heading";
 import axios from "axios";
 import toast from "react-hot-toast";
+import { baseUrl } from "../../../api/config";
 
 const OrderForm = ({
   orderPackage = false,
@@ -53,7 +54,11 @@ const OrderForm = ({
 
   const postOrders = async () => {
     try {
+<<<<<<< HEAD
       const Response = await axios.post("htttps://api.dipixels.com/api/my-orders", {
+=======
+      const Response = await axios.post(`${baseUrl}/my-orders`, {
+>>>>>>> c4e2891116a2ae8a13461ef539c90eb216b79ef8
         data: state,
       });
       if (Response.status == 200) {
