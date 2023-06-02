@@ -72,11 +72,7 @@ const StartProject = () => {
 
   const postOrder = async () => {
     try {
-<<<<<<< HEAD
-      const Response = await axios.post("htttps://api.dipixels.com/api/my-users", {
-=======
       const Response = await axios.post(`${baseUrl}/my-users`, {
->>>>>>> c4e2891116a2ae8a13461ef539c90eb216b79ef8
         data: state,
       });
       if (Response.status == 200) {
