@@ -1,5 +1,5 @@
 .design_process_section {
-  margin-top: 5em;
+  margin-top: 2em;
   height: 800px;
 }
 .design_process_section_content {
@@ -85,20 +85,9 @@
   .design_process_section_content_para p {
     font-size: 1.2em;
   }
-  /* .design_process_section_content_wrapper{
-  display: flex;
-  align-items: center;
-  justify-content: center;
- }
- .design_process_content_card_left h2 {
- font-size: 2em;
- }
- .design_process_content_card_left p {
- font-size: 1.5em;
- }
- .design_process_content_card_right h1 {
-  font-size: 2em;
- } */
+  .design_process_section {
+  margin-top: 0;
+  }
 }
 @media screen and (max-width: 375px) {
   .design_process_content_card {

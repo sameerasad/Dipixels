@@ -31,7 +31,7 @@ const LogoPortfolioData = [
   },
 ];
 
-const LogoDataPackage = [
+const ContentDataPackage = [
   {
     id: 1,
     listItem1: "Up to 1000 words",
@@ -130,8 +130,8 @@ const contentWriting = () => {
             alignItems: "center",
           }}
         >
-          <div style={{ maxWidth: "85%" }}>
-            <WebsitePackagesCard dataPackage={LogoDataPackage} />
+          <div className={styles.websitepackagescard_wrapper}>
+            <WebsitePackagesCard dataPackage={ContentDataPackage} />
           </div>
         </div>
         <ScrollHeadings />

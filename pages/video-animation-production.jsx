@@ -138,7 +138,7 @@ const videoAnimationProduction = () => {
             alignItems: "center",
           }}
         >
-          <div style={{ maxWidth: "85%" }}>
+          <div className={styles.websitepackagescard_wrapper}>
             <WebsitePackagesCard dataPackage={AnimationDataPackage} />
           </div>
         </div>

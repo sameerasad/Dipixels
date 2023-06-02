@@ -239,11 +239,17 @@
 }
 @media screen and (max-width: 425px) {
   .dipixels_header_Reel {
-    top: 80px;
-    left: -60px !important;
+    top: 50px  !important;
+    left: -100px !important;
   }
   .background_video_container img {
     width: 85%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .dipixels_header_Reel {
+    top: 30px !important;
+    left: -80px !important;
   }
 }
 @media screen and (max-width: 400px) {
@@ -267,6 +273,6 @@
   }
   .dipixels_header_Reel {
     top: 70px;
-    left: -50px !important;
+    left: -90px !important;
   }
 }

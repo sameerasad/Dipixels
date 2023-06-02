@@ -5,7 +5,7 @@ import StyledButton from '../Buttons/StyledButton/StyledButton'
 import PlayReel from './PlayReel'
 import VideoModal from '../VideoModal/VideoModal'
 import styles from '../../../styles/Hero.module.css'
-
+import Link from 'next/link'
 const Hero = ({ title, description, company, videoLink }) => {
   const [isVideoModalOpen, setVideoModalOpen] = useState(false)
   const openVideoModal = () => {
@@ -24,7 +24,8 @@ const Hero = ({ title, description, company, videoLink }) => {
               {title} <span className={styles.colorBlue}>{company}</span>
             </h1>
             <p>{description}</p>
-            <div  className={styles.button_Wrapper}
+            <div
+              className={styles.button_Wrapper}
               style={{
                 display: 'flex',
                 gap: '20px',
@@ -33,7 +34,9 @@ const Hero = ({ title, description, company, videoLink }) => {
               }}
             >
               <Button>View Our Portfolio</Button>
-              <Button>View Our Services</Button>
+              <Link href='/services'>
+                <Button>View Our Services</Button>
+              </Link>
             </div>
           </div>
           <div className={styles.videoPlayReel}>

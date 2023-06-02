@@ -10,6 +10,7 @@ import PortfolioContent from './compnents/Portfolio/PortfolioContent'
 import WebsitePackagesCard from './compnents/WebsitePackages/WebsitePackagesCard'
 import Video from '../public/assets/video/WebsiteDesign.mp4'
 import styles from '../styles/portfolio.module.css'
+
 const WebPortfolioData = [
   {
     image: '/assets/WebPortfolio1.png',
@@ -134,7 +135,7 @@ const WebDesignDevelopment = () => {
             alignItems: 'center',
           }}
         >
-          <div style={{ maxWidth: '85%' }}>
+          <div className={styles.websitepackagescard_wrapper}>
             <WebsitePackagesCard dataPackage={WebDataPackage} />
           </div>
         </div>

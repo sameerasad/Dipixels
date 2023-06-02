@@ -99,6 +99,11 @@
  max-width: 96%;
  }
 }
+@media screen and (max-width: 1048px) {
+  .our_services_section {
+    margin-top: 5em;
+  }
+}
 @media screen and (max-width: 920px) {
  .our_services_content_sliders_images {
   width: 360px;

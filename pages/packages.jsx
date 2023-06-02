@@ -3,7 +3,8 @@ import Layout from './compnents/Layout/Layout'
 import Hero from './compnents/HeroSection/Hero'
 import PackagesTabber from './compnents/Tabber/PackagesTabber'
 import ScrollHeadings from './compnents/Scroll/ScrollHeadings'
-import Video from '../public/assets/video/DipixelsAllServices.mp4'
+
+import Video from '../public/assets/video/Packages.mp4'
 
 const packages = () => {
   return (

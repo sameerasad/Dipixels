@@ -3,7 +3,7 @@ import ScrollHeadings from './compnents/Scroll/ScrollHeadings'
 import Layout from './compnents/Layout/Layout'
 import Hero from './compnents/HeroSection/Hero'
 import ContactusForm from './compnents/Forms/ContactusForm'
-import Video from '../public/assets/video/Contactus.mp4'
+import Video from '../public/assets/video/ContactUs.mp4'
 const Contactus = () => {
   return (
     <>

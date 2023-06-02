@@ -6,12 +6,13 @@ import Image from "next/image";
 import WebsitePackagesCard from "./WebsitePackagesCard";
 import Button from "../Buttons/Button/Button";
 import Heading from "../Heading/Heading";
+import styles from '../../../styles/WebsitePackagesCard.module.css'
 
 function WebsitePackages({ packagesHeading, packagesDescription }) {
   return (
     <>
       <Marquee>best</Marquee>
-      <section className="webPackage wrapper">
+      <section className={`${styles.webPackage} ${styles.wrapper}`}>
         <div className="webpackages-section-content-heading">
           <Heading>
             <span> {packagesHeading} </span> packages

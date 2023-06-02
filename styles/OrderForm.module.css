@@ -1,9 +1,4 @@
-/* .order_form_content_right_section {
- width: 65%;
- padding: 50px;
- border: 1px solid #9add3a;
- border-radius: 50px;
-} */
+
 .orderform_Des {
  font-size: 24px;
  color: #ffffff;
@@ -30,4 +25,14 @@
 }
 .order_form_content_right_section_projectForm_fields_inputField {
  width: 48%;
+}
+@media screen and (max-width: 1024px) {
+ .orderform_Des {
+  font-size: 1.2em;
+ }
+}
+@media screen and (max-width: 800px) {
+ .orderform_Des {
+  font-size: 1em;
+ }
 }

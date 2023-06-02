@@ -33,15 +33,15 @@ const MobilePortfolioData = [
 const MobileDataPackage = [
   {
     id: 1,
-    listItem1: "5 Pages mbile app Design",
-    listItem2: "HTML Based",
-    listItem3: "2 Banner Designs",
-    listItem4: "Contact / Query Form",
-    listItem5: "6 Revisions",
+    listItem1: "5 Pages mobile application",
+    listItem2: "React native or Flutter based",
+    listItem3: "Api Intefrations",
+    listItem4: "Testing and bug fixing",
+    listItem5: "3 Revisions",
     title: "STARTER MOBILE APP",
     packageBlue: "PACKAGE",
-    regularPrice: "$499",
-    salePrice: " $729",
+    regularPrice: "$1999",
+    salePrice: " $2299",
     speakWithUs: "Speak with us",
     contactNumber: "414 400 3996",
     contactNumberLink: "#",
@@ -52,15 +52,15 @@ const MobileDataPackage = [
   },
   {
     id: 2,
-    listItem1: "Up to 10 Pages mobile app Design",
-    listItem2: "CMS (WordPress)",
-    listItem3: "3 Banner Designs",
-    listItem4: "Unlimited Revision",
-    listItem5: "Contact/Query Form",
+    listItem1: "Up to 10 screens of mobile app Design",
+    listItem2: "React native or Flutter based",
+    listItem3: "Api Integrations, Third party api's",
+    listItem4: "Testing and debugging",
+    listItem5: "5 revisions",
     title: "STANDARD MOBILE APP",
     packageBlue: "PACKAGE",
-    regularPrice: "$999",
-    salePrice: " $1309",
+    regularPrice: "$2400",
+    salePrice: " $2699",
     speakWithUs: "Speak with us",
     contactNumber: "414 400 3996",
     contactNumberLink: "#",
@@ -73,12 +73,12 @@ const MobileDataPackage = [
     id: 3,
     title: "PREMIUM MOBILE APP",
     packageBlue: "PACKAGE",
-    regularPrice: "$2499",
-    salePrice: " $2700",
-    listItem1: "Up to 15 Pages mobile app Design",
-    listItem2: "WordPress or Php Development",
-    listItem3: "10 Banner Designs",
-    listItem4: "Unlimited Revision",
+    regularPrice: "$3200",
+    salePrice: " $3399",
+    listItem1: "Up to 15 screens mobile app Design",
+    listItem2: "React native Expo cli, ignite or flutter based",
+    listItem3: "Api Integrations, Third party api's",
+    listItem4: "Testing and debugging",
     listItem5: "Interactive Sliding Banners",
     speakWithUs: "Speak with us",
     contactNumber: "414 400 3996",
@@ -133,8 +133,8 @@ const MobileappDesignAndDevelopment = () => {
             alignItems: "center",
           }}
         >
-          <div style={{ maxWidth: "85%" }}>
-            {/* <WebsitePackagesCard dataPackage={MobileDataPackage} /> */}
+         <div className={styles.websitepackagescard_wrapper}>
+            <WebsitePackagesCard dataPackage={MobileDataPackage} />
           </div>
         </div>
         <ScrollHeadings />

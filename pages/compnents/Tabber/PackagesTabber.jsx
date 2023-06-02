@@ -306,6 +306,72 @@ const SeoDataPackage = [
   },
 ];
 
+const ContentDataPackage = [
+  {
+    id: 1,
+    listItem1: "Up to 1000 words",
+    listItem2: "Additional pages",
+    listItem3: "Banner writing",
+    listItem4: "Meta Description ",
+    listItem5: "Satsfaction policy",
+    listItem6: "Search engine optimization words",
+    listItem7: "Unique Content protected",
+    title: "one page site content",
+    packageBlue: "PACKAGE",
+    regularPrice: "$400",
+    salePrice: " $699",
+    speakWithUs: "Speak with us",
+    contactNumber: "414 400 3996",
+    contactNumberLink: "#",
+    chatNow: "Chat Now",
+    chatNowLink: "#",
+    btnTxt: "Get a quote",
+    btnLink: "#",
+  },
+  {
+    id: 2,
+    listItem1: "Up to 2500 words total",
+    listItem2: "Additional pages",
+    listItem3: "Banner writing",
+    listItem4: "Meta Description ",
+    listItem5: "Satsfaction policy",
+    listItem6: "Search engine optimization words",
+    listItem7: "Unique Content protected",
+    title: "Start-Up site Content package",
+    packageBlue: "PACKAGE",
+    regularPrice: "$999",
+    salePrice: " $1299",
+    speakWithUs: "Speak with us",
+    contactNumber: "414 400 3996",
+    contactNumberLink: "#",
+    chatNow: "Chat Now",
+    chatNowLink: "#",
+    btnTxt: "Get a quote",
+    btnLink: "#",
+  },
+  {
+    id: 3,
+    listItem1: "Up to 5000 words total",
+    listItem2: "Additional pages",
+    listItem3: "Banner writing",
+    listItem4: "Meta Description ",
+    listItem5: "Satsfaction policy",
+    listItem6: "Search engine optimization words",
+    listItem7: "Unique Content protected",
+    title: "Business site Content package",
+    packageBlue: "PACKAGE",
+    regularPrice: "$1500",
+    salePrice: " $1899",
+    speakWithUs: "Speak with us",
+    contactNumber: "414 400 3996",
+    contactNumberLink: "#",
+    chatNow: "Chat Now",
+    chatNowLink: "#",
+    btnTxt: "Get a quote",
+    btnLink: "#",
+  },
+];
+
 function PackagesTabber() {
   const [isActive, setIsActive] = useState(0);
   const tabs = [
@@ -346,6 +412,14 @@ function PackagesTabber() {
       content: (
         <div className="seo-container">
           <WebsitePackagesCard dataPackage={SeoDataPackage} />
+        </div>
+      ),
+    },
+    {
+      label: "Content Writing",
+      content: (
+        <div className="content-writing-container">
+          <WebsitePackagesCard dataPackage={ContentDataPackage} />
         </div>
       ),
     },

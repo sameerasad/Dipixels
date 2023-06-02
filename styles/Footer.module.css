@@ -85,7 +85,10 @@
  text-transform: uppercase;
  font-size: 15px;
 }
-
+.dipixels_footer_content_end_right p a{
+  text-decoration: none;
+  color: #ffff;
+}
 @media (max-width: 800px) {
  .dipixels_footer_content_image {
   width: 60%;

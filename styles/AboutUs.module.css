@@ -105,3 +105,8 @@
   font-size: 1.5em;
 }
 }
+@media screen and (max-width: 425px) {
+  .aboutus_section {
+    margin-top: 6em;
+    }
+}

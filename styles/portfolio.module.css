@@ -54,6 +54,9 @@
 .portfolioContent_wrapper{
  max-width: 85%;
 }
+.websitepackagescard_wrapper{
+ max-width: 85%;
+}
 @media screen and (max-width: 1465px) {
  .portfolio_section_content_images{
  margin-top: 6em;
@@ -61,7 +64,7 @@
 }
 @media screen and (max-width: 1280px) {
  .portfolio_section_content_images{
- margin-top: 0em;
+ margin-top: 2em;
  }
 }
 @media screen and (max-width: 1048px) {
@@ -70,6 +73,9 @@
  }
  .portfolioContent_wrapper{
  max-width: 96%;
+ }
+ .websitepackagescard_wrapper{
+  max-width: 96%;
  }
 }
 @media screen and (max-width: 425px) {

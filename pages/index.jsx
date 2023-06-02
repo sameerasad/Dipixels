@@ -52,13 +52,12 @@ const Home =
           <Banner />
           <Aboutus />
           <FeaturedProject
-            data={projectData[0]}
+            data={projectData}
             marqueeText='Featured Projects'
             heading={<h1>Featured Projects</h1>}
           />
           <OurServices />
           <DesignSolutions />
-
           <ScrollBrands />
           <ScrollHeadings />  
         </Layout>

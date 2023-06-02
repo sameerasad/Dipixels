@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import Logo from '../../../public/assets/dipixelsLogo.png'
 import styles from '../../../styles/Footer.module.css'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -45,7 +46,10 @@ const Footer = () => {
             </div>
 
             <div className={styles.dipixels_footer_content_end_right}>
-              <p> term of use | privacy policy </p>
+              <p> 
+                <Link href='/terms-and-use'>  term of use </Link> 
+                | 
+                <Link href='/privacy-policy'> privacy policy </Link> </p>
             </div>
           </div>
         </div>

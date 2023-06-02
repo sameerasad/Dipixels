@@ -30,23 +30,23 @@
 }
 
 .wrapper {
- width: 85%;
+ max-width: 85%;
  margin: 0 auto;
 }
 .packagesCards {
  margin-top: 100px;
  display: flex;
  justify-content: space-between;
- gap: 1.5rem;
+ /* gap: 1.5rem; */
  flex-wrap: wrap;
  position: relative;
 }
 .packagesCards .card {
  position: relative;
- flex: 1 1 30%;
+ width: 32%;
  background-color: #171717;
  border-radius: 21px;
- min-height: 280px;
+ /* min-height: 280px; */
  padding: 40px 30px;
 }
 
@@ -174,14 +174,71 @@
  background-color: #171717;
  border-radius: 5px;
 }
-
 .packageListing::-webkit-scrollbar-button:hover {
- background-color: #555;
+    background-color: #555;
+}
+.websitepackagescard_wrapper{
+    max-width: 85%;
+}
+/* OrderForm */
+.modal {
+    width: 75%;
+    padding: 50px;
+    border: 2px solid #9add3a;
+    border-radius: 30px !important;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .modal_close {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+  
+@media (max-width: 1440px) {
+    .packagetitle h2{
+        font-size: 1.5em !important;
+    }
+    .packagePrice h4 {
+    font-size: 2em;
+    }
+    .packagePrice p {
+    font-size: 1.5em;
+    }
+    .packageListing ul li {
+        font-size: 1em;
+    }
+    .packagecontact h3 {
+        font-size: 1.5em;
+    }
+    .packagecontact a {
+        font-size: 1.5em;
+    }
+    .packagebtn button {
+    font-size: 14px !important;
+    }
 }
 
-
+@media (max-width: 1048px) {
+    .wrapper {
+        max-width: 96%;
+    }
+}
 @media (max-width: 800px) {
-   .Heading_main_heading__92XkJ h1{
+    .modal{
+        width: 90%;
+    }
+    .card{
+        margin-bottom: 2em;
+    }
+   .Heading_main_heading h1{
        font-size:2em;
    }
   
@@ -222,13 +279,14 @@
   .packagebtn button {
    font-size:0.9em !important;
    position:relative;
-   top:-25px;
-   margin-bottom: 8px;
+   top: 10px;
+   margin-bottom: 10px;
   }
   
   .packagesCards {
+    margin-top: 4em;
    flex-wrap:nowrap;
-   width:133%;
+   gap: 1em;
    overflow-x:auto;
    overflow-y:hidden;
   }
