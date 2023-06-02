@@ -53,7 +53,7 @@ const OrderForm = ({
 
   const postOrders = async () => {
     try {
-      const Response = await axios.post("http://localhost:1337/api/my-orders", {
+      const Response = await axios.post("htttps://api.dipixels.com/api/my-orders", {
         data: state,
       });
       if (Response.status == 200) {
