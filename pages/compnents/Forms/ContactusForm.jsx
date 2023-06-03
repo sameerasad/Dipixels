@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
-import Image from 'next/image'
-import Button from '../Buttons/Button/Button'
-import axios from 'axios'
-import toast from 'react-hot-toast'
+import React, { useState } from "react";
+import Image from "next/image";
+import Button from "../Buttons/Button/Button";
+import axios from "axios";
+import toast from "react-hot-toast";
+import { baseUrl } from "../../../api/config";
+
 // import Pin from '/public/assets/icon-location-address.png'
 // import Email from '/public/assets/icon-email.png'
 import styles from '../../../styles/ContactForm.module.css'
@@ -38,12 +40,9 @@ const ContactusForm = () => {
 
   const postContact = async () => {
     try {
-      const Response = await axios.post(
-        'htttps://api.dipixels.com/api/contactedusers',
-        {
-          data: state,
-        }
-      )
+      const Response = await axios.post(`${baseUrl}/contactedusers`, {
+        data: state,
+      });
       if (Response.status == 200) {
         setState({
           first_name: '',
@@ -58,9 +57,9 @@ const ContactusForm = () => {
         const templateParams = {
           to: email,
           subject: `Best wishes to you from Dipixels`,
-          text: 'Thanks for approaching Dipixels. We are hopeful so that we will wonder you with our services. For more information visit www.dipixels.com',
-        }
-        await axios.post('https://dipixels.com/api/sendEmail', templateParams)
+          text: "Thanks for approaching Dipixels. We are hopeful so that we will wonder you with our services. For more information visit www.dipixels.com",
+        };
+        await axios.post("https://dipixels.com/api/sendEmail", templateParams);
         // };
         // sendMail(email, templateParams.subject, templateParams.text);
 

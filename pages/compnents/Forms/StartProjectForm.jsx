@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 // import "./ContactUs.css";
-import axios, { isCancel, AxiosError } from 'axios'
-import Heading from '../Heading/Heading'
-import Button from '../Buttons/Button/Button'
-import toast from 'react-hot-toast'
-import { useRef } from 'react'
+import axios, { isCancel, AxiosError } from "axios";
+import Heading from "../Heading/Heading";
+import Button from "../Buttons/Button/Button";
+import toast from "react-hot-toast";
+import { baseUrl } from "../../../api/config";
 // import emailjs from "@emailjs/browser";
 
 const StartProject = () => {
@@ -72,12 +72,9 @@ const StartProject = () => {
 
   const postOrder = async () => {
     try {
-      const Response = await axios.post(
-        'htttps://api.dipixels.com/api/my-users',
-        {
-          data: state,
-        }
-      )
+      const Response = await axios.post(`${baseUrl}/my-users`, {
+        data: state,
+      });
       if (Response.status == 200) {
         setState({
           first_name: '',
@@ -93,9 +90,9 @@ const StartProject = () => {
         const templateParams = {
           to: email,
           subject: `Best wishes to you from Dipixels`,
-          text: 'Thanks for approaching Dipixels and considering our service for you. We are hopeful so that we will wonder you with our services. For more information visit www.dipixels.com',
-        }
-        await axios.post('http://localhost:3000/api/sendEmail', templateParams)
+          text: "Thanks for approaching Dipixels and considering our service for you. We are hopeful so that we will wonder you with our services. For more information visit www.dipixels.com",
+        };
+        await axios.post("https://dipixels.com/api/sendEmail", templateParams);
         // };
         toast.success('thanks for your response.')
         document.getElementById('form').reset()
