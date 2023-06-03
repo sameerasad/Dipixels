@@ -21,6 +21,7 @@ function MyApp({ Component, pageProps }) {
       <Toaster position="top-right" reverseOrder={false} />
       <Component {...pageProps} />
       <AnimatedCursor
+        style={{ position: "relative", zIindex: "99" }}
         innerSize={10}
         outerSize={35}
         color="255,255,255"
