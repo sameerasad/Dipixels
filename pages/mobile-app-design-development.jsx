@@ -11,6 +11,8 @@ import StyledButton from './compnents/Buttons/StyledButton/StyledButton'
 import Button from './compnents/Buttons/Button/Button'
 import WebsitePackagesCard from './compnents/WebsitePackages/WebsitePackagesCard'
 import styles from '../styles/portfolio.module.css'
+import HeroContactus from './compnents/HeroSection/HeroContactus'
+import Video from '../public/assets/video/MobileApplications.mp4'
 
 const MobilePortfolioData = [
   {
@@ -107,6 +109,7 @@ const MobileappDesignAndDevelopment = () => {
           title="Mobile App Design And"
           company="development"
           description="An adequate website interface can bring great traffic towards your business. Allow dipixels to build an exemplary interface for you. Have a look at our amazing web design portfolio below."
+         videoLink={Video}
         />
         <Technologies />
         <Portfolio

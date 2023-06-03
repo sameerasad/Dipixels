@@ -12,6 +12,7 @@ import 'swiper/swiper.min.css'
 import Button from '../Buttons/Button/Button'
 import Heading from '../Heading/Heading'
 import styles from '../../../styles/Technologies.module.css'
+import Link from 'next/link'
 const TechnologiesData = [
   {
     title: 'UI/UX Design',
@@ -89,7 +90,7 @@ const Technologies = () => {
             marginTop: '30px',
           }}
         >
-          <Button>Start Project</Button>
+         <Link href='./start-project'> <Button>Start Project</Button></Link>
         </div>
       </div>
     </>

@@ -42,8 +42,8 @@ const OrderForm = ({
       name !== "" &&
       last_name !== "" &&
       phone_number !== "" &&
-      email !== "" &&
-      package_type !== ""
+      email !== ""
+      // package_type !== ""
     ) {
       postOrders();
     } else {
@@ -67,6 +67,8 @@ const OrderForm = ({
           message: "",
         });
         document.getElementById("form").reset();
+
+        toast.success("Form submitted successfully.");
         closeModal();
         const { email, name } = Response?.data?.data?.attributes;
 
@@ -75,11 +77,10 @@ const OrderForm = ({
           subject: `Best wishes to you from Dipixels`,
           text: "Thanks for approaching Dipixels and considering our service for you. We are hopeful so that we will wonder you with our services. For more information visit www.dipixels.com",
         };
-        await axios.post("http://localhost:3000/api/sendEmail", templateParams);
+        await axios.post("https://dipixels.com/api/sendEmail", templateParams);
 
         // };
 
-        toast.success("Form submitted successfully.");
         console.log(Response, "Response", "email", email);
       }
     } catch (error) {

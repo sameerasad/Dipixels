@@ -582,34 +582,67 @@ body {
   margin-left: 20px;
 }
 .main-heading-image img {
-  width: 75%;
+  width: 65%;
+}
+.terms-main-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 9;
+}
+.terms-main-heading h1 {
+  text-transform: uppercase;
+  font-size: 60px;
+  color: #00f3f4;
+  font-family: 'Monument Extended Regular';
+}
+.terms-main-heading-image {
+  margin-left: 20px;
+}
+.terms-main-heading-image {
+  margin-left: 20px;
+}
+.terms-main-heading-image img {
+  width: 65%;
 }
 @media screen and (max-width: 1280px) {
   .main-heading h1 {
-    font-size: 3.5em;
+    font-size: 3em;
   }
   .main-heading-image img {
     width: 50%;
+  }
+  .terms-main-heading h1 {
+  font-size: 2.5em;
+  }
+  .terms-main-heading-image img {
+    width: 45%;
   }
 }
 @media screen and (max-width: 1024px) {
   .main-heading-image {
     margin-left: 0px;
   }
-}
-@media screen and (max-width: 1280px) {
-  .main-heading h1 {
-    font-size: 3em;
+  .terms-main-heading-image {
+    margin-left: 0px;
   }
 }
+
 @media screen and (max-width: 800px) {
   .main-heading h1 {
     text-align: center;
   }
+  .terms-main-heading h1 {
+  text-align: center;
+  }
 }
 @media screen and (max-width: 425px) {
   .main-heading h1 {
-    font-size: 2.5em;
+    font-size: 1.5em;
+  }
+  .main-heading h1 {
+    font-size: 1em;
   }
 }
 
@@ -712,6 +745,19 @@ body {
 .formTextarea input {
   width: 100%;
   padding: 27px 0px 150px 30px;
+  background: transparent;
+  border: none;
+  border: 2px solid #9add3a;
+  border-radius: 20px;
+  color: #fff;
+  outline: 0;
+  font-size: 20px;
+  margin-top: 80px;
+}
+.formTextarea textarea {
+  width: 100%;
+  padding: 20px;
+  min-height: 250px;
   background: transparent;
   border: none;
   border: 2px solid #9add3a;

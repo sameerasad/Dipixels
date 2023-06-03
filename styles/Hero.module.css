@@ -46,6 +46,16 @@
   background-repeat: no-repeat;
   position: relative;
 }
+.contactus_videoPlay{
+  min-height: 450px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.contactus_videoPlay video{
+  width: 100%;
+}
 .heroReel {
   position: absolute;
   top: 50%;
@@ -105,6 +115,9 @@
   .modal{
     width: 90%;
   }
+  .contactus_videoPlay{
+    min-height: 0;
+    }
 }
 .modal_close {
   display: flex;
@@ -148,6 +161,7 @@
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
 @media (max-width: 768px){
   .videoModal {
   width: 90%;
