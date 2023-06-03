@@ -33,7 +33,7 @@ const FeaturedProject = ({ data, marqueeText, heading }) => {
                   </h2>
                   <p>{data?.[count]?.description || ''}</p>
                 </div>
-                <Button>our featured themes</Button>
+                {/* <Button>our featured themes</Button> */}
               </div>
               <div className={styles.featured_project_content_two_right}>
                 <h1>{data?.[count]?.heading || ''}</h1>

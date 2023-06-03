@@ -5,9 +5,15 @@ import Heading from '../Heading/Heading'
 const Privacy = () => {
   return (
     <>
-      <div className={styles.terms_section} style={{marginTop: '10em'}}>
+      <div className={styles.terms_section} style={{ marginTop: '10em' }}>
         <div className={styles.terms_wrapper}>
-          <Heading>What kind of details do we gather?</Heading>
+          <div className='terms-main-heading'>
+            <h1>What kind of details do we gather?</h1>
+            <div className='terms-main-heading-image'>
+              <img src='/assets/arrow-up-right.png' alt='' />
+            </div>
+          </div>
+
           <div className={styles.terms_wrapper_content}>
             <p>
               The information we gather is basic in nature. Taking into account
@@ -22,9 +28,14 @@ const Privacy = () => {
         </div>
       </div>
 
-      <div className={styles.terms_section} style={{marginTop: '10em'}}>
+      <div className={styles.terms_section} style={{ marginTop: '10em' }}>
         <div className={styles.terms_wrapper}>
-          <Heading>How is the information protected?</Heading>
+          <div className='terms-main-heading'>
+            <h1>How is the information protected?</h1>
+            <div className='terms-main-heading-image'>
+              <img src='/assets/arrow-up-right.png' alt='' />
+            </div>
+          </div>
           <div className={styles.terms_wrapper_content}>
             <p>
               Dipixels ensures the security of the client’s private and credit
@@ -36,9 +47,14 @@ const Privacy = () => {
         </div>
       </div>
 
-      <div className={styles.terms_section} style={{marginTop: '10em'}}>
+      <div className={styles.terms_section} style={{ marginTop: '10em' }}>
         <div className={styles.terms_wrapper}>
-          <Heading>Why do we ask for your information?</Heading>
+          <div className='terms-main-heading'>
+            <h1>Why do we ask for your information?</h1>
+            <div className='terms-main-heading-image'>
+              <img src='/assets/arrow-up-right.png' alt='' />
+            </div>
+          </div>
           <div className={styles.terms_wrapper_content}>
             <p>
               We obtain your personal information for the sake of ensuring
@@ -52,9 +68,14 @@ const Privacy = () => {
         </div>
       </div>
 
-      <div className={styles.terms_section} style={{marginTop: '10em'}}>
+      <div className={styles.terms_section} style={{ margin: '10em 0' }}>
         <div className={styles.terms_wrapper}>
-          <Heading>Do we use this information for trading purposes?</Heading>
+          <div className='terms-main-heading'>
+            <h1>Do we use this information for trading purposes?</h1>
+            <div className='terms-main-heading-image'>
+              <img src='/assets/arrow-up-right.png' alt='' />
+            </div>
+          </div>
           <div className={styles.terms_wrapper_content}>
             <p>
               Our site ensures the safety of the information our clients provide

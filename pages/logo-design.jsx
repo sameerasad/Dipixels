@@ -10,7 +10,8 @@ import WebsitePackages from './compnents/WebsitePackages/WebsitePackages'
 import ScrollHeadings from './compnents/Scroll/ScrollHeadings'
 import WebsitePackagesCard from './compnents/WebsitePackages/WebsitePackagesCard'
 import styles from '../styles/portfolio.module.css'
-
+import HeroContactus from './compnents/HeroSection/HeroContactus'
+import Video from '../public/assets/video/LogoDesigning.mp4'
 const LogoPortfolioData = [
   {
     image: '/assets/LogoPortfolio1.png',
@@ -111,6 +112,8 @@ const logoDesign = () => {
           title='logo'
           company='design'
           description='For any business or company, its logo plays a vital role in identifying that brand. No matter what your brand is about, a great logo will draw more attention and fully engage your audience. Dipixels offers you an elegant and attractive logo design service that not only strengthens your brand identity but also leaves a lasting impression.'
+          videoLink={Video}
+      
         />
         <Technologies />
         <Portfolio

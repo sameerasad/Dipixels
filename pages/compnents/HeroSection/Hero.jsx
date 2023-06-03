@@ -33,7 +33,7 @@ const Hero = ({ title, description, company, videoLink }) => {
                 // height: '60px',
               }}
             >
-              <Button>View Our Portfolio</Button>
+              {/* <Button>View Our Portfolio</Button> */}
               <Link href='/services'>
                 <Button>View Our Services</Button>
               </Link>

@@ -47,7 +47,7 @@ const Footer = () => {
 
             <div className={styles.dipixels_footer_content_end_right}>
               <p> 
-                <Link href='/terms-and-use'>  term of use </Link> 
+                <Link href='/terms-and-condition'>  term of use </Link> 
                 | 
                 <Link href='/privacy-policy'> privacy policy </Link> </p>
             </div>

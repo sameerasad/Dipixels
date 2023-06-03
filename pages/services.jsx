@@ -3,7 +3,9 @@ import Layout from './compnents/Layout/Layout'
 import Hero from './compnents/HeroSection/Hero'
 import FeaturedProject from './compnents/FeaturedProject/FeaturedProject'
 import ScrollHeadings from './compnents/Scroll/ScrollHeadings'
-import Video from '../public/assets/video/DipixelsAllServices.mp4'
+import Video from '../public/assets/video/Services.mp4'
+import HeroContactus from './compnents/HeroSection/HeroContactus'
+
 const Ourservices = () => {
   const projectData = [
     {
@@ -42,7 +44,7 @@ const Ourservices = () => {
       // image1: '/assets/Portfolio3.jpeg',
       // image2: '/assets/Portfolio4.jpeg',
     },
-  ]  
+  ]
 
   return (
     <>

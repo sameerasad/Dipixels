@@ -5,16 +5,17 @@ import PackagesTabber from './compnents/Tabber/PackagesTabber'
 import ScrollHeadings from './compnents/Scroll/ScrollHeadings'
 
 import Video from '../public/assets/video/Packages.mp4'
+import HeroContactus from './compnents/HeroSection/HeroContactus'
 
 const packages = () => {
   return (
     <>
       <Layout>
-        <Hero
+        <HeroContactus
           title='Affordable'
           company='Packages'
           description='Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo'
-          videoLink={Video}
+          src='/assets/video/Packages.mp4'
         />
         <PackagesTabber />
         {/* <ScrollHeadings /> */}

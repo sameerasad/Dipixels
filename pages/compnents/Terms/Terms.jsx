@@ -8,7 +8,12 @@ const Terms = () => {
       <div className={styles.terms_section}>
         <Marquee> Terms of use</Marquee>
         <div className={styles.terms_wrapper}>
-          <Heading>Terms and Condition</Heading>
+          <div className='terms-main-heading'>
+            <h1>terms and condition</h1>
+            <div className='terms-main-heading-image'>
+              <img src='/assets/arrow-up-right.png' alt='' />
+            </div>
+          </div>
           <div className={styles.terms_wrapper_content}>
             <p>
               By utilizing any site, administration, application or item claimed
@@ -19,7 +24,6 @@ const Terms = () => {
               by modifying this posting. You should visit this website page
               occasionally to check these terms and conditions, since they are
               authoritative on you. <br />
-              <br />
               <br /> You recognize and concur that we should have the privilege
               (however not the commitment) in our sole attentiveness, to
               pre-screen, decline or take off any project by the client given
@@ -38,7 +42,6 @@ const Terms = () => {
               requests for client administration; or (e) ensure our rights,
               property, or security of the rights, property, or wellbeing of our
               clients or the general population. <br />
-              <br />
               <br /> Dipixels ensures the security of the client’s private and
               credit information during all times. The information remains
               stored in our server which is only to be viewed by the concerned
@@ -51,25 +54,27 @@ const Terms = () => {
       <div className={styles.terms_section}>
         <Marquee> Terms of use</Marquee>
         <div className={styles.terms_wrapper}>
-          <Heading>Copyrights and Trademarks</Heading>
+          <div className='terms-main-heading'>
+            <h1>copyrights and trademark</h1>
+            <div className='terms-main-heading-image'>
+              <img src='/assets/arrow-up-right.png' alt='' />
+            </div>
+          </div>
           <div className={styles.terms_wrapper_content}>
             <p>
               Any service that Dipixels has provided and is intended for a
               particular customer is to be used by that particular customer.
               Dipixels does not hold any rights to what is created for a
-              customer. 
-              <br />
+              customer.
               <br />
               <br /> Dipixels does not record a trademark application for the
               services intended for its customer. The customer is allowed to
               register as a trademark the service made for it by Dipixels.
               <br />
-              <br />
               <br /> If installment for any service is not made as per the
               installment strategies of Dipixels, then all of the client’s
               rights in and to the service provided for it, including any
               trademark property, will instantly return to the company.
-              <br />
               <br />
               <br /> Dipixels warrants that its services are of its own creation
               and are not duplicated from or inspired by existing service or
@@ -78,12 +83,10 @@ const Terms = () => {
               which did not exist before the service was created by Dipixels.
               <br />
               <br />
-              <br />
               On the off chance that for some unintentional reason a service
               created by Dipixels appears to be indistinguishable to another
               party’s service, Dipixels will give a free redraw session with a
               new service.
-              <br />
               <br />
               <br />
             </p>

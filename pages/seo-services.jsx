@@ -10,7 +10,8 @@ import WebsitePackages from './compnents/WebsitePackages/WebsitePackages'
 import ScrollHeadings from './compnents/Scroll/ScrollHeadings'
 import WebsitePackagesCard from './compnents/WebsitePackages/WebsitePackagesCard'
 import styles from '../styles/portfolio.module.css'
-
+import HeroContactus from './compnents/HeroSection/HeroContactus'
+import Video from '../public/assets/video/SEO.mp4'
 const LogoPortfolioData = [
   {
     image: '/assets/LogoPortfolio1.png',
@@ -111,6 +112,7 @@ const seoServices = () => {
           title='seo'
           company='services'
           description='Achieve higher search engine rankings and boost your online visibility with our proven SEO strategies.'
+          videoLink={Video}
         />
         <Technologies />
         <DesignProcess title={title} description={description} />

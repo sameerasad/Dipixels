@@ -10,7 +10,8 @@ import WebsitePackages from './compnents/WebsitePackages/WebsitePackages'
 import ScrollHeadings from './compnents/Scroll/ScrollHeadings'
 import WebsitePackagesCard from './compnents/WebsitePackages/WebsitePackagesCard'
 import Video from '../public/assets/video/VideoAnimation.mp4'
-import styles from '../styles/portfolio.module.css' 
+import styles from '../public/assets/video/VideoAnimation.mp4' 
+import HeroContactus from './compnents/HeroSection/HeroContactus'
 
 const VideoPortfolioData = [
   {
