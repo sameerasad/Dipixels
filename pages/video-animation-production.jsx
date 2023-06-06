@@ -1,36 +1,36 @@
-import React from 'react'
-import Layout from './compnents/Layout/Layout'
-import Hero from './compnents/HeroSection/Hero'
-import Technologies from './compnents/Technologies/Technologies'
-import Portfolio from './compnents/Portfolio/Portfolio'
-import PortfolioContent from './compnents/Portfolio/PortfolioContent'
-import Button from './compnents/Buttons/Button/Button'
-import DesignProcess from './compnents/DesignProcess/DesignProcess'
-import WebsitePackages from './compnents/WebsitePackages/WebsitePackages'
-import ScrollHeadings from './compnents/Scroll/ScrollHeadings'
-import WebsitePackagesCard from './compnents/WebsitePackages/WebsitePackagesCard'
-import Video from '../public/assets/video/VideoAnimation.mp4'
-import styles from '../public/assets/video/VideoAnimation.mp4' 
-import HeroContactus from './compnents/HeroSection/HeroContactus'
+import React from "react";
+import Layout from "./compnents/Layout/Layout";
+import Hero from "./compnents/HeroSection/Hero";
+import Technologies from "./compnents/Technologies/Technologies";
+import Portfolio from "./compnents/Portfolio/Portfolio";
+import PortfolioContent from "./compnents/Portfolio/PortfolioContent";
+import Button from "./compnents/Buttons/Button/Button";
+import DesignProcess from "./compnents/DesignProcess/DesignProcess";
+import WebsitePackages from "./compnents/WebsitePackages/WebsitePackages";
+import ScrollHeadings from "./compnents/Scroll/ScrollHeadings";
+import WebsitePackagesCard from "./compnents/WebsitePackages/WebsitePackagesCard";
+import Video from "../public/assets/video/VideoAnimation.mp4";
+import styles from "../public/assets/video/VideoAnimation.mp4";
+import HeroContactus from "./compnents/HeroSection/HeroContactus";
 
 const VideoPortfolioData = [
   {
-    image: '/assets/VideoPortfolio1.png',
+    image: "/assets/VideoPortfolio1.png",
   },
   {
-    image: '/assets/VideoPortfolio2.png',
+    image: "/assets/VideoPortfolio2.png",
   },
   {
-    image: '/assets/VideoPortfolio3.png',
+    image: "/assets/VideoPortfolio3.png",
   },
   {
-    image: '/assets/VideoPortfolio4.png',
+    image: "/assets/VideoPortfolio4.png",
   },
   {
-    image: '/assets/VideoPortfolio5.png',
+    image: "/assets/VideoPortfolio5.png",
   },
   {
-    image: '/assets/VideoPortfolio6.png',
+    image: "/assets/VideoPortfolio6.png",
   },
 ];
 
@@ -110,9 +110,9 @@ const videoAnimationProduction = () => {
     <>
       <Layout>
         <Hero
-          title='video animation and'
-          company='production'
-          description='Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo.'
+          title="video animation and"
+          company="production"
+          description="With our creative expertise and state-of-the-art technology, we create captivating and impactful videos that engage your audience and deliver your message effectively."
           videoLink={Video}
         />
         <Technologies />
@@ -121,7 +121,7 @@ const videoAnimationProduction = () => {
           headingText={headingText}
           company={company}
         />
-          <div className={styles.portfolioContent_wrapper_section}>
+        <div className={styles.portfolioContent_wrapper_section}>
           <div className={styles.portfolioContent_wrapper}>
             <PortfolioContent PortfolioData={VideoPortfolioData} />
           </div>
