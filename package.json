@@ -17,6 +17,7 @@
     "nodemailer": "^6.9.3",
     "react": "^18.2.0",
     "react-animated-cursor": "^2.7.0",
+    "react-animated-text": "^0.1.4",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.1",
     "sharp": "^0.32.1",

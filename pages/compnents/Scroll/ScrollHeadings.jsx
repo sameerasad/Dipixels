@@ -1,7 +1,9 @@
 import React from 'react'
 import Heading from '../Heading/Heading'
 import styles from '../../../styles/ScrollHeading.module.css'
+import Waves from './Waves'
 const ScrollHeadings = () => {
+ 
   return (
     <div>
       <section
@@ -17,7 +19,7 @@ const ScrollHeadings = () => {
           </div>
         </div>
 
-        <Heading>start a project</Heading>
+        <Waves/>
 
         <div className={`${styles.headingScroll} ${styles.second}`}>
           <div className={styles.hScroll}>
