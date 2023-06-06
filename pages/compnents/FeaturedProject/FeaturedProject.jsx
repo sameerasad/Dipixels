@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import styles from "../../../styles/FeaturedProject.module.css";
 import Arrow from "../../../public/assets/arrow-up-right.png";
 import Image from "next/image";
@@ -7,13 +7,19 @@ import Marquee from "../../compnents/Marquee/Marquee";
 import "swiper/css";
 import Button from "../Buttons/Button/Button";
 import Heading from "../Heading/Heading";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const FeaturedProject = ({ data, marqueeText, heading }) => {
-  const swiper = useSwiper()
+  const swiper = useSwiper();
 
-  const [count, setCount] = useState(0)
-  const swiperRef = useRef()
+  const [count, setCount] = useState(0);
+  const swiperRef = useRef();
   // const projectData = data[dataIndex] || {};
+
+  useEffect(() => {
+    AOS.init({ duration: 1400 });
+  }, []);
 
   return (
     <>
@@ -21,60 +27,67 @@ const FeaturedProject = ({ data, marqueeText, heading }) => {
         <Marquee>{marqueeText}</Marquee>
         <div className={styles.featured_project_wrapper}>
           <div className={styles.featured_project_content}>
-            <Heading> featured project </Heading>
-            <div className={styles.featured_project_content_two}>
+            <Heading data-aos="fade-left"> featured project </Heading>
+            <div
+              data-aos="fade-right"
+              className={styles.featured_project_content_two}
+            >
               <div className={styles.featured_project_content_two_left}>
                 <div
                   className={styles.featured_project_content_two_left_heading}
                 >
                   <h2>
-                    <span>{data?.[count]?.title || ''}</span> <br />
-                    {data?.[count]?.subtitle || ''}
+                    <span>{data?.[count]?.title || ""}</span> <br />
+                    {data?.[count]?.subtitle || ""}
                   </h2>
-                  <p>{data?.[count]?.description || ''}</p>
+                  <p>{data?.[count]?.description || ""}</p>
                 </div>
                 {/* <Button>our featured themes</Button> */}
               </div>
-              <div className={styles.featured_project_content_two_right}>
-                <h1>{data?.[count]?.heading || ''}</h1>
+              <div
+                data-aos="fade-right"
+                className={styles.featured_project_content_two_right}
+              >
+                <h1>{data?.[count]?.heading || ""}</h1>
                 <div
+                  data-aos="fade-up"
                   className={styles.featured_project_content_two_right_image}
                 >
                   <Swiper
                     spaceBetween={0}
                     loop={true}
                     slidesPerView={1}
-                    onSlideChange={() => console.log('slide change')}
+                    onSlideChange={() => console.log("slide change")}
                     onSwiper={(swiper) => console.log(swiper)}
-                    direction='horizontal'
+                    direction="horizontal"
                     onBeforeInit={(swiper) => {
-                      swiperRef.current = swiper
+                      swiperRef.current = swiper;
                     }}
                     onRealIndexChange={(e) => {
                       if (count < 3) {
-                        setCount(() => count + 1)
+                        setCount(() => count + 1);
                       } else {
-                        setCount(0)
+                        setCount(0);
                       }
                     }}
                   >
                     <SwiperSlide>
-                      <img src='/assets/portfolio1.jpeg' />
+                      <img src="/assets/portfolio1.jpeg" />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src='/assets/postfolio2.jpeg' alt='' />
+                      <img src="/assets/postfolio2.jpeg" alt="" />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src='/assets/portfolio1.jpeg' />
+                      <img src="/assets/portfolio1.jpeg" />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src='/assets/postfolio2.jpeg' alt='' />
+                      <img src="/assets/postfolio2.jpeg" alt="" />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src='/assets/LogoPortfolio3.png' alt='' />
+                      <img src="/assets/LogoPortfolio3.png" alt="" />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src='/assets/VideoPortfolio5.png' alt='' />
+                      <img src="/assets/VideoPortfolio5.png" alt="" />
                     </SwiperSlide>
                   </Swiper>
                 </div>
@@ -84,10 +97,10 @@ const FeaturedProject = ({ data, marqueeText, heading }) => {
                     styles.featured_project_content_two_right_arrow_left
                   }
                   onClick={() => {
-                    swiperRef?.current?.slidePrev()
+                    swiperRef?.current?.slidePrev();
                   }}
                 >
-                  <img src='/assets/arrowLeft.png' alt='' />
+                  <img src="/assets/arrowLeft.png" alt="" />
                 </div>
 
                 <div
@@ -95,10 +108,10 @@ const FeaturedProject = ({ data, marqueeText, heading }) => {
                     styles.featured_project_content_two_right_arrow_right
                   }
                   onClick={() => {
-                    swiperRef?.current?.slideNext()
+                    swiperRef?.current?.slideNext();
                   }}
                 >
-                  <img src='/assets/arrowRight.png' alt='' />
+                  <img src="/assets/arrowRight.png" alt="" />
                 </div>
               </div>
             </div>
@@ -106,7 +119,7 @@ const FeaturedProject = ({ data, marqueeText, heading }) => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default FeaturedProject
+export default FeaturedProject;

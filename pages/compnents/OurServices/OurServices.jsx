@@ -1,57 +1,58 @@
-import React, { useState } from 'react'
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
-import 'swiper/css'
-import 'swiper/css/pagination'
-import { Pagination } from 'swiper'
-import Marquee from '../../compnents/Marquee/Marquee'
-import Heading from '../Heading/Heading'
-import styles from '../../../styles/OurServices.module.css'
-import Image from 'next/image'
+import React, { useState } from "react";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper";
+import Marquee from "../../compnents/Marquee/Marquee";
+import Heading from "../Heading/Heading";
+import styles from "../../../styles/OurServices.module.css";
+import Image from "next/image";
+
 const servicesData = [
   {
-    title: 'app designs',
-    image: '/assets/ServiceFour.png',
+    title: "app designs",
+    image: "/assets/ServiceFour.png",
   },
   {
-    title: 'web designs',
-    image: '/assets/ServiceThree.png',
+    title: "web designs",
+    image: "/assets/ServiceThree.png",
   },
   {
-    title: 'logo designs',
-    image: '/assets/ServiceTwo.png',
+    title: "logo designs",
+    image: "/assets/ServiceTwo.png",
   },
   {
-    title: 'video animation',
-    image: '/assets/ServiceOne.png',
+    title: "video animation",
+    image: "/assets/ServiceOne.png",
   },
   {
-    title: 'app designs',
-    image: '/assets/ServiceFour.png',
+    title: "app designs",
+    image: "/assets/ServiceFour.png",
   },
   {
-    title: 'web designs',
-    image: '/assets/ServiceThree.png',
+    title: "web designs",
+    image: "/assets/ServiceThree.png",
   },
   {
-    title: 'logo designs',
-    image: '/assets/ServiceTwo.png',
+    title: "logo designs",
+    image: "/assets/ServiceTwo.png",
   },
   {
-    title: 'video animation',
-    image: '/assets/ServiceOne.png',
+    title: "video animation",
+    image: "/assets/ServiceOne.png",
   },
-]
+];
 
 const OurServices = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null)
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const handleServiceHover = (index) => {
-    setHoveredIndex(index)
-  }
+    setHoveredIndex(index);
+  };
 
   const handleServiceLeave = () => {
-    setHoveredIndex(null)
-  }
+    setHoveredIndex(null);
+  };
   return (
     <>
       <div className={styles.our_services_section}>
@@ -61,81 +62,83 @@ const OurServices = () => {
             <Heading>our services</Heading>
           </div>
           <div className={styles.our_services_slider_wrapper}>
-          <Swiper
-            slidesPerView={4}
-            spaceBetween={10}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Pagination]}
-            breakpoints={{
-              // When window width is >= 640px
-              320: {
-                slidesPerView: 1,
-              },
-              // When window width is >= 768px
-              768: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
-              // When window width is >= 1024px
-              1024: {
-                slidesPerView: 2,
-                spaceBetween: 80,
-              },
-              1251: {
-                slidesPerView: 3,
-              },
-              1660: {
-                slidesPerView: 3,
-              },
-              1661: {
-                slidesPerView: 4,
-              },
-            }}
-          >
-            <div className={styles.our_services_content_slider}>
-              {servicesData.map((item, index) => {
-                const isEvenIndex = index % 2 === 0
-                return (
-                  <SwiperSlide key={item.id}>
-                    <div
-                      className={`${
-                        styles.our_services_content_sliders_images
-                      } ${hoveredIndex === index ? styles.hovered : ''}`}
-                      key={index}
-                      onMouseEnter={() => handleServiceHover(index)}
-                      onMouseLeave={handleServiceLeave}
-                      style={{ marginTop: !isEvenIndex ? '70px' : '0px' }}
-                    >
-                      <img src={item.image} alt='' />
-                      <div className={styles.overlay}></div>
+            <Swiper
+              slidesPerView={4}
+              spaceBetween={10}
+              loop={true}
+              pagination={{
+                clickable: true,
+              }}
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
+              modules={[Pagination]}
+              breakpoints={{
+                // When window width is >= 640px
+                320: {
+                  slidesPerView: 1,
+                },
+                // When window width is >= 768px
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                // When window width is >= 1024px
+                1024: {
+                  slidesPerView: 2,
+                  spaceBetween: 80,
+                },
+                1251: {
+                  slidesPerView: 3,
+                },
+                1660: {
+                  slidesPerView: 3,
+                },
+                1661: {
+                  slidesPerView: 4,
+                },
+              }}
+            >
+              <div className={styles.our_services_content_slider}>
+                {servicesData.map((item, index) => {
+                  const isEvenIndex = index % 2 === 0;
+                  return (
+                    <SwiperSlide key={item.id}>
                       <div
-                        className={styles.title}
-                        style={{
-                          position: 'absolute',
-                          zIndex: '99',
-                          textTransform: 'uppercase',
-                        }}
+                        className={`${
+                          styles.our_services_content_sliders_images
+                        } ${hoveredIndex === index ? styles.hovered : ""}`}
+                        key={index}
+                        onMouseEnter={() => handleServiceHover(index)}
+                        onMouseLeave={handleServiceLeave}
+                        style={{ marginTop: !isEvenIndex ? "70px" : "0px" }}
                       >
-                        {item.title}
+                        <img src={item.image} alt="" />
+                        <div className={styles.overlay}></div>
+                        <div
+                          className={styles.title}
+                          style={{
+                            position: "absolute",
+                            zIndex: "99",
+                            textTransform: "uppercase",
+                          }}
+                        >
+                          {item.title}
+                        </div>
+                        <div
+                          className={
+                            styles.our_services_content_sliders_images_gradient
+                          }
+                        ></div>
                       </div>
-                      <div
-                        className={
-                          styles.our_services_content_sliders_images_gradient
-                        }
-                      ></div>
-                    </div>
-                  </SwiperSlide>
-                )
-              })}
-            </div>
-          </Swiper>
+                    </SwiperSlide>
+                  );
+                })}
+              </div>
+            </Swiper>
           </div>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default OurServices
+export default OurServices;

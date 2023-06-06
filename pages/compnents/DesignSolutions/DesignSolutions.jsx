@@ -1,10 +1,15 @@
-import React from 'react'
-import next from 'next/image'
-import Marquee from '../../compnents/Marquee/Marquee'
-import Heading from '../Heading/Heading'
-import styles from '../../../styles/DesignSolutions.module.css'
+import React, { useEffect } from "react";
+import next from "next/image";
+import Marquee from "../../compnents/Marquee/Marquee";
+import Heading from "../Heading/Heading";
+import styles from "../../../styles/DesignSolutions.module.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const DesignSolutions = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1800 });
+  }, []);
   return (
     <>
       <section className={styles.designSolution}>
@@ -12,13 +17,13 @@ const DesignSolutions = () => {
         <div className={styles.container}>
           <Heading>design solutions</Heading>
           <div className={styles.content}>
-            <div>
+            <div data-aos="fade-left">
               <h2>
                 Surpass the digital world with customized and attractive logo
                 designs, adding colors to your business.
               </h2>
             </div>
-            <div className={styles.content_list}>
+            <div data-aos="fade-right" className={styles.content_list}>
               <ul>
                 <li>Constant Client Coordination</li>
                 <li>Supreme Customer Satisfaction</li>
@@ -31,7 +36,7 @@ const DesignSolutions = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default DesignSolutions
+export default DesignSolutions;

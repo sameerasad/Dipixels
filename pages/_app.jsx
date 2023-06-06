@@ -3,6 +3,7 @@ import { Montserrat } from "@next/font/google";
 // import AnimatedCursor from "react-animated-cursor";
 import dynamic from "next/dynamic";
 import { Toaster } from "react-hot-toast";
+import useScrollPercentage from "../pages/compnents/Hooks/useScrollPercentage";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -13,6 +14,8 @@ function MyApp({ Component, pageProps }) {
   const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
     ssr: false,
   });
+  const scrollPercentage = useScrollPercentage();
+  console.log(scrollPercentage, "pppp");
   return (
     <main
       className={montserrat.className}
