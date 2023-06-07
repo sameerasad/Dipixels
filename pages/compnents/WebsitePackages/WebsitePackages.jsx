@@ -1,4 +1,5 @@
 // import './WebsitePackages.css'
+import React, { useEffect } from "react";
 import StyledButton from "../Buttons/StyledButton/StyledButton";
 import Marquee from "../../compnents/Marquee/Marquee";
 import Arrow from "../../../public/assets/arrow-up-right.png";
@@ -6,9 +7,14 @@ import Image from "next/image";
 import WebsitePackagesCard from "./WebsitePackagesCard";
 import Button from "../Buttons/Button/Button";
 import Heading from "../Heading/Heading";
-import styles from '../../../styles/WebsitePackagesCard.module.css'
+import styles from "../../../styles/WebsitePackagesCard.module.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function WebsitePackages({ packagesHeading, packagesDescription }) {
+  useEffect(() => {
+    AOS.init({ duration: 1400 });
+  }, []);
   return (
     <>
       <Marquee>best</Marquee>
@@ -18,7 +24,7 @@ function WebsitePackages({ packagesHeading, packagesDescription }) {
             <span> {packagesHeading} </span> packages
           </Heading>
         </div>
-        <div className="package-section-content-para">
+        <div data-aos="slide-right" className="package-section-content-para">
           <p>{packagesDescription}</p>
         </div>
         {/* <div className='packagesCards'>

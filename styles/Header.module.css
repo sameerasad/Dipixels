@@ -83,7 +83,7 @@
   display: flex;
   justify-content: center;
 }
-.dipixels_header_button button {
+/* .dipixels_header_button button {
   background-color: #9add3a;
   padding: 15px 30px;
   border: none;
@@ -93,7 +93,7 @@
   color: #000000;
   font-family: 'Monument Extended Regular';
   cursor: pointer;
-}
+} */
 
 /* Burger  Icon Menu */
 .dipixels_header_Triggermenu {

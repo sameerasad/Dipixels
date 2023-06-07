@@ -27,7 +27,7 @@ const FeaturedProject = ({ data, marqueeText, heading }) => {
         <Marquee>{marqueeText}</Marquee>
         <div className={styles.featured_project_wrapper}>
           <div className={styles.featured_project_content}>
-            <Heading data-aos="fade-left"> featured project </Heading>
+            <Heading data-aos="fade-down"> featured project </Heading>
             <div
               data-aos="fade-right"
               className={styles.featured_project_content_two}

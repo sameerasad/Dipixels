@@ -1,24 +1,29 @@
 // import '../../../styles/Empowering.module.css'
-import Marquee from '../Marquee/Marquee'
-import Heading from '../Heading/Heading'
-import styles from '../../../styles/Empowering.module.css'
-
+import React, { useEffect } from "react";
+import Marquee from "../Marquee/Marquee";
+import Heading from "../Heading/Heading";
+import styles from "../../../styles/Empowering.module.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Empowering() {
+  useEffect(() => {
+    AOS.init({ duration: 1400 });
+  }, []);
   return (
     <>
       <section className={styles.empowering}>
         <Marquee>Streamlined Process</Marquee>
-        <div style={{ textAlign: 'center', marginTop: '-50px' }}>
+        <div style={{ textAlign: "center", marginTop: "-50px" }}>
           <Heading>Empowering your success</Heading>
         </div>
         <div className={styles.mincontainer}>
-          <div className={styles.content_1}>
+          <div data-aos="fade-right" className={styles.content_1}>
             <h1>
               Our foremost goal is to provide you with innovative digital
               assistance, ensuring that you satisfy what your business craves.
             </h1>
           </div>
-          <div className={styles.content_2}>
+          <div data-aos="fade-left" className={styles.content_2}>
             <p>
               At Dipixels, we highly prioritise working in collaboration with
               technology to serve you with excellence throughout the process of
@@ -32,7 +37,7 @@ function Empowering() {
         </div>
       </section>
     </>
-  )
+  );
 }
 
-export default Empowering
+export default Empowering;

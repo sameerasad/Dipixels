@@ -1,42 +1,47 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Button from "../Buttons/Button/Button";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { baseUrl } from "../../../api/config";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // import Pin from '/public/assets/icon-location-address.png'
 // import Email from '/public/assets/icon-email.png'
-import styles from '../../../styles/ContactForm.module.css'
+import styles from "../../../styles/ContactForm.module.css";
 const ContactusForm = () => {
   const [state, setState] = useState({
-    first_name: '',
-    last_name: '',
-    email: '',
-    phone_number: '',
-    message: '',
-  })
+    first_name: "",
+    last_name: "",
+    email: "",
+    phone_number: "",
+    message: "",
+  });
+  useEffect(() => {
+    AOS.init({ duration: 1400 });
+  }, []);
 
   const handleInputChange = (event) => {
-    const { name, value } = event.target
+    const { name, value } = event.target;
     setState((prevProps) => ({
       ...prevProps,
       [name]: value,
-    }))
-  }
+    }));
+  };
   const handleSubmit = () => {
-    const { first_name, last_name, phone_number, email, message } = state
+    const { first_name, last_name, phone_number, email, message } = state;
     if (
-      first_name !== '' &&
-      last_name !== '' &&
-      phone_number !== '' &&
-      email !== ''
+      first_name !== "" &&
+      last_name !== "" &&
+      phone_number !== "" &&
+      email !== ""
     ) {
-      postContact()
+      postContact();
     } else {
-      toast.error('kindly fill all the required fields')
+      toast.error("kindly fill all the required fields");
     }
-  }
+  };
 
   const postContact = async () => {
     try {
@@ -45,15 +50,15 @@ const ContactusForm = () => {
       });
       if (Response.status == 200) {
         setState({
-          first_name: '',
-          last_name: '',
-          email: '',
-          phone_number: '',
-          message: '',
-        })
-        document.getElementById('form').reset()
-        toast.success('Thanks for contacting us')
-        const { email, name } = Response?.data?.data?.attributes
+          first_name: "",
+          last_name: "",
+          email: "",
+          phone_number: "",
+          message: "",
+        });
+        document.getElementById("form").reset();
+        toast.success("Thanks for contacting us");
+        const { email, name } = Response?.data?.data?.attributes;
         const templateParams = {
           to: email,
           subject: `Best wishes to you from Dipixels`,
@@ -63,12 +68,12 @@ const ContactusForm = () => {
         // };
         // sendMail(email, templateParams.subject, templateParams.text);
 
-        console.log(Response, 'Response', 'email', email)
+        console.log(Response, "Response", "email", email);
       }
     } catch (error) {
-      toast.error(error?.response?.data?.error?.message)
+      toast.error(error?.response?.data?.error?.message);
     }
-  }
+  };
 
   return (
     <>
@@ -77,6 +82,7 @@ const ContactusForm = () => {
           <div className={styles.contactus_form_content}>
             <div className={styles.contactus_form_content_left_section}>
               <div
+                data-aos="fade-right"
                 className={styles.contactus_form_content_left_section_heading}
               >
                 <h1>
@@ -84,7 +90,10 @@ const ContactusForm = () => {
                   <span> We Look forward to hearing from You. </span>
                 </h1>
               </div>
-              <div className={styles.contactus_form_content_left_section_icons}>
+              <div
+                data-aos="fade-up"
+                className={styles.contactus_form_content_left_section_icons}
+              >
                 <div
                   className={
                     styles.contactus_form_content_left_section_icons_left
@@ -95,7 +104,7 @@ const ContactusForm = () => {
                       styles.contactus_form_content_left_section_icons_left_image
                     }
                   >
-                    <img src='/assets/icon-location-address.svg' alt='' />
+                    <img src="/assets/icon-location-address.svg" alt="" />
                   </div>
                   <div
                     className={
@@ -118,9 +127,9 @@ const ContactusForm = () => {
                     className={
                       styles.contactus_form_content_left_section_icons_left_image
                     }
-                    style={{ padding: '19px 17px' }}
+                    style={{ padding: "19px 17px" }}
                   >
-                    <img src='/assets/icon-email.png' alt='' />
+                    <img src="/assets/icon-email.png" alt="" />
                   </div>
                   <div
                     className={
@@ -132,11 +141,13 @@ const ContactusForm = () => {
                   </div>
                 </div>
               </div>
-              <p className={styles.para}>
+              <p data-aos="fade-up" className={styles.para}>
                 For Immediate Support, Feel Free To Call Us On
               </p>
-              <h2 className={styles.number}>4144003996</h2>
-              <hr className={styles.horizontal_line} />
+              <h2 data-aos="fade-up" className={styles.number}>
+                4144003996
+              </h2>
+              <hr data-aos="fade-left" className={styles.horizontal_line} />
               <p className={styles.social_media}>social media</p>
               <div
                 className={
@@ -144,38 +155,40 @@ const ContactusForm = () => {
                 }
               >
                 <div
+                  data-aos="fade-right"
                   className={
                     styles.contactus_form_content_left_section_social_media_icon
                   }
-                  style={{ padding: '15px 20px' }}
+                  style={{ padding: "15px 20px" }}
                 >
-                  <img src='/assets/white-facebook-f.png' alt='' />
+                  <img src="/assets/white-facebook-f.png" alt="" />
                 </div>
                 <div
                   className={
                     styles.contactus_form_content_left_section_social_media_icon
                   }
                 >
-                  <img src='/assets/whitetwitter.svg' alt='' />
+                  <img src="/assets/whitetwitter.svg" alt="" />
                 </div>
                 <div
                   className={
                     styles.contactus_form_content_left_section_social_media_icon
                   }
                 >
-                  <img src='/assets/white-instagram.png' alt='' />
+                  <img src="/assets/white-instagram.png" alt="" />
                 </div>
                 <div
+                  data-aos="fade-left"
                   className={
                     styles.contactus_form_content_left_section_social_media_icon
                   }
                 >
-                  <img src='/assets/white-linkedin-in.png' alt='' />
+                  <img src="/assets/white-linkedin-in.png" alt="" />
                 </div>
               </div>
             </div>
             <div className={styles.contactus_form_content_right_section}>
-              <form id='form' action='' autocomplete='off'>
+              <form id="form" action="" autocomplete="off">
                 <div
                   className={
                     styles.contactus_form_content_right_section_projectForm
@@ -192,11 +205,11 @@ const ContactusForm = () => {
                       }
                     >
                       <input
-                        name='first_name'
-                        type='text'
-                        placeholder='First Name *'
+                        name="first_name"
+                        type="text"
+                        placeholder="First Name *"
                         onChange={handleInputChange}
-                        id=''
+                        id=""
                       />
                     </div>
                     <div
@@ -205,10 +218,10 @@ const ContactusForm = () => {
                       }
                     >
                       <input
-                        type='text'
-                        name='last_name'
-                        placeholder='Last Name *'
-                        id=''
+                        type="text"
+                        name="last_name"
+                        placeholder="Last Name *"
+                        id=""
                         onChange={handleInputChange}
                       />
                     </div>
@@ -225,10 +238,10 @@ const ContactusForm = () => {
                       }
                     >
                       <input
-                        type='email'
-                        name='email'
-                        placeholder='Email Address *'
-                        id=''
+                        type="email"
+                        name="email"
+                        placeholder="Email Address *"
+                        id=""
                         onChange={handleInputChange}
                       />
                     </div>
@@ -253,10 +266,10 @@ const ContactusForm = () => {
                     }
                   >
                     <input
-                      type='text'
-                      name='message'
-                      placeholder='Your Message here...'
-                      id=''
+                      type="text"
+                      name="message"
+                      placeholder="Your Message here..."
+                      id=""
                       onChange={handleInputChange}
                     />
                   </div>
@@ -264,9 +277,9 @@ const ContactusForm = () => {
               </form>
               <div
                 onClick={() => {
-                  handleSubmit()
+                  handleSubmit();
                 }}
-                style={{ marginTop: '2em' }}
+                style={{ marginTop: "2em" }}
               >
                 <Button>send</Button>
               </div>
@@ -275,7 +288,7 @@ const ContactusForm = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default ContactusForm
+export default ContactusForm;

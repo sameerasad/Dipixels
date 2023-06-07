@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -7,6 +7,9 @@ import Marquee from "../../compnents/Marquee/Marquee";
 import Heading from "../Heading/Heading";
 import styles from "../../../styles/OurServices.module.css";
 import Image from "next/image";
+import SwiperCore, { Autoplay } from "swiper";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const servicesData = [
   {
@@ -53,6 +56,11 @@ const OurServices = () => {
   const handleServiceLeave = () => {
     setHoveredIndex(null);
   };
+  SwiperCore.use([Autoplay]);
+  useEffect(() => {
+    AOS.init({ duration: 1400 });
+  }, []);
+
   return (
     <>
       <div className={styles.our_services_section}>
@@ -63,6 +71,7 @@ const OurServices = () => {
           </div>
           <div className={styles.our_services_slider_wrapper}>
             <Swiper
+              data-aos="fade-up"
               slidesPerView={4}
               spaceBetween={10}
               loop={true}
@@ -70,7 +79,8 @@ const OurServices = () => {
               pagination={{
                 clickable: true,
               }}
-              autoplay={{ delay: 1000, disableOnInteraction: false }}
+              speed={1000}
+              autoplay={{ delay: 2000, disableOnInteraction: false }}
               modules={[Pagination]}
               breakpoints={{
                 // When window width is >= 640px

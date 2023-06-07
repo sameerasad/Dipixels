@@ -5,9 +5,15 @@ import Heading from "../Heading/Heading";
 import Button from "../Buttons/Button/Button";
 import toast from "react-hot-toast";
 import { baseUrl } from "../../../api/config";
+import AOS from "aos";
+import "aos/dist/aos.css";
 // import emailjs from "@emailjs/browser";
 
 const StartProject = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1400 });
+  }, []);
+
   // const [firstName, setFirstname] = useState(null);
   // const [lastName, setLastName] = useState(null);
   // const [company, setCompany] = useState(null);
@@ -126,7 +132,7 @@ const StartProject = () => {
         >
           <div id="form" method="post">
             <Heading>start a project</Heading>
-            <h4 className="formDes">
+            <h4 data-aos="fade-right" className="formDes">
               Thanks for your interest in working with us. Please complete the
               details below and we’ll get back to you within one or two business
               days.

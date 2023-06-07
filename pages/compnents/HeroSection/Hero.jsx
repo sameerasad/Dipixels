@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import Gif from "../../../public/assets/Banner.gif";
+import React, { useState, useEffect } from "react";
 import Button from "../Buttons/Button/Button";
 import StyledButton from "../Buttons/StyledButton/StyledButton";
 import PlayReel from "./PlayReel";
@@ -7,6 +6,8 @@ import VideoModal from "../VideoModal/VideoModal";
 import styles from "../../../styles/Hero.module.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Hero = ({ title, description, company, videoLink }) => {
   const [isVideoModalOpen, setVideoModalOpen] = useState(false);
@@ -21,6 +22,10 @@ const Hero = ({ title, description, company, videoLink }) => {
     setVideoModalOpen(false);
   };
 
+  useEffect(() => {
+    AOS.init({ duration: 1400 });
+  }, []);
+
   const shouldRenderButtonWrapper = pathname === "/about";
 
   return (
@@ -28,12 +33,13 @@ const Hero = ({ title, description, company, videoLink }) => {
       <div className={styles.hero}>
         <div className={styles.container}>
           <div className={styles.heroContent}>
-            <h1 className={styles.colorGreen}>
+            <h1 data-aos="fade-down" className={styles.colorGreen}>
               {title} <span className={styles.colorBlue}>{company}</span>
             </h1>
-            <p>{description}</p>
+            <p data-aos="fade-right">{description}</p>
             {shouldRenderButtonWrapper && (
               <div
+                data-aos="fade-up"
                 className={styles.button_Wrapper}
                 style={{
                   display: "flex",
@@ -47,15 +53,19 @@ const Hero = ({ title, description, company, videoLink }) => {
               </div>
             )}
           </div>
-          <div className={styles.videoPlayReel}>
-            <div className={styles.heroReel} onClick={openVideoModal}>
+          <div data-aos="fade-left" className={styles.videoPlayReel}>
+            <div
+              // data-aos="fade-right"
+              className={styles.heroReel}
+              onClick={openVideoModal}
+            >
               <PlayReel />
             </div>
           </div>
         </div>
       </div>
       {isVideoModalOpen && (
-        <div className={styles.videoOverlay}>
+        <div data-aos="flip-up" className={styles.videoOverlay}>
           <div className={styles.videoModal}>
             <div onClick={closeVideoModal} className={styles.modal_close}>
               <img src="/assets/CloseIcon.svg" alt="" />

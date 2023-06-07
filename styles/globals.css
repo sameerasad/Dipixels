@@ -26,8 +26,6 @@ body {
 }
 
 /* Button */
-.simple-button {
-}
 .simple-button button {
   color: #000000;
   background-color: #00f3f4;
@@ -40,27 +38,53 @@ body {
   cursor: pointer;
   border: 2px solid #00f3f4;
 }
+.simple-button button:hover {
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #00f3f4;
+}
+.styled-button button {
+  background-color: #9add3a;
+  padding: 15px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-radius: 10px;
+  color: #000000;
+  font-family: 'Monument Extended Regular';
+  border: 2px solid #9add3a;
+  cursor: pointer;
+}
+.styled-button button:hover {
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #9add3a;
+}
+@media screen and (max-width: 1440px) {
+  .simple-button button {
+    font-size: 14px;
+  }
+  .styled-button button {
+  font-size: 14px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .simple-button button {
     padding: 10px 20px;
     font-size: 1em;
+  }
+  .styled-button button {
+  font-size: 1em;
   }
 }
 @media screen and (max-width: 400px) {
   .simple-button button {
     font-size: 0.8em !important;
   }
-}
-
-.simple-button button:hover {
-  color: #ffffff;
-  background-color: transparent;
-  border: 2px solid #00f3f4;
-}
-@media screen and (max-width: 1440px) {
-  .simple-button button {
-    font-size: 14px;
-  }
+  .styled-button button {
+    font-size: 0.8em !important;
+    }
 }
 /* .Banner-section-content-links {
   transform: rotate(90deg);
@@ -512,7 +536,7 @@ body {
   margin: 30px 0px 30px 0;
 }
 
-.packagesCards .packagebtn button {
+/* .packagesCards .packagebtn button {
   text-align: center;
   background-color: #9add3a;
   font-family: 'Monument Extended Regular';
@@ -524,9 +548,9 @@ body {
   border-radius: 10px;
   border: none;
   cursor: pointer;
-}
+} */
 
-.packagesCards .packagebtn {
+/* .packagesCards .packagebtn {
   display: flex;
   width: 100% !important;
   justify-content: center;
@@ -534,7 +558,7 @@ body {
   bottom: -25px;
   left: 50%;
   transform: translate(-50%);
-}
+} */
 
 .packageListing {
   height: 275px;

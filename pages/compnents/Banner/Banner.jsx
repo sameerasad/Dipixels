@@ -37,6 +37,7 @@ const Banner = () => {
   useEffect(() => {
     AOS.init({ duration: 1400 });
   }, []);
+
   return (
     <>
       {isFormModalOpen && (

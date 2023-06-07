@@ -1,15 +1,23 @@
-import React, { useState } from 'react'
-import styles from '../../../styles/Header.module.css'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
-import DropdownArrow from '/public/assets/dropdownArrow.svg'
-import Image from 'next/image'
-import Drawer from './Drawer'
+import React, { useState, useEffect } from "react";
+import styles from "../../../styles/Header.module.css";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import DropdownArrow from "/public/assets/dropdownArrow.svg";
+import Image from "next/image";
+import Drawer from "./Drawer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import StyledButton from "../Buttons/StyledButton/StyledButton";
+
 const Header = () => {
-  const router = useRouter()
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
-  const [open, setOpen] = useState(false)
-  
+  const router = useRouter();
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    AOS.init({ duration: 1400 });
+  }, []);
+
   return (
     <>
       <div className={styles.dipixels_header}>
@@ -57,9 +65,10 @@ const Header = () => {
               </Link>
               {isDropdownOpen && (
                 <ul
+                  data-aos="fade-up"
                   onMouseLeave={() => setIsDropdownOpen(false)}
                   className={`${styles.dropdown_menu} ${
-                    isDropdownOpen ? 'open' : ''
+                    isDropdownOpen ? "open" : ""
                   }`}
                 >
                   <li>
@@ -180,15 +189,15 @@ const Header = () => {
 
           <div className={styles.dipixels_header_button}>
             <Link href="./start-project">
-              <button>Start a project</button>
+              <StyledButton>Start a project</StyledButton>
             </Link>
           </div>
           <div className={styles.dipixels_header_Triggermenu}>
             <img
-              src='/assets/menu.svg'
-              alt=''
+              src="/assets/menu.svg"
+              alt=""
               onClick={() => {
-                setOpen((prevState) => !open)
+                setOpen((prevState) => !open);
               }}
             />
           </div>

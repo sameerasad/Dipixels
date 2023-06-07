@@ -1,90 +1,102 @@
 .portfolio_section {
- margin-top: 5em;
- height: 200px;
- justify-content: center;
- display: flex;
- flex-direction: column;
-}
-.portfolio_section_content {
- margin-top: -50px;
- align-items: center;
- display: flex;
- flex-direction: column;
-}
-.portfolio_section_content_wrapper {
- width: 100%;
- max-width: 85%;
- display: flex;
- flex-direction: column;
- align-items: center;
- position: absolute;
- justify-content: center;
-}
-.portfolio-section-content-heading {
- display: flex;
- justify-content: center;
- align-items: center;
- position: relative;
- z-index: 9;
- margin-top: 10px;
-}
-.portfolio-section-content-image {
- margin-left: 20px;
-}
-.portfolio_section_content_images {
- display: flex;
- flex-wrap: wrap;
- margin-top: 3em;
- justify-content: space-between;
-}
-.portfolio_section_content_images_img{
- width: 32%;
- margin-bottom: 20px;
-}
-.portfolio_section_content_images_img img {
- width: 100%;
-}
-.portfolioContent_wrapper_section{
- width: 100%;
- justify-content: center;
- display: flex;
- align-items: center;
- margin-top: 3em;
-}
-.portfolioContent_wrapper{
- max-width: 85%;
-}
-.websitepackagescard_wrapper{
- max-width: 85%;
-}
-@media screen and (max-width: 1465px) {
- .portfolio_section_content_images{
- margin-top: 6em;
- }
-}
-@media screen and (max-width: 1280px) {
- .portfolio_section_content_images{
- margin-top: 2em;
- }
-}
-@media screen and (max-width: 1048px) {
- .portfolio_section_content_wrapper {
- max-width: 96%;
- }
- .portfolioContent_wrapper{
- max-width: 96%;
- }
- .websitepackagescard_wrapper{
-  max-width: 96%;
- }
-}
-@media screen and (max-width: 425px) {
- .portfolioContent_wrapper_section{
-  margin-top: 0;
- }
-}
-@media screen and (max-width: 402px) {
- .portfolioContent_wrapper_section{
-  margin-top: 1em;
- }
-}
+    margin-top: 5em;
+    height: 200px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+   }
+   .portfolio_section_content {
+    margin-top: -50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+   }
+   .portfolio_section_content_wrapper {
+    width: 100%;
+    max-width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+   }
+   .portfolio-section-content-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 9;
+    margin-top: 10px;
+   }
+   .portfolio-section-content-image {
+    margin-left: 20px;
+   }
+   .portfolio_section_content_images {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3em;
+    justify-content: space-between;
+   }
+   .portfolio_section_content_images_img{
+    width: 32%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .portfolio_section_content_images_img:hover{
+    box-shadow: 0 10px 20px rgba(213, 255, 64, 0.3);
+    border-radius: 25px;
+    padding: 15px;
+    background-color: rgba(23, 23, 23, 1);
+    transition: all .5s ease; 
+   }
+   .portfolio_section_content_images_img img {
+    width: 100%;
+    border-radius: 20px;
+   }
+   .portfolioContent_wrapper_section{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 3em;
+   }
+   .portfolioContent_wrapper{
+    max-width: 85%;
+   }
+   .websitepackagescard_wrapper{
+    max-width: 85%;
+   }
+   @media screen and (max-width: 1465px) {
+    .portfolio_section_content_images{
+    margin-top: 6em;
+    }
+   }
+   @media screen and (max-width: 1280px) {
+    .portfolio_section_content_images{
+    margin-top: 2em;
+    }
+   }
+   @media screen and (max-width: 1048px) {
+    .portfolio_section_content_wrapper {
+    max-width: 96%;
+    }
+    .portfolioContent_wrapper{
+    max-width: 96%;
+    }
+    .websitepackagescard_wrapper{
+     max-width: 96%;
+    }
+   }
+   @media screen and (max-width: 425px) {
+    .portfolioContent_wrapper_section{
+     margin-top: 0;
+    }
+   }
+   @media screen and (max-width: 402px) {
+    .portfolioContent_wrapper_section{
+     margin-top: 1em;
+    }
+   }

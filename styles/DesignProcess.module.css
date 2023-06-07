@@ -35,7 +35,7 @@
 }
 .design_process_content_card {
   width: 360px;
-  background-color: #171717;
+  background-color: rgba(23, 23, 23, 1);
   padding: 0 20px;
   border-radius: 20px;
   display: flex;
@@ -43,6 +43,12 @@
   align-items: center;
   font-family: 'Monument Extended Regular';
   position: relative;
+}
+.design_process_content_card:hover {
+  box-shadow: 15px 18px 32px rgba(213, 255, 64, 0.3);
+  -webkit-transform: translateY(-17px);
+  transform: translateY(-17px);
+  transition: all .5s ease;
 }
 .design_process_content_card_left {
   display: flex;
