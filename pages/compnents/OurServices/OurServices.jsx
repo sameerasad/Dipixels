@@ -66,10 +66,11 @@ const OurServices = () => {
               slidesPerView={4}
               spaceBetween={10}
               loop={true}
+              navigation={true}
               pagination={{
                 clickable: true,
               }}
-              autoplay={{ delay: 3000, disableOnInteraction: false }}
+              autoplay={{ delay: 1000, disableOnInteraction: false }}
               modules={[Pagination]}
               breakpoints={{
                 // When window width is >= 640px
