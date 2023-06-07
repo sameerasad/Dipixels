@@ -39,28 +39,28 @@
 .dipixels_footer_content_contact p {
  color: #9add3a;
  text-transform: uppercase;
- font-size: 18px;
+ font-size: 24px;
 }
 .dipixels_footer_content_contact h3 {
  color: #ffffff;
  text-transform: uppercase;
- font-size: 24px;
+ font-size: 18px;
  font-weight: 500;
  margin-top: 10px;
 }
 .dipixels_footer_content_address {
- width: 30%;
+ width: 25%;
 }
 .dipixels_footer_content_address p {
  color: #9add3a;
  text-transform: uppercase;
- font-size: 18px;
+ font-size: 24px;
 }
 .dipixels_footer_content_address h3 {
  color: #ffffff;
  font-weight: 500;
  text-transform: uppercase;
- font-size: 24px;
+ font-size: 18px;
  margin-top: 10px;
 }
 .dipixels_footer_content_line {

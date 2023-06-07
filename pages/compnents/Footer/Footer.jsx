@@ -1,8 +1,8 @@
-import Image from 'next/image'
-import React from 'react'
-import Logo from '../../../public/assets/dipixelsLogo.png'
-import styles from '../../../styles/Footer.module.css'
-import Link from 'next/link'
+import Image from "next/image";
+import React from "react";
+import Logo from "../../../public/assets/dipixelsLogo.png";
+import styles from "../../../styles/Footer.module.css";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -15,7 +15,7 @@ const Footer = () => {
             </div>
 
             <div className={styles.dipixels_footer_content_image}>
-              <Image src={Logo} alt='' width='400' height='100' />
+              <Image src={Logo} alt="" width="400" height="100" />
             </div>
 
             <div className={styles.dipixels_footer_center_line}>
@@ -31,7 +31,9 @@ const Footer = () => {
 
             <div className={styles.dipixels_footer_content_address}>
               <p>find us</p>
-              <h3>dipixels llc p.o. box 1 hales corners, w153130,usa</h3>
+              <h3>
+                Dipixels LLC <br /> P.O. Box 1, <br /> Hales Corners, WI 53130
+              </h3>
             </div>
           </div>
 
@@ -46,16 +48,16 @@ const Footer = () => {
             </div>
 
             <div className={styles.dipixels_footer_content_end_right}>
-              <p> 
-                <Link href='/terms-and-condition'>  term of use </Link> 
-                | 
-                <Link href='/privacy-policy'> privacy policy </Link> </p>
+              <p>
+                <Link href="/terms-and-condition"> term of use </Link>|
+                <Link href="/privacy-policy"> privacy policy </Link>{" "}
+              </p>
             </div>
           </div>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

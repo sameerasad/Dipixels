@@ -10,6 +10,7 @@ import "aos/dist/aos.css";
 // import Pin from '/public/assets/icon-location-address.png'
 // import Email from '/public/assets/icon-email.png'
 import styles from "../../../styles/ContactForm.module.css";
+import Link from "next/link";
 const ContactusForm = () => {
   const [state, setState] = useState({
     first_name: "",
@@ -113,7 +114,8 @@ const ContactusForm = () => {
                   >
                     <h1>Address</h1>
                     <p>
-                      Dipixels LLC P.O. Box 1, Hales Corners, WI, 53130, USA
+                      Dipixels LLC <br /> P.O. Box 1, <br /> Hales Corners, WI
+                      53130
                     </p>
                   </div>
                 </div>
@@ -154,37 +156,45 @@ const ContactusForm = () => {
                   styles.contactus_form_content_left_section_social_media
                 }
               >
-                <div
-                  data-aos="fade-right"
-                  className={
-                    styles.contactus_form_content_left_section_social_media_icon
-                  }
-                  style={{ padding: "15px 20px" }}
-                >
-                  <img src="/assets/white-facebook-f.png" alt="" />
-                </div>
-                <div
-                  className={
-                    styles.contactus_form_content_left_section_social_media_icon
-                  }
-                >
-                  <img src="/assets/whitetwitter.svg" alt="" />
-                </div>
-                <div
-                  className={
-                    styles.contactus_form_content_left_section_social_media_icon
-                  }
-                >
-                  <img src="/assets/white-instagram.png" alt="" />
-                </div>
-                <div
-                  data-aos="fade-left"
-                  className={
-                    styles.contactus_form_content_left_section_social_media_icon
-                  }
-                >
-                  <img src="/assets/white-linkedin-in.png" alt="" />
-                </div>
+                <Link href="https://www.facebook.com/Dipixels.LLC/">
+                  <div
+                    data-aos="fade-right"
+                    className={
+                      styles.contactus_form_content_left_section_social_media_icon
+                    }
+                    style={{ padding: "15px 20px" }}
+                  >
+                    <img src="/assets/white-facebook-f.png" alt="" />
+                  </div>
+                </Link>
+                <Link href="https://twitter.com/Dipixels_/">
+                  <div
+                    className={
+                      styles.contactus_form_content_left_section_social_media_icon
+                    }
+                  >
+                    <img src="/assets/whitetwitter.svg" alt="" />
+                  </div>
+                </Link>
+                <Link href="">
+                  <div
+                    className={
+                      styles.contactus_form_content_left_section_social_media_icon
+                    }
+                  >
+                    <img src="/assets/white-instagram.png" alt="/" />
+                  </div>
+                </Link>
+                <Link href="https://www.linkedin.com/company/dipixels">
+                  <div
+                    data-aos="fade-left"
+                    className={
+                      styles.contactus_form_content_left_section_social_media_icon
+                    }
+                  >
+                    <img src="/assets/white-linkedin-in.png" alt="" />
+                  </div>
+                </Link>
               </div>
             </div>
             <div className={styles.contactus_form_content_right_section}>
