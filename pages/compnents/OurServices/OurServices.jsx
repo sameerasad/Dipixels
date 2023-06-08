@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { useRouter } from "next/router";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
@@ -15,40 +16,48 @@ const servicesData = [
   {
     title: "app designs",
     image: "/assets/ServiceFour.png",
+    url: "/mobile-app-design-development",
   },
   {
     title: "web designs",
     image: "/assets/ServiceThree.png",
+    url: "/web-design-development",
   },
   {
     title: "logo designs",
     image: "/assets/ServiceTwo.png",
+    url: "/logo-design",
   },
   {
     title: "video animation",
     image: "/assets/ServiceOne.png",
+    url: "/video-animation-production",
   },
   {
     title: "app designs",
     image: "/assets/ServiceFour.png",
+    url: "/mobile-app-design-development",
   },
   {
     title: "web designs",
     image: "/assets/ServiceThree.png",
+    url: "/web-design-development",
   },
   {
     title: "logo designs",
     image: "/assets/ServiceTwo.png",
+    url: "/logo-design",
   },
   {
     title: "video animation",
     image: "/assets/ServiceOne.png",
+    url: "/video-animation-production",
   },
 ];
 
 const OurServices = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
-
+  const router = useRouter();
   const handleServiceHover = (index) => {
     setHoveredIndex(index);
   };
@@ -112,7 +121,12 @@ const OurServices = () => {
                 {servicesData.map((item, index) => {
                   const isEvenIndex = index % 2 === 0;
                   return (
-                    <SwiperSlide key={item.id}>
+                    <SwiperSlide
+                      key={item.id}
+                      onClick={() => {
+                        router.push(item.url);
+                      }}
+                    >
                       <div
                         className={`${
                           styles.our_services_content_sliders_images

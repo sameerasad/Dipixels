@@ -63,13 +63,7 @@ const FeaturedProject = ({ data, marqueeText, heading }) => {
                     onBeforeInit={(swiper) => {
                       swiperRef.current = swiper;
                     }}
-                    onRealIndexChange={(e) => {
-                      if (count < 3) {
-                        setCount(() => count + 1);
-                      } else {
-                        setCount(0);
-                      }
-                    }}
+                    onRealIndexChange={(e) => {}}
                   >
                     <SwiperSlide>
                       <img src="/assets/portfolio1.jpeg" />
@@ -77,12 +71,7 @@ const FeaturedProject = ({ data, marqueeText, heading }) => {
                     <SwiperSlide>
                       <img src="/assets/postfolio2.jpeg" alt="" />
                     </SwiperSlide>
-                    <SwiperSlide>
-                      <img src="/assets/portfolio1.jpeg" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src="/assets/postfolio2.jpeg" alt="" />
-                    </SwiperSlide>
+
                     <SwiperSlide>
                       <img src="/assets/LogoPortfolio3.png" alt="" />
                     </SwiperSlide>
@@ -98,6 +87,11 @@ const FeaturedProject = ({ data, marqueeText, heading }) => {
                   }
                   onClick={() => {
                     swiperRef?.current?.slidePrev();
+                    if (count !== 0) {
+                      setCount((prev) => prev - 1);
+                    } else {
+                      setCount(3);
+                    }
                   }}
                 >
                   <img src="/assets/arrowLeft.png" alt="" />
@@ -109,6 +103,11 @@ const FeaturedProject = ({ data, marqueeText, heading }) => {
                   }
                   onClick={() => {
                     swiperRef?.current?.slideNext();
+                    if (count !== 3) {
+                      setCount((prev) => prev + 1);
+                    } else {
+                      setCount(0);
+                    }
                   }}
                 >
                   <img src="/assets/arrowRight.png" alt="" />
