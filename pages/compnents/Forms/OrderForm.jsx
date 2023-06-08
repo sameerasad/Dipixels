@@ -74,6 +74,7 @@ const OrderForm = ({
 
         const templateParams = {
           to: email,
+          name,
           subject: `Best wishes to you from Dipixels`,
           text: "Thanks for approaching Dipixels and considering our service for you. We are hopeful so that we will wonder you with our services. For more information visit www.dipixels.com",
         };
