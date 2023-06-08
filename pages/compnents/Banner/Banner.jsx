@@ -55,12 +55,12 @@ const Banner = () => {
       )}
       <div data-aos="fade-down" className={styles.Banner_section}>
         <div className={styles.Banner_section_wrapper}>
-          <div
+          {/* <div
             data-aos="fade-right"
             className={styles.background_video_container}
           >
             <img src="/assets/Banner_new.gif" alt="" />
-          </div>
+          </div> */}
           <div className={styles.Banner_section_content}>
             <h1>
               <span> we are </span> dipixels

@@ -52,13 +52,12 @@ function OurProcess() {
               {OurProcess.map((item) => {
                 return (
                   <div
-                    data-aos="flip-right"
                     key={item.id}
                     className={styles.card}
                   >
-                    <img src={item.img} alt="" />
-                    <h3>{item.title}</h3>
-                    <p>{item.des}</p>
+                    <img data-aos="flip-right" src={item.img} alt="" />
+                    <h3 data-aos="flip-right" >{item.title}</h3>
+                    <p data-aos="flip-right">{item.des}</p>
                   </div>
                 );
               })}

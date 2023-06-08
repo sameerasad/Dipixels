@@ -255,7 +255,6 @@
   .hero .container {
     min-height: 400px;
     flex-wrap: wrap;
-    max-width: 96%;
   }
   .hero {
     min-height: 400px;

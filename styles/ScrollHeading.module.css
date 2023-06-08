@@ -6,7 +6,7 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  font-family: "Monument Extended Regular";
+  font-family: 'Monument Extended Regular';
 }
 .font_vw {
   font-size: 9.65vw;
@@ -23,6 +23,37 @@
   transition: all 0.4s ease;
   margin-left: -8%;
 }
+.heading {
+  justify-content: center;
+  transition: 0.8s;
+  display: flex;
+  align-items: center;
+}
+
+.ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ul li {
+  list-style: none;
+  float: left;
+  text-transform: uppercase;
+  font-size: 70px;
+  color: #00f3f4;
+  font-family: 'Monument Extended Regular';
+  transition: 0.8s;
+}
+.ul li img{
+  width: 50px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.ul:hover li {
+  transform: rotateY(360deg);
+}
+
 @media screen and (max-width: 1280px) {
   .stoke_h1 {
     font-size: 7em;
@@ -34,6 +65,12 @@
     margin: 4em 0;
     padding: 0;
   }
+  .ul li {
+  font-size: 3em;
+  }
+  .ul li img{
+    width: 35px;
+}
 }
 
 @media (min-width: 801px) {
@@ -61,7 +98,36 @@
   .font_vw {
     font-size: 20vw;
   }
-  .ScrollingHeadings .hScroll:first-child{
+  .ScrollingHeadings .hScroll:first-child {
     display: none;
   }
+  .ul li {
+    font-size: 2.5em;
+    }
+    .ul li img{
+      width: 30px;
+      margin-left: 5px;
+  }
+}
+@media (max-width: 580px) {
+  .ul li {
+    font-size: 2em;
+    }
+    .ul li img{
+      width: 25px;
+  }
+}
+@media (max-width: 440px) {
+  .ul li {
+    font-size: 1.5em;
+    }
+    .ul li img{
+      width: 20px;
+      margin-left: 0px;
+  }
+}
+@media (max-width: 440px) {
+  .ul li img{
+   display: none;
+}
 }

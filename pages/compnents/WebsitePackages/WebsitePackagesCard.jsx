@@ -52,7 +52,7 @@ const WebsitePackagesCard = ({ dataPackage }) => {
                   <a href={item.contactNumberLink}>{item.contactNumber}</a>
                 </div>
                 {/* <div className={styles.chatNow}>
-                  <a href={item.chatNowLink}>{item.chatNow}</a>
+                  <Link href={item.chatNowLink}>{item.chatNow}</Link>
                 </div> */}
                 <div
                   className={styles.packagebtn}

@@ -55,7 +55,9 @@ function Counter() {
   return (
     <div className={styles.counter}>
       <div data-aos="slide-up" className={styles.minContainer}>
-        <div data-aos="flip-right" className={styles.counterItem}>
+        <div 
+        // data-aos="flip-right" 
+        className={styles.counterItem}>
           <h3>{counter1}+</h3>
           <h5>
             Years in <br /> business

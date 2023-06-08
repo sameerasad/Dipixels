@@ -20,7 +20,8 @@
 }
 .featured_project_content_two {
   display: flex;
-  height: 800px;
+  margin-top: 3em;
+  height: auto;
   align-items: center;
   justify-content: space-between;
 }
@@ -187,9 +188,6 @@ width: 50%;
     width: 380px;
     top: 100px;
   }
-  /* .featured_project_content_image{
-   width: 5%;
-  } */
 }
 @media screen and (max-width: 1080px) {
   .featured_project_section {

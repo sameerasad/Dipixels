@@ -51,7 +51,7 @@ const AnimationDataPackage = [
     contactNumberLink: "#",
     chatNow: "Chat Now",
     chatNowLink: "#",
-    btnTxt: "Get a quote",
+    btnTxt: "get in touch",
     btnLink: "#",
   },
   {
@@ -70,7 +70,7 @@ const AnimationDataPackage = [
     contactNumberLink: "#",
     chatNow: "Chat Now",
     chatNowLink: "#",
-    btnTxt: "Get a quote",
+    btnTxt: "get in touch",
     btnLink: "#",
   },
   {
@@ -90,7 +90,7 @@ const AnimationDataPackage = [
     contactNumberLink: "#",
     chatNow: "Chat Now",
     chatNowLink: "#",
-    btnTxt: "Get a quote",
+    btnTxt: "get in touch",
     btnLink: "#",
   },
 ];

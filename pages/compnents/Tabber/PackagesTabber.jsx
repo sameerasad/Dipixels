@@ -19,7 +19,7 @@ const WebDataPackage = [
     contactNumberLink: "#",
     chatNow: "Chat Now",
     chatNowLink: "#",
-    btnTxt: "Get a quote",
+    btnTxt: "get in touch",
     btnLink: "#",
   },
   {
@@ -38,7 +38,7 @@ const WebDataPackage = [
     contactNumberLink: "#",
     chatNow: "Chat Now",
     chatNowLink: "#",
-    btnTxt: "Get a quote",
+    btnTxt: "get in touch",
     btnLink: "#",
   },
   {
@@ -57,7 +57,7 @@ const WebDataPackage = [
     contactNumberLink: "#",
     chatNow: "Chat Now",
     chatNowLink: "#",
-    btnTxt: "Get a quote",
+    btnTxt: "get in touch",
     btnLink: "#",
   },
 ];
@@ -79,7 +79,7 @@ const MobileDataPackage = [
     contactNumberLink: "#",
     chatNow: "Chat Now",
     chatNowLink: "#",
-    btnTxt: "Get a quote",
+    btnTxt: "get in touch",
     btnLink: "#",
   },
   {
@@ -98,7 +98,7 @@ const MobileDataPackage = [
     contactNumberLink: "#",
     chatNow: "Chat Now",
     chatNowLink: "#",
-    btnTxt: "Get a quote",
+    btnTxt: "get in touch",
     btnLink: "#",
   },
   {
@@ -117,7 +117,7 @@ const MobileDataPackage = [
     contactNumberLink: "#",
     chatNow: "Chat Now",
     chatNowLink: "#",
-    btnTxt: "Get a quote",
+    btnTxt: "get in touch",
     btnLink: "#",
   },
 ];
@@ -140,7 +140,7 @@ const LogoDataPackage = [
     contactNumberLink: "#",
     chatNow: "Chat Now",
     chatNowLink: "#",
-    btnTxt: "Get a quote",
+    btnTxt: "get in touch",
     btnLink: "#",
   },
   {
@@ -159,7 +159,7 @@ const LogoDataPackage = [
     contactNumberLink: "#",
     chatNow: "Chat Now",
     chatNowLink: "#",
-    btnTxt: "Get a quote",
+    btnTxt: "get in touch",
     btnLink: "#",
   },
   {
@@ -179,7 +179,7 @@ const LogoDataPackage = [
     contactNumberLink: "#",
     chatNow: "Chat Now",
     chatNowLink: "#",
-    btnTxt: "Get a quote",
+    btnTxt: "get in touch",
     btnLink: "#",
   },
 ];
@@ -201,7 +201,7 @@ const AnimationDataPackage = [
     contactNumberLink: "#",
     chatNow: "Chat Now",
     chatNowLink: "#",
-    btnTxt: "Get a quote",
+    btnTxt: "get in touch",
     btnLink: "#",
   },
   {
@@ -220,7 +220,7 @@ const AnimationDataPackage = [
     contactNumberLink: "#",
     chatNow: "Chat Now",
     chatNowLink: "#",
-    btnTxt: "Get a quote",
+    btnTxt: "get in touch",
     btnLink: "#",
   },
   {
@@ -240,7 +240,7 @@ const AnimationDataPackage = [
     contactNumberLink: "#",
     chatNow: "Chat Now",
     chatNowLink: "#",
-    btnTxt: "Get a quote",
+    btnTxt: "get in touch",
     btnLink: "#",
   },
 ];
@@ -262,7 +262,7 @@ const SeoDataPackage = [
     contactNumberLink: "#",
     chatNow: "Chat Now",
     chatNowLink: "#",
-    btnTxt: "Get a quote",
+    btnTxt: "get in touch",
     btnLink: "#",
   },
   {
@@ -281,7 +281,7 @@ const SeoDataPackage = [
     contactNumberLink: "#",
     chatNow: "Chat Now",
     chatNowLink: "#",
-    btnTxt: "Get a quote",
+    btnTxt: "get in touch",
     btnLink: "#",
   },
   {
@@ -301,7 +301,7 @@ const SeoDataPackage = [
     contactNumberLink: "#",
     chatNow: "Chat Now",
     chatNowLink: "#",
-    btnTxt: "Get a quote",
+    btnTxt: "get in touch",
     btnLink: "#",
   },
 ];
@@ -325,7 +325,7 @@ const ContentDataPackage = [
     contactNumberLink: "#",
     chatNow: "Chat Now",
     chatNowLink: "#",
-    btnTxt: "Get a quote",
+    btnTxt: "get in touch",
     btnLink: "#",
   },
   {
@@ -346,7 +346,7 @@ const ContentDataPackage = [
     contactNumberLink: "#",
     chatNow: "Chat Now",
     chatNowLink: "#",
-    btnTxt: "Get a quote",
+    btnTxt: "get in touch",
     btnLink: "#",
   },
   {
@@ -367,7 +367,7 @@ const ContentDataPackage = [
     contactNumberLink: "#",
     chatNow: "Chat Now",
     chatNowLink: "#",
-    btnTxt: "Get a quote",
+    btnTxt: "get in touch",
     btnLink: "#",
   },
 ];
