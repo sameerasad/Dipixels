@@ -11,11 +11,11 @@ const montserrat = Montserrat({
 });
 
 function MyApp({ Component, pageProps }) {
-  const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
-    ssr: false,
-  });
-  const scrollPercentage = useScrollPercentage();
-  console.log(scrollPercentage, "pppp");
+  // const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
+  //   ssr: false,
+  // });
+  // const scrollPercentage = useScrollPercentage();
+  // console.log(scrollPercentage, "pppp");
   return (
     <main
       className={montserrat.className}
@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
     >
       <Toaster position="top-right" reverseOrder={false} />
       <Component {...pageProps} />
-      <AnimatedCursor
+      {/* <AnimatedCursor
         style={{ position: "relative", zIindex: "99" }}
         innerSize={10}
         outerSize={35}
@@ -45,7 +45,7 @@ function MyApp({ Component, pageProps }) {
           "button",
           ".link",
         ]}
-      />
+      /> */}
     </main>
   );
 }

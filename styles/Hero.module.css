@@ -203,11 +203,11 @@
   }
   .playReel {
     transform:none;
-    width: 130px !important;
-    height: 130px !important;
+    width: 100px !important;
+    height: 100px !important;
   }
   .playReel h2{
-  font-size: 14px;
+  font-size: 10px;
   }
   .hero .container > div {
     flex: 1 1 100%;

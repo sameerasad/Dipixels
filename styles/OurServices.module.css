@@ -1,5 +1,5 @@
 .our_services_section {
-  margin-top: 10rem;
+  margin-top: 8em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,15 +94,15 @@
   width: 400px;
  }
 }
+@media screen and (max-width: 1080px) {
+.our_services_section {
+  margin-top: 16em;
+}
+}
 @media screen and (max-width: 1048px) {
  .our_services_wrapper {
  max-width: 96%;
  }
-}
-@media screen and (max-width: 1048px) {
-  .our_services_section {
-    margin-top: 5em;
-  }
 }
 @media screen and (max-width: 920px) {
  .our_services_content_sliders_images {

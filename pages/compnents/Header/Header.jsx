@@ -22,12 +22,14 @@ const Header = () => {
     <>
       <div className={styles.dipixels_header}>
         <div className={styles.wrapper}>
+        <Link href="/" passHref>
           <div className={styles.dipixels_header_logo}>
             <img src="/assets/dipixelsLogo.png" alt="" />
           </div>
+          </Link>
 
           <ul className={styles.dipixels_header_navbar}>
-            <li>
+            {/* <li>
               <Link href="/" passHref>
                 <div
                   className={`${styles.nav_link} ${
@@ -37,7 +39,7 @@ const Header = () => {
                   Home
                 </div>
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/about" passHref>
                 <div

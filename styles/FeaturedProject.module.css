@@ -135,6 +135,13 @@
 }
 
 @media screen and (max-width: 1440px) {
+  .featured_project_section {
+  margin-top: 1em;
+  }
+  .featured_project_content_two {
+  height: auto;
+  margin-top: 2em;
+  }
   .featured_project_content_two_right {
     width: 650px;
   }
@@ -184,7 +191,16 @@ width: 50%;
    width: 5%;
   } */
 }
+@media screen and (max-width: 1080px) {
+  .featured_project_section {
+  height: auto;
+  margin-top: 3em;
+  }
+}
 @media screen and (max-width: 1048px) {
+  .featured_project_section {
+  margin-top: 0;
+  }
  .featured_project_wrapper {
     max-width: 98%;
   }
