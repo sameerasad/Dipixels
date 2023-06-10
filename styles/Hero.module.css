@@ -234,8 +234,8 @@
     max-width: 96%;
   }
   .hero {
-    min-height: 1px;
     padding:  0;
+    margin-bottom: 0;
   }
   .hero .heroContent h1 {
     font-size: 2em;

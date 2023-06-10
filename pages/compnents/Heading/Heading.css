@@ -18,7 +18,12 @@
   .main-heading h1 {
     font-size: 3.5em;
   }
-  .main-heading-image img{
+  /* .main-heading-image img{
     width: 50%;
-  }
+  } */
 }
+/* @media screen and (max-width: 800px){
+   .main-heading-image img{
+    width: ;
+  }
+} */

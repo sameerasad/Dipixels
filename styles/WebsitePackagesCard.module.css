@@ -229,7 +229,12 @@
       .Heading_main_heading h1{
           font-size:2em;
       }
-     
+      .packagesCards .card:hover {
+        box-shadow: none;
+        -webkit-transform: none;
+        transform: none;
+        transition: none;
+      }
      .packagetitle h2{
       font-size:1.4em !important;
      }
@@ -263,13 +268,6 @@
       font-size:1.2em !important;
       line-height:30px;
      }
-     
-     /* .packagebtn button {
-      font-size:0.9em !important;
-      position:relative;
-      top: 10px;
-      margin-bottom: 10px;
-     } */
      
      .packagesCards {
        margin-top: 4em;

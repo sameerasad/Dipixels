@@ -90,6 +90,24 @@
      max-width: 96%;
     }
    }
+   @media screen and (max-width: 800px) {
+    .portfolio_section {
+        margin-top: 2em;
+    }
+    .portfolioContent_wrapper_section {
+        margin-top: 0em; 
+}
+.portfolio_section_content_images {
+    margin-top: 0em;
+   }
+   .portfolio_section_content_images_img:hover{
+    box-shadow: none;
+    border-radius: 25px;
+    padding: none;
+    background-color: none;
+    transition: all .5s ease;  
+}
+}
    @media screen and (max-width: 425px) {
     .portfolioContent_wrapper_section{
      margin-top: 0;

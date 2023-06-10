@@ -10,7 +10,7 @@ import "aos/dist/aos.css";
 const Drawer = ({ setOpen }) => {
   const router = useRouter();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [animate, setAnimate] = useState("slide-right");
+  const [animate, setAnimate] = useState("slide-left");
   useEffect(() => {
     AOS.init({ duration: 1400 });
   }, []);

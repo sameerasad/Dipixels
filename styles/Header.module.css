@@ -129,7 +129,7 @@
 
 @media screen and (max-width: 1048px) {
   .wrapper {
-    max-width: 98%;
+    max-width: 95%;
     gap: 5px;
   }
   .dipixels_header_logo {
@@ -159,7 +159,7 @@
   /* menubar */
   .dipixels_drawer_sidebar {
     visibility: visible;
-    width: 100%;
+    width: 80%;
     background: #1f1f1f;
     height: 100%;
     position: fixed;
@@ -167,6 +167,7 @@
     top: 0;
     z-index: 99;
     transition: width 0.3s ease;
+    border-top-left-radius: 50px;
   }
   .dipixels_drawer_moretoshow {
     visibility: visible;
@@ -200,6 +201,7 @@
     font-family: 'Monument Extended Regular';
     border-bottom: 1px solid #9add3a;
     width: 100%;
+    padding-bottom: 10px;
   }
   .dipixels_drawer_navbar li a {
     list-style: none;

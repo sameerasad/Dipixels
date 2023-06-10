@@ -95,11 +95,20 @@ const OurServices = () => {
                 // When window width is >= 640px
                 320: {
                   slidesPerView: 1,
+                  spaceBetween: 1,
+                },
+                600: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
                 },
                 // When window width is >= 768px
+                // 601: {
+                //   slidesPerView: 2,
+                //   spaceBetween: 10,
+                // },
                 768: {
                   slidesPerView: 2,
-                  spaceBetween: 20,
+                  spaceBetween: 10,
                 },
                 // When window width is >= 1024px
                 1024: {

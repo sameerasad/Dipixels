@@ -7,6 +7,9 @@
   height: 860px;
   margin-top: 5em;
 }
+.Technologies_section_wrapper{
+  padding-top: 6em;
+}
 .Technologies_section_content {
   display: flex;
   flex-direction: column;
@@ -39,6 +42,14 @@
 }
 }
 @media screen and (max-width: 800px) {
+  .Technologies_section{
+    height: auto;
+    padding-bottom: 1em;
+    margin-top: 1em;
+  }
+  .Technologies_section_wrapper{
+    padding-top: 1em;
+  }
  .Technologies_section_content_heading_para {
   font-size: 1.2em;
  }

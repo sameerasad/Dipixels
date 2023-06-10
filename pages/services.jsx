@@ -9,7 +9,7 @@ import HeroContactus from './compnents/HeroSection/HeroContactus'
 const Ourservices = () => {
   const projectData = [
     {
-      title: '712 Creative website',
+      title: 'Creative website',
       subtitle: 'Redesign & Development',
       description:
         'To increase website engagement, the best way is to provide your users with stand-out UI/UX designs. A good user interface and experience will not only make your users happy, but also benefit you in making a distinctive business identity.',
@@ -19,7 +19,7 @@ const Ourservices = () => {
     },
     {
       title: 'Innovative Mobile Apps',
-      subtitle: 'Redesign & Development',
+      subtitle: 'Design & Development',
       description:
         'DiPixels enlightens to provide you with a slick, smooth, and responsive user interface while significantly reducing load time. We stuff your business with faster and cheaper ways to build apps in React Native.',
       // image1: '/assets/Portfolio3.jpeg',

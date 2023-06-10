@@ -17,7 +17,7 @@ const DesignSolutions = () => {
         <div className={styles.container}>
           <Heading>design solutions</Heading>
           <div className={styles.content}>
-            <div data-aos="fade-left">
+            <div data-aos="fade-left" className={styles.content_left}>
               <h2>
                 Surpass the digital world with customized and attractive logo
                 designs, adding colors to your business.

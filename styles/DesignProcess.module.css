@@ -87,6 +87,17 @@
     justify-content: center;
   }
 }
+@media screen and (max-width: 800px) {
+  .design_process_content_card:hover {
+    box-shadow: none;
+    -webkit-transform:none;
+    transform: none;
+    transition: none;
+  }
+  .design_process_section_content_para {
+    margin: 1em 0;
+}
+}
 @media screen and (max-width: 768px) {
   .design_process_section_content_para p {
     font-size: 1.2em;

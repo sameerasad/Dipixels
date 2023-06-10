@@ -34,6 +34,14 @@
 .PackagesTabber_tab_buttons{
  margin-bottom: 2em;
 }
+.tabber_section {
+ /* margin-top: -3em !important; */
+}
+}
+@media screen and (max-width: 1080px) {
+ .tabber_section {
+  margin-top: 8em !important;
+ }
 }
 @media screen and (max-width: 1048px) {
  .tabber_warpper {
@@ -45,6 +53,9 @@
  }
 }
 @media screen and (max-width: 768px) {
+ .tabber_section {
+  margin-top: 2em !important;
+ }
  .tab_buttons {
  overflow-x: scroll;
  white-space: nowrap;

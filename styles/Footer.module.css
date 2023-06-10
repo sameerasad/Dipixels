@@ -34,7 +34,7 @@
  display: flex;
  justify-content: space-between;
  font-family: "Monument Extended Regular";
- margin-top: 2rem;
+ margin-top: 1rem;
 }
 .dipixels_footer_content_contact {
  width: 20%;
@@ -69,7 +69,7 @@
 .dipixels_footer_content_line {
  width: 100%;
  border: 1px solid #707070;
- margin-top: 2rem;
+ margin-top: 2em;
 }
 .dipixels_footer_content_end {
  display: flex;
@@ -113,18 +113,19 @@
    text-align: center;
  }
  .dipixels_footer_content img {
-   width: 75%;
+   width: 60px;
    margin: 0 auto;
    height: auto;
  }
  .dipixels_footer_content_address,
  .dipixels_footer_content_contact {
    width: 100%;
-   margin: 20px 0;
+   margin: 10px 0;
  }
  .dipixels_footer_center_line {
-   width: 100%;
-   margin-top: 1em;
+  display: none;
+   /* width: 100%;
+   margin-top: 1em; */
  }
  .dipixels_footer_content_address h3,.dipixels_footer_content_contact h3  {
    font-size: 1em;
@@ -133,4 +134,8 @@
  .dipixels_footer_content_end_left p {
   margin-bottom: 1em;
  }
+ .dipixels_footer_content_line {
+margin-top: 1em; 
+margin-bottom: 1em;
+}
 }

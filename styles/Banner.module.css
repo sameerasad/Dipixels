@@ -37,6 +37,7 @@
   object-fit: cover;
 }
 .Banner_section_content {
+  text-align: center;
   margin-top: 16em;
   align-items: center;
   display: flex;

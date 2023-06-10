@@ -127,7 +127,7 @@ function Tabber() {
     {
       label: "All",
       content: (
-        <div className="All-container">
+        <div className="All-container" style={{marginTop: '1em'}}>
           <PortfolioContent PortfolioData={AllPortfolioData} />
         </div>
       ),
@@ -143,7 +143,7 @@ function Tabber() {
     {
       label: "Mobile apps",
       content: (
-        <div className="mobile-apps-container">
+        <div className="mobile-apps-container" style={{marginTop: '1em'}}>
           <PortfolioContent PortfolioData={MobilePortfolioData} />
         </div>
       ),
@@ -151,7 +151,7 @@ function Tabber() {
     {
       label: "logo designs",
       content: (
-        <div className="logo-designs-container">
+        <div className="logo-designs-container" style={{marginTop: '1em'}}>
           <PortfolioContent PortfolioData={LogoPortfolioData} />
         </div>
       ),
@@ -159,7 +159,7 @@ function Tabber() {
     {
       label: "video animations",
       content: (
-        <div className="video-animations-container">
+        <div className="video-animations-container" style={{marginTop: '1em'}}>
           <PortfolioContent PortfolioData={VideoPortfolioData} />
         </div>
       ),

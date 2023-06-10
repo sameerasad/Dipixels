@@ -21,7 +21,7 @@
 }
 .our_process_section_wrapper .processCards .card {
   flex: 1 1 22%;
-  background-color: rgba(23, 23, 23, 1);           ;
+  background-color: rgba(23, 23, 23, 1);
   border-radius: 21px;
   /* min-height: 280px; */
   padding: 20px 20px 30px 20px;
@@ -30,7 +30,7 @@
   box-shadow: 15px 18px 32px rgba(213, 255, 64, 0.3);
   -webkit-transform: translateY(-17px);
   transform: translateY(-17px);
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 .our_process_section_wrapper .processCards .card img {
   width: 60px;
@@ -40,7 +40,7 @@
   color: #00f3f4;
   font-size: 22px;
   margin-bottom: 10px;
-  font-family: "Monument Extended Regular";
+  font-family: 'Monument Extended Regular';
 }
 .our_process_section_wrapper .processCards .card p {
   color: #fff;
@@ -60,6 +60,12 @@
   }
 }
 @media (max-width: 800px) {
+  .processCards .card:hover {
+    box-shadow: none;
+    -webkit-transform: none;
+    transform: none;
+    transition: none;
+  }
   .our_process_section_wrapper .minContainer {
     width: 96%;
   }
@@ -74,7 +80,7 @@
     padding: 20px;
   }
   .our_process_section_wrapper .processCards {
-    margin:0;
+    margin: 0;
   }
   .our_process_section_wrapper .processCards .card h3 {
     font-size: 1em;
