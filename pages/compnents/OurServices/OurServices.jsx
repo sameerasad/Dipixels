@@ -89,7 +89,7 @@ const OurServices = () => {
                 clickable: true,
               }}
               speed={1000}
-              autoplay={{ delay: 2000, disableOnInteraction: false }}
+              // autoplay={{ delay: 2000, disableOnInteraction: false }}
               modules={[Pagination]}
               breakpoints={{
                 // When window width is >= 640px
@@ -99,7 +99,7 @@ const OurServices = () => {
                 },
                 600: {
                   slidesPerView: 1,
-                  spaceBetween: 10,
+                  spaceBetween: 1,
                 },
                 // When window width is >= 768px
                 // 601: {

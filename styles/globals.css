@@ -131,6 +131,7 @@ body {
   }
   .swiper-slide{
     justify-content: center !important;
+    align-items: center;
   }
 }
 /* HeroSection */
@@ -494,13 +495,18 @@ body {
 
 @media screen and (max-width: 800px) {
   .main-heading h1 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
   .main-heading h1 {
     text-align: center;
+
   }
   .terms-main-heading h1 {
   text-align: center;
+  font-size: 2em;
+  }
+  .terms-main-heading-image {
+    display: none;
   }
   .main-heading-image {
     margin-left: 5px;
@@ -508,11 +514,9 @@ body {
   .main-heading-image img {
     width: 2em;
   }
-}
-@media screen and (max-width: 600px) {
   .main-heading-image {
-  display: none;
-  }
+    display: none;
+    }
 }
 @media screen and (max-width: 375px) {
   .main-heading h1 {
@@ -575,12 +579,12 @@ body {
 .projectForm .field50 > div {
   flex: 1 1 48%;
 }
-.checkBoxesSection {
+/* .checkBoxesSection {
   display: flex;
   justify-content: space-between;
   margin: 120px 0px 120px 0px;
   flex-wrap: wrap;
-}
+} */
 .checkBoxesSection .checkBoxLft {
   border: 1px solid #565656;
   border-right: 0;
@@ -671,7 +675,14 @@ body {
   appearance: auto;
   accent-color: #85dc0c;
 }
-
+@media screen and (max-width: 800px) {
+  .projectForm input {
+  margin-top: 0 !important;
+  }
+  .projectForm .field50 {
+  gap: 10px;
+  }
+}
 /* Empowering */
 .empowering {
   background-image: url('../public/assets/empowering-bg.png');
@@ -970,7 +981,7 @@ body {
   color: #fff;
   outline: 0;
   font-size: 20px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 .contactus-form-content-right-section-projectForm-fields {
   display: flex;
@@ -1058,8 +1069,15 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 768px){
+  .modal_close img{
+    width: 30px;
+  }
   .Video video{
     margin-top: 10px !important;
+  }
+  .modal{
+    width: 95%;
+    padding: 5px;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -1071,8 +1089,6 @@ body {
     background: #000000;
     margin: 0;
     padding: 0;
-    
-    
   }
 }
 

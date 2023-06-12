@@ -113,7 +113,7 @@
 }
 @media screen and (max-width: 800px) {
   .modal{
-    width: 90%;
+    width: 95%;
   }
   .contactus_videoPlay{
     min-height: 0;
@@ -163,6 +163,9 @@
 }
 
 @media (max-width: 768px){
+  .modal_close img{
+  width: 30px;
+  }
   .videoModal {
   width: 90%;
   padding: 10px;
@@ -189,6 +192,9 @@
   }
 }
 @media (max-width: 800px) {
+  .contactus_videoPlay{
+  display: none;
+  }
   .hero {
     margin-bottom: 3em;
   }

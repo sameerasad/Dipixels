@@ -177,6 +177,7 @@
 @media (max-width:800px) {
  .contactus_form_content {
      flex-direction: column;
+     margin: 2em 0;
  }
 
  .contactus_form_content_left_section {

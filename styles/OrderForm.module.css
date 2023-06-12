@@ -1,38 +1,48 @@
-
 .orderform_Des {
- font-size: 24px;
- color: #ffffff;
- font-weight: 400;
- margin: 1em 0;
- text-align: center;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 400;
+  margin: 1em 0;
+  text-align: center;
 }
 .order_form_content_right_section_projectForm input {
- width: 100%;
- padding: 20px 20px 20px 0;
- background: transparent;
- border: none;
- border-bottom: 2px solid #9add3a;
- color: #fff;
- outline: 0;
- font-size: 20px;
- margin-top: 20px;
+  width: 100%;
+  padding: 20px 20px 20px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #9add3a;
+  color: #fff;
+  outline: 0;
+  font-size: 20px;
+  margin-top: 20px;
 }
 
 .order_form_content_right_section_projectForm_fields {
- display: flex;
- flex-wrap: wrap;
- justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .order_form_content_right_section_projectForm_fields_inputField {
- width: 48%;
+  width: 48%;
+}
+.orderForm_select {
+  margin-top: 2em;
+  width: 48%;
 }
 @media screen and (max-width: 1024px) {
- .orderform_Des {
-  font-size: 1.2em;
- }
+  .orderform_Des {
+    font-size: 1.2em;
+  }
 }
 @media screen and (max-width: 800px) {
- .orderform_Des {
-  font-size: 1em;
- }
+  .order_form_content_right_section_projectForm input {
+    margin-top: 0.5em;
+  }
+  .orderform_Des {
+    font-size: 1em;
+    margin: 0.5em 0;
+  }
+  .orderForm_select {
+    margin-top: 2em;
+  }
 }

@@ -1,75 +1,76 @@
 .tabber_section {
- margin-top: 5em;
- background-image: url('../public/assets/tabber-bg.png');
- background-position: center;
- background-size: cover;
- background-repeat: no-repeat;
+  margin-top: 5em;
+  background-image: url('../public/assets/tabber-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .tabber_section {
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .tabber_warpper {
- width: 100%;
- max-width: 85%;
+  width: 100%;
+  max-width: 85%;
 }
 .tab_buttons {
- display: flex;
- justify-content: space-between;
- border-bottom: 2px solid #9add3a;
- padding-bottom: 1em;
- margin-top: 3em;
- cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #9add3a;
+  padding-bottom: 1em;
+  margin-top: 3em;
+  cursor: pointer;
+  gap: 20px;
 }
 .tab_button {
- padding: 10px;
- font-size: 20px;
- text-transform: uppercase;
- font-weight: bold;
- font-family: 'Monument Extended Regular';
+  padding: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Monument Extended Regular';
 }
 @media screen and (max-width: 1280px) {
-.PackagesTabber_tab_buttons{
- margin-bottom: 2em;
-}
-.tabber_section {
- /* margin-top: -3em !important; */
-}
+  .PackagesTabber_tab_buttons {
+    margin-bottom: 2em;
+  }
+  .tabber_section {
+    /* margin-top: -3em !important; */
+  }
 }
 @media screen and (max-width: 1080px) {
- .tabber_section {
-  margin-top: 8em !important;
- }
+  .tabber_section {
+    margin-top: 8em !important;
+  }
 }
 @media screen and (max-width: 1048px) {
- .tabber_warpper {
-  width: 100%;
-  max-width: 96%;
- }
- .tab_button {
- font-size: 1em;
- }
+  .tabber_warpper {
+    width: 100%;
+    max-width: 96%;
+  }
+  .tab_button {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 800px) {
+  .tabber_section {
+    margin-top: 0 !important;
+  }
+  .tab_buttons {
+    overflow-x: scroll;
+    white-space: nowrap;
+    /* Styling the scrollbar */
+  }
 }
 @media screen and (max-width: 768px) {
- .tabber_section {
-  margin-top: 2em !important;
- }
- .tab_buttons {
- overflow-x: scroll;
- white-space: nowrap;
- /* Styling the scrollbar */
-}
+  /* Styling the scrollbar thumb */
+  .tabber_section .tab_buttons::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+  }
 
-/* Styling the scrollbar thumb */
-.tabber_section .tab_buttons::-webkit-scrollbar-thumb {
- background-color: #ccc;
+  /* Styling the scrollbar track */
+  .tabber_section .tab_buttons::-webkit-scrollbar-track {
+    background-color: #f4f4f4;
+  }
 }
-
-/* Styling the scrollbar track */
-.tabber_section .tab_buttons::-webkit-scrollbar-track {
- background-color: #f4f4f4;
-}
-}
-

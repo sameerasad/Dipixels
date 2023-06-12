@@ -52,6 +52,10 @@
 .service_dropdown a div img {
   margin-left: 5px;
 }
+.service_dropdown img {
+  transform: rotate(0deg);
+  transition: transform 0.5s ease;
+}
 .service_dropdown:hover img {
   margin-left: 5px;
   transform: rotate(180deg);
@@ -122,7 +126,7 @@
   .wrapper {
     gap: 10px;
   }
-  .dipixels_header_navbar{
+  .dipixels_header_navbar {
     width: 60%;
   }
 }
@@ -141,6 +145,16 @@
   }
 }
 @media screen and (max-width: 800px) {
+  .dipixels_drawer_CloseIcon img {
+    width: 30px;
+  }
+  .dipixels_drawer_button {
+    margin-top: 1em;
+  }
+  .dipixels_drawer_button button {
+    font-size: 14px;
+    padding: 10px 10px;
+  }
   .dipixels_header_navbar {
     display: none;
   }
@@ -237,6 +251,6 @@
     width: 60px;
   }
   .service_dropdown a div img {
-   margin-left: 5px;
- }
+    margin-left: 5px;
+  }
 }

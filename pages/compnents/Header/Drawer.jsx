@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import StyledButton from "../Buttons/StyledButton/StyledButton";
 
 const Drawer = ({ setOpen }) => {
   const router = useRouter();
@@ -196,9 +197,9 @@ const Drawer = ({ setOpen }) => {
                   </li>
                 </ul>
 
-                <div className={styles.dipixels_header_button}>
+                <div className={styles.dipixels_drawer_button}>
                   <Link href="./start-project">
-                    <button>Start a project</button>
+                    <StyledButton>Start a project</StyledButton>
                   </Link>
                 </div>
               </div>

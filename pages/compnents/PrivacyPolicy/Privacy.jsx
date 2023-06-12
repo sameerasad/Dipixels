@@ -28,7 +28,7 @@ const Privacy = () => {
         </div>
       </div>
 
-      <div className={styles.terms_section} style={{ marginTop: '10em' }}>
+      <div className={styles.terms_section} >
         <div className={styles.terms_wrapper}>
           <div className='terms-main-heading'>
             <h1>How is the information protected?</h1>
@@ -47,7 +47,7 @@ const Privacy = () => {
         </div>
       </div>
 
-      <div className={styles.terms_section} style={{ marginTop: '10em' }}>
+      <div className={styles.terms_section} >
         <div className={styles.terms_wrapper}>
           <div className='terms-main-heading'>
             <h1>Why do we ask for your information?</h1>
@@ -68,7 +68,7 @@ const Privacy = () => {
         </div>
       </div>
 
-      <div className={styles.terms_section} style={{ margin: '10em 0' }}>
+      <div className={styles.terms_section} style={{ marginBottom: '5em' }}>
         <div className={styles.terms_wrapper}>
           <div className='terms-main-heading'>
             <h1>Do we use this information for trading purposes?</h1>
