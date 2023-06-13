@@ -11,8 +11,8 @@ const Aboutus = () => {
         <Marquee>about us</Marquee>
         <div className={styles.aboutus_wrapper}>
           <div className={styles.aboutus_content}>
-           <div style={{display: 'flex', justifyContent: 'left'}}>
-            <Heading> about us </Heading>
+            <div style={{ display: 'flex', justifyContent: 'left' }}>
+              <Heading> about us </Heading>
             </div>
             <div className={styles.aboutus_content_para}>
               <p>

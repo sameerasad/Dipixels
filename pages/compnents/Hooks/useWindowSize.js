@@ -1,21 +1,29 @@
-import { useEffect, useState } from 'react'
+import { useState, useEffect } from "react";
 
-function useWindowSize() {
+const useWindowSize = () => {
   const [windowSize, setWindowSize] = useState({
-    width: 1920,
-    height: 1080,
-  })
-  const handleResize = () => {
-    setWindowSize({ width: window.innerWidth, height: window.innerHeight })
-  }
+    width: undefined,
+    height: undefined,
+  });
 
   useEffect(() => {
-    window.addEventListener('resize', handleResize)
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
 
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
+    window.addEventListener("resize", handleResize);
 
-  return windowSize
-}
+    // Call handleResize immediately to set the initial window size
+    handleResize();
 
-export default useWindowSize
+    // Clean up the event listener on unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return windowSize;
+};
+
+export default useWindowSize;

@@ -12,7 +12,7 @@ const packages = () => {
     <>
       <Layout>
         <HeroContactus
-          title="Custom and Affordable"
+          title="Custom Affordable"
           company="Packages"
           description="We offer a range of website packages designed to meet the unique needs of businesses and individuals. Whether you're a small startup, a growing enterprise, or a creative professional, we have the perfect solution to establish or enhance your online presence."
           src="/assets/video/Packages.mp4"

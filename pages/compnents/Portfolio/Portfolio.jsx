@@ -1,10 +1,6 @@
 import React from 'react'
 import Marquee from '../Marquee/Marquee'
-import Image from 'next/image'
-import Arrow from '../../../public/assets/arrow-up-right.png'
-import StyledButton from '../Buttons/StyledButton/StyledButton'
 import Heading from '../Heading/Heading'
-// import PortfolioContent from './PortfolioContent'
 import styles from '../../../styles/portfolio.module.css'
 
 const Portfolio = ({ marqueeText, headingText, company }) => {

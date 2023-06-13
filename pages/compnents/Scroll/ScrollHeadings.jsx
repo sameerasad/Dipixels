@@ -1,7 +1,5 @@
 import React from 'react'
-import Heading from '../Heading/Heading'
 import styles from '../../../styles/ScrollHeading.module.css'
-import Waves from './Waves'
 const ScrollHeadings = () => {
   return (
     <div>
@@ -20,26 +18,26 @@ const ScrollHeadings = () => {
 
         {/* <Waves/> */}
         <div>
-        <ul className={styles.ul}>
-          <li>s</li>
-          <li>t</li>
-          <li>a</li>
-          <li>r</li>
-          <li>t</li>
-          <li>&nbsp;</li>
-          <li>a</li>
-          <li>&nbsp;</li>
-          <li>p</li>
-          <li>r</li>
-          <li>o</li>
-          <li>j</li>
-          <li>e</li>
-          <li>c</li>
-          <li>t</li>
-          <li>
-            <img src='/assets/arrow-up-right.png' alt='' />{' '}
-          </li>
-        </ul>
+          <ul className={styles.ul}>
+            <li>s</li>
+            <li>t</li>
+            <li>a</li>
+            <li>r</li>
+            <li>t</li>
+            <li>&nbsp;</li>
+            <li>a</li>
+            <li>&nbsp;</li>
+            <li>p</li>
+            <li>r</li>
+            <li>o</li>
+            <li>j</li>
+            <li>e</li>
+            <li>c</li>
+            <li>t</li>
+            <li>
+              <img src='/assets/arrow-up-right.png' alt='' />{' '}
+            </li>
+          </ul>
         </div>
 
         <div className={`${styles.headingScroll} ${styles.second}`}>

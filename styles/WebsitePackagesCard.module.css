@@ -45,6 +45,8 @@
     background-color: rgba(23, 23, 23, 1);
     border-radius: 21px;
     padding: 40px 30px;
+    transform: translateY(17px);
+       transition: all .5s ease;
    }
    .packagesCards .card:hover {
        box-shadow: 15px 18px 32px rgba(213, 255, 64, 0.3);
@@ -232,6 +234,9 @@
        }
       .Heading_main_heading h1{
           font-size:2em;
+      }
+      .packagesCards{
+        padding-bottom: 1em;
       }
       .packagesCards .card:hover {
         box-shadow: none;

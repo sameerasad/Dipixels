@@ -25,6 +25,8 @@
   border-radius: 21px;
   /* min-height: 280px; */
   padding: 20px 20px 30px 20px;
+  transform: translateY(17px);
+  transition: all 0.5s ease;
 }
 .processCards .card:hover {
   box-shadow: 15px 18px 32px rgba(213, 255, 64, 0.3);

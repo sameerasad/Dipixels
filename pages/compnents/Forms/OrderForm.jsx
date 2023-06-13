@@ -93,11 +93,10 @@ const OrderForm = ({
     <>
       {/* <div className={styles.order_form_content_right_section}> */}
       {/* <Heading>start a project</Heading> */}
-        <p className={styles.orderform_Des}>
-          Thanks for your interest in working with us. Please complete the
-          details below and we’ll get back to you within one or two business
-          days.
-        </p>
+      <p className={styles.orderform_Des}>
+        Thanks for your interest in working with us. Please complete the details
+        below and we’ll get back to you within one or two business days.
+      </p>
       <form id='form'>
         <div className={styles.order_form_content_right_section_projectForm}>
           <div
@@ -168,8 +167,7 @@ const OrderForm = ({
             {isUserComingFromHome && (
               <>
                 {' '}
-                <div className={styles.orderForm_select}
-                >
+                <div className={styles.orderForm_select}>
                   <select
                     style={{
                       width: '100%',

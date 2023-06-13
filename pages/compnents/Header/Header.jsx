@@ -8,11 +8,25 @@ import Drawer from './Drawer'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import StyledButton from '../Buttons/StyledButton/StyledButton'
+// import useWindowSize from '../Hooks/useWindowSize'
 
 const Header = () => {
   const router = useRouter()
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const [open, setOpen] = useState(false)
+  // const windowSize = useWindowSize()
+
+  // useEffect(() => {
+  //   if (windowSize.width > 768) {
+  //     setOpen(false)
+  //   }
+  // }, [windowSize])
+
+  // const toggleDropdown = () =>{
+  //   if(windowSize.width<=768){
+  //     setOpen((prevState) => !prevState)
+  //   }
+  // }
 
   useEffect(() => {
     AOS.init({ duration: 1400 })
@@ -54,23 +68,27 @@ const Header = () => {
             <li
               className={styles.service_dropdown}
               onMouseEnter={() => setIsDropdownOpen(true)}
+              // onClick={toggleDropdown} //onClick event for mobile screens
             >
-              <Link href='/services' passHref>
-                <div
-                  className={`${styles.nav_link} ${
-                    router.pathname === '/services' ? styles.active : ''
-                  }`}
-                >
-                  Services
-                  <Image
-                    src={DropdownArrow}
-                    alt=''
-                    width='10'
-                    height='10'
-                    onMouseEnter={() => setIsDropdownOpen(true)}
-                  />
-                </div>
-              </Link>
+              {/* <Link href='/services' passHref> */}
+              <div
+                className={`${styles.nav_link} ${
+                  router.pathname === '/services' ? styles.active : ''
+                }`}
+              >
+                <Link href='/services' passHref>
+                  {' '}
+                  Services{' '}
+                </Link>
+                <Image
+                  src={DropdownArrow}
+                  alt=''
+                  width='10'
+                  height='10'
+                  onMouseEnter={() => setIsDropdownOpen(true)}
+                />
+              </div>
+              {/* </Link> */}
               {isDropdownOpen && (
                 <ul
                   data-aos='fade-up'

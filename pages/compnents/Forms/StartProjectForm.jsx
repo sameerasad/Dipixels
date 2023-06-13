@@ -312,16 +312,17 @@ const StartProject = () => {
             <Heading> tell us about the project</Heading>
             <div className={styles.formTextarea}>
               {/* <div className={styles.inputField}> */}
-                <textarea
-                  type='text'
-                  name='project_description'
-                  onChange={handleInputChange}
-                  value={state.project_description}
-                  placeholder='Requirements, goals, intentions, target audience etc *'
-                />
+              <textarea
+                type='text'
+                name='project_description'
+                onChange={handleInputChange}
+                value={state.project_description}
+                placeholder='Requirements, goals, intentions, target audience etc *'
+              />
               {/* </div> */}
             </div>
-            <div className={styles.formButton}
+            <div
+              className={styles.formButton}
               // onClick={handleButtonClick}
               onClick={(e) => {
                 // e.preventDefault()

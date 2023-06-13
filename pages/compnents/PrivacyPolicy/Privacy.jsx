@@ -28,7 +28,7 @@ const Privacy = () => {
         </div>
       </div>
 
-      <div className={styles.terms_section} >
+      <div className={styles.terms_section}>
         <div className={styles.terms_wrapper}>
           <div className='terms-main-heading'>
             <h1>How is the information protected?</h1>
@@ -47,7 +47,7 @@ const Privacy = () => {
         </div>
       </div>
 
-      <div className={styles.terms_section} >
+      <div className={styles.terms_section}>
         <div className={styles.terms_wrapper}>
           <div className='terms-main-heading'>
             <h1>Why do we ask for your information?</h1>

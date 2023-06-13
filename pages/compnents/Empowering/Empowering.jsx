@@ -1,4 +1,3 @@
-// import '../../../styles/Empowering.module.css'
 import React, { useEffect } from 'react'
 import Marquee from '../Marquee/Marquee'
 import Heading from '../Heading/Heading'
@@ -18,17 +17,19 @@ function Empowering() {
             <Heading>Empowering your success</Heading>
           </div>
           <div className={styles.mincontainer}>
-            <div 
-            // data-aos='fade-right' 
-            className={styles.content_1}>
+            <div
+              // data-aos='fade-right'
+              className={styles.content_1}
+            >
               <h1>
                 Our foremost goal is to provide you with innovative digital
                 assistance, ensuring that you satisfy what your business craves.
               </h1>
             </div>
-            <div 
-            // data-aos='fade-left'
-             className={styles.content_2}>
+            <div
+              // data-aos='fade-left'
+              className={styles.content_2}
+            >
               <p>
                 At Dipixels, we highly prioritise working in collaboration with
                 technology to serve you with excellence throughout the process

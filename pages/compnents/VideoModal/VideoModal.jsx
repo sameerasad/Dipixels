@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const VideoModal = ({ videoLink }) => {
   // useEffect(() => {
@@ -9,11 +9,11 @@ const VideoModal = ({ videoLink }) => {
 
   return (
     <>
-      <div className="Video">
+      <div className='Video'>
         <video src={videoLink} controls autoPlay />
       </div>
     </>
-  );
-};
+  )
+}
 
-export default VideoModal;
+export default VideoModal

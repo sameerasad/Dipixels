@@ -1,30 +1,25 @@
 // import './WebsitePackages.css'
-import React, { useEffect } from "react";
-import StyledButton from "../Buttons/StyledButton/StyledButton";
-import Marquee from "../../compnents/Marquee/Marquee";
-import Arrow from "../../../public/assets/arrow-up-right.png";
-import Image from "next/image";
-import WebsitePackagesCard from "./WebsitePackagesCard";
-import Button from "../Buttons/Button/Button";
-import Heading from "../Heading/Heading";
-import styles from "../../../styles/WebsitePackagesCard.module.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { useEffect } from 'react'
+import Marquee from '../../compnents/Marquee/Marquee'
+import Heading from '../Heading/Heading'
+import styles from '../../../styles/WebsitePackagesCard.module.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function WebsitePackages({ packagesHeading, packagesDescription }) {
   useEffect(() => {
-    AOS.init({ duration: 1400 });
-  }, []);
+    AOS.init({ duration: 1400 })
+  }, [])
   return (
     <>
       <Marquee>best</Marquee>
       <section className={`${styles.webPackage} ${styles.wrapper}`}>
-        <div className="webpackages-section-content-heading">
+        <div className='webpackages-section-content-heading'>
           <Heading>
             <span> {packagesHeading} </span> packages
           </Heading>
         </div>
-        <div data-aos="slide-right" className="package-section-content-para">
+        <div data-aos='slide-right' className='package-section-content-para'>
           <p>{packagesDescription}</p>
         </div>
         {/* <div className='packagesCards'>
@@ -74,7 +69,7 @@ function WebsitePackages({ packagesHeading, packagesDescription }) {
         </div> */}
       </section>
     </>
-  );
+  )
 }
 
-export default WebsitePackages;
+export default WebsitePackages

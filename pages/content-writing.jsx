@@ -13,7 +13,6 @@ import styles from '../styles/portfolio.module.css'
 import HeroContactus from './compnents/HeroSection/HeroContactus'
 import Video from '../public/assets/video/ContentWriting.mp4'
 
-
 const LogoPortfolioData = [
   {
     image: '/assets/LogoPortfolio1.png',

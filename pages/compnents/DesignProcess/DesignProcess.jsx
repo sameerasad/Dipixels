@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import Marquee from "../Marquee/Marquee";
-import Arrow from "../../../public/assets/arrow-up-right.png";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";

@@ -1,74 +1,73 @@
-import React, { useState, useEffect } from "react";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
-import { useRouter } from "next/router";
-import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination } from "swiper";
-import Marquee from "../../compnents/Marquee/Marquee";
-import Heading from "../Heading/Heading";
-import styles from "../../../styles/OurServices.module.css";
-import Image from "next/image";
-import SwiperCore, { Autoplay } from "swiper";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { useState, useEffect } from 'react'
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
+import { useRouter } from 'next/router'
+import 'swiper/css'
+import 'swiper/css/pagination'
+import { Pagination } from 'swiper'
+import Marquee from '../../compnents/Marquee/Marquee'
+import Heading from '../Heading/Heading'
+import styles from '../../../styles/OurServices.module.css'
+import SwiperCore, { Autoplay } from 'swiper'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const servicesData = [
   {
-    title: "app designs",
-    image: "/assets/ServiceFour.png",
-    url: "/mobile-app-design-development",
+    title: 'app designs',
+    image: '/assets/ServiceFour.png',
+    url: '/mobile-app-design-development',
   },
   {
-    title: "web designs",
-    image: "/assets/ServiceThree.png",
-    url: "/web-design-development",
+    title: 'web designs',
+    image: '/assets/ServiceThree.png',
+    url: '/web-design-development',
   },
   {
-    title: "logo designs",
-    image: "/assets/ServiceTwo.png",
-    url: "/logo-design",
+    title: 'logo designs',
+    image: '/assets/ServiceTwo.png',
+    url: '/logo-design',
   },
   {
-    title: "video animation",
-    image: "/assets/ServiceOne.png",
-    url: "/video-animation-production",
+    title: 'video animation',
+    image: '/assets/ServiceOne.png',
+    url: '/video-animation-production',
   },
   {
-    title: "app designs",
-    image: "/assets/ServiceFour.png",
-    url: "/mobile-app-design-development",
+    title: 'app designs',
+    image: '/assets/ServiceFour.png',
+    url: '/mobile-app-design-development',
   },
   {
-    title: "web designs",
-    image: "/assets/ServiceThree.png",
-    url: "/web-design-development",
+    title: 'web designs',
+    image: '/assets/ServiceThree.png',
+    url: '/web-design-development',
   },
   {
-    title: "logo designs",
-    image: "/assets/ServiceTwo.png",
-    url: "/logo-design",
+    title: 'logo designs',
+    image: '/assets/ServiceTwo.png',
+    url: '/logo-design',
   },
   {
-    title: "video animation",
-    image: "/assets/ServiceOne.png",
-    url: "/video-animation-production",
+    title: 'video animation',
+    image: '/assets/ServiceOne.png',
+    url: '/video-animation-production',
   },
-];
+]
 
 const OurServices = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
-  const router = useRouter();
+  const [hoveredIndex, setHoveredIndex] = useState(null)
+  const router = useRouter()
   const handleServiceHover = (index) => {
-    setHoveredIndex(index);
-  };
+    setHoveredIndex(index)
+  }
 
   const handleServiceLeave = () => {
-    setHoveredIndex(null);
-  };
-  SwiperCore.use([Autoplay]);
+    setHoveredIndex(null)
+  }
+  SwiperCore.use([Autoplay])
   useEffect(() => {
-    AOS.init({ duration: 1400 });
-  }, []);
+    AOS.init({ duration: 1400 })
+  }, [])
 
   return (
     <>
@@ -80,7 +79,7 @@ const OurServices = () => {
           </div>
           <div className={styles.our_services_slider_wrapper}>
             <Swiper
-              data-aos="fade-up"
+              data-aos='fade-up'
               slidesPerView={4}
               spaceBetween={10}
               loop={true}
@@ -89,7 +88,7 @@ const OurServices = () => {
                 clickable: true,
               }}
               speed={1000}
-              // autoplay={{ delay: 2000, disableOnInteraction: false }}
+              autoplay={{ delay: 2000, disableOnInteraction: false }}
               modules={[Pagination]}
               breakpoints={{
                 // When window width is >= 640px
@@ -128,31 +127,31 @@ const OurServices = () => {
             >
               <div className={styles.our_services_content_slider}>
                 {servicesData.map((item, index) => {
-                  const isEvenIndex = index % 2 === 0;
+                  const isEvenIndex = index % 2 === 0
                   return (
                     <SwiperSlide
                       key={item.id}
                       onClick={() => {
-                        router.push(item.url);
+                        router.push(item.url)
                       }}
                     >
                       <div
                         className={`${
                           styles.our_services_content_sliders_images
-                        } ${hoveredIndex === index ? styles.hovered : ""}`}
+                        } ${hoveredIndex === index ? styles.hovered : ''}`}
                         key={index}
                         onMouseEnter={() => handleServiceHover(index)}
                         onMouseLeave={handleServiceLeave}
-                        style={{ marginTop: !isEvenIndex ? "70px" : "0px" }}
+                        style={{ marginTop: !isEvenIndex ? '70px' : '0px' }}
                       >
-                        <img src={item.image} alt="" />
+                        <img src={item.image} alt='' />
                         <div className={styles.overlay}></div>
                         <div
                           className={styles.title}
                           style={{
-                            position: "absolute",
-                            zIndex: "99",
-                            textTransform: "uppercase",
+                            position: 'absolute',
+                            zIndex: '99',
+                            textTransform: 'uppercase',
                           }}
                         >
                           {item.title}
@@ -164,7 +163,7 @@ const OurServices = () => {
                         ></div>
                       </div>
                     </SwiperSlide>
-                  );
+                  )
                 })}
               </div>
             </Swiper>
@@ -172,7 +171,7 @@ const OurServices = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default OurServices;
+export default OurServices

@@ -3,7 +3,6 @@ import { Montserrat } from "@next/font/google";
 // import AnimatedCursor from "react-animated-cursor";
 import dynamic from "next/dynamic";
 import { Toaster } from "react-hot-toast";
-import useScrollPercentage from "../pages/compnents/Hooks/useScrollPercentage";
 
 const montserrat = Montserrat({
   subsets: ["latin"],

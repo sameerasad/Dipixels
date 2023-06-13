@@ -1,6 +1,6 @@
 .colorGreen {
   color: #9add3a;
-  font-family: "Monument Extended Regular";
+  font-family: 'Monument Extended Regular';
   text-transform: uppercase;
 }
 .colorGreen span {
@@ -40,20 +40,20 @@
 }
 .videoPlayReel {
   min-height: 450px;
-  background-image: url("../public/assets/Banner_new.gif");
+  background-image: url('../public/assets/Banner_new.gif');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
 }
-.contactus_videoPlay{
+.contactus_videoPlay {
   min-height: 450px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
 }
-.contactus_videoPlay video{
+.contactus_videoPlay video {
   width: 100%;
 }
 .heroReel {
@@ -112,12 +112,12 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 800px) {
-  .modal{
+  .modal {
     width: 95%;
   }
-  .contactus_videoPlay{
+  .contactus_videoPlay {
     min-height: 0;
-    }
+  }
 }
 .modal_close {
   display: flex;
@@ -162,19 +162,27 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 768px){
-  .modal_close img{
-  width: 30px;
+@media (max-width: 768px) {
+  .modal_close img {
+    width: 30px;
   }
   .videoModal {
-  width: 90%;
-  padding: 10px;
+    width: 90%;
+    padding: 10px;
   }
-  .modal_close img{
+  .modal_close img {
     width: 6%;
   }
 }
-@media (max-width:425px){
+@media (max-width: 600px) {
+  .hero {
+    min-height: 500px;
+  }
+  .hero_contact {
+    min-height: 450px !important;
+  }
+}
+@media (max-width: 425px) {
   .hero .heroContent h1 {
     font-size: 1.4em !important;
     margin-bottom: 0.6rem;
@@ -187,13 +195,13 @@
   .hero .heroContent {
     height: 350px !important;
   }
-  .modal_close img{
+  .modal_close img {
     width: 8%;
   }
 }
 @media (max-width: 800px) {
-  .contactus_videoPlay{
-  display: none;
+  .contactus_videoPlay {
+    display: none;
   }
   .hero {
     margin-bottom: 3em;
@@ -208,12 +216,12 @@
     left: unset;
   }
   .playReel {
-    transform:none;
+    transform: none;
     width: 100px !important;
     height: 100px !important;
   }
-  .playReel h2{
-  font-size: 10px;
+  .playReel h2 {
+    font-size: 10px;
   }
   .hero .container > div {
     flex: 1 1 100%;
@@ -222,9 +230,9 @@
     background-image: none;
   }
   .hero .heroContent {
-    background-image: url("../public/assets/Banner_new.gif");
+    background-image: url('../public/assets/Banner_new.gif');
     background-size: contain;
-    background-position:  center;
+    background-position: center;
     background-repeat: no-repeat;
     position: relative;
     height: 450px;
@@ -240,7 +248,7 @@
     max-width: 96%;
   }
   .hero {
-    padding:  0;
+    padding: 0;
     margin-bottom: 0;
   }
   .hero .heroContent h1 {
@@ -253,7 +261,7 @@
     margin-bottom: 1em;
   }
 
-  .button_Wrapper{
+  .button_Wrapper {
     justify-content: center;
   }
 }
