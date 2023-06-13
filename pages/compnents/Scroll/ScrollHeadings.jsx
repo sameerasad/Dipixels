@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../../../styles/ScrollHeading.module.css'
+import Link from 'next/link'
 const ScrollHeadings = () => {
   return (
     <div>
@@ -18,6 +19,7 @@ const ScrollHeadings = () => {
 
         {/* <Waves/> */}
         <div>
+          <Link href='./start-project'>
           <ul className={styles.ul}>
             <li>s</li>
             <li>t</li>
@@ -38,6 +40,7 @@ const ScrollHeadings = () => {
               <img src='/assets/arrow-up-right.png' alt='' />{' '}
             </li>
           </ul>
+          </Link>
         </div>
 
         <div className={`${styles.headingScroll} ${styles.second}`}>
