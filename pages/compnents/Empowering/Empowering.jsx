@@ -13,7 +13,7 @@ function Empowering() {
       <section className={styles.empowering}>
         <Marquee>Streamlined Process</Marquee>
         <div className={styles.empowering_wrapper}>
-          <div style={{ textAlign: 'center', marginTop: '-50px' }}>
+          <div className={styles.empowering_content} style={{ textAlign: 'center', marginTop: '-40px' }}>
             <Heading>Empowering your success</Heading>
           </div>
           <div className={styles.mincontainer}>

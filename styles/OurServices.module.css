@@ -11,7 +11,7 @@
   height: 1000px;
 }
 .our_services_content {
-  margin-top: -50px;
+  margin-top: -40px;
 }
 .our_services_content_sliders_images {
   width: 350px;
@@ -127,7 +127,15 @@
     margin-top: 12em;
   }
 }
+@media screen and (max-width: 800px) {
+  .our_services_content {
+    margin-top: -30px;
+  }
+}
 @media screen and (max-width: 600px) {
+  .our_services_content {
+    margin-top: -20px;
+  }
   .our_services_content_sliders_images {
     width: 350px;
     height: 500px;

@@ -107,7 +107,7 @@ const WebDesignDevelopment = () => {
     <>
       <Layout>
         <Hero
-          title='web design and'
+          title='web design'
           description='An adequate website interface can bring great traffic towards your business. Allow dipixels to build an exemplary interface for you. Have a look at our amazing web design portfolio below.'
           company='development'
           videoLink={Video}

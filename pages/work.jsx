@@ -28,7 +28,7 @@ const projectData = [
   },
   {
     title: "Innovative Logo Designs",
-    subtitle: "Logo Designing",
+    subtitle: "Logo Design",
     description:
       "Create your brand’s identity with unique and attractive corporate design that define your purpose. Here’s our corporate design portfolio that showcases our most recent work.",
     heading: "Logo Design",

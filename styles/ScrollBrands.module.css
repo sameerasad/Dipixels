@@ -3,7 +3,7 @@
   padding: 100px 0 0 0;
 }
 .container_2 {
-  margin-top: -50px;
+  margin-top: -40px;
 }
 
 .iconScroll {
@@ -46,6 +46,9 @@
 }
 
 @media (max-width: 800px) {
+  .container_2 {
+    margin-top: -30px;
+  }
   /* .icons .svg {
     min-height: 10px !important;
   } */

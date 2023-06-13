@@ -112,12 +112,16 @@
   top: 350px;
   left: 40px;
   cursor: pointer;
-  transform: scale(1);
   transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
 }
 .featured_project_content_two_right_arrow_left:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
   transition: all 0.5s ease;
+  border: 2px solid #00f3f4;
+  padding: 2px;
+  background-color: #fff;
 }
 .featured_project_content_two_right_arrow_right {
   position: absolute;
@@ -128,10 +132,15 @@
   cursor: pointer;
   transform: scale(1);
   transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
 }
 .featured_project_content_two_right_arrow_right:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
   transition: all 0.5s ease;
+  border: 2px solid #9add3a;
+  padding: 2px;
+  background-color: #fff;
 }
 @media screen and (max-width: 1600px) {
   .featured_project_content_two_right {
@@ -186,7 +195,7 @@
 }
 @media screen and (max-width: 1280px) {
   .featured_project_content {
-    margin-top: -80px;
+    margin-top: -30px;
   }
   .featured_project_content_image img {
     width: 50%;
@@ -215,7 +224,7 @@
     margin-top: 0;
   }
   .featured_project_wrapper {
-    max-width: 98%;
+    max-width: 95%;
   }
   .featured_project_content_image {
     margin-left: 0px;
@@ -246,7 +255,7 @@
     margin-top: 1em;
   }
   .featured_project_content {
-    margin-top: -50px;
+    margin-top: -20px;
   }
   .featured_project_content_two {
     flex-direction: column;
@@ -269,7 +278,15 @@
     top: 110px;
   }
 }
+@media screen and (max-width: 768px) {
+  .featured_project_content_two_left_heading{
+    height: 140px !important;
+  }
+}
 @media screen and (max-width: 600px) {
+  .featured_project_content_two_left_heading{
+    height: 230px !important;
+  }
   .featured_project_content_two_left {
     margin-top: 0;
   }
@@ -281,10 +298,14 @@
   .featured_project_content_two_right_arrow_right:hover {
     transform: none;
     transition: none;
+    border: none;
+    background-color: transparent;
   }
   .featured_project_content_two_right_arrow_left:hover {
     transform: none;
     transition: none;
+    border: none;
+    background-color: transparent;
   }
   .featured_project_content_two_right_image {
     width: 80%;
@@ -312,6 +333,9 @@
 }
 
 @media screen and (max-width: 425px) {
+  .featured_project_content_two_left_heading{
+    height: 270px !important;
+  }
   .featured_project_content_two_right_arrow_left {
     left: 10px;
   }

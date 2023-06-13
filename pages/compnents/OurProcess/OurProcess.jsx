@@ -36,9 +36,9 @@ function OurProcess() {
     <>
       <div class={styles.our_process_section} style={{ marginTop: '5em' }}>
         <Marquee>our process</Marquee>
-        <div class={styles.our_process_section_wrapper}>
+        <div className={styles.our_process_section_wrapper}>
           <div className={styles.minContainer}>
-            <div style={{ marginTop: '-50px', justifyContent: 'flex-start' }}>
+            <div className={styles.our_process_content} style={{ marginTop: '-40px', justifyContent: 'flex-start' }}>
               <Heading>our process</Heading>
             </div>
             <p data-aos='fade-right' className={styles.description}>

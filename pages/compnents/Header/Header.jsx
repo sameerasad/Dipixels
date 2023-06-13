@@ -76,10 +76,10 @@ const Header = () => {
                   router.pathname === '/services' ? styles.active : ''
                 }`}
               >
-                <Link href='/services' passHref>
+                {/* <Link href='/services' passHref> */}
                   {' '}
                   Services{' '}
-                </Link>
+                {/* </Link> */}
                 <Image
                   src={DropdownArrow}
                   alt=''
@@ -106,7 +106,7 @@ const Header = () => {
                             : ''
                         }`}
                       >
-                        Web Design and Development
+                        Website
                       </div>
                     </Link>
                   </li>
@@ -119,7 +119,7 @@ const Header = () => {
                             : ''
                         }`}
                       >
-                        Mobile App Design and Development
+                        Mobile Application
                       </div>
                     </Link>
                   </li>
@@ -145,7 +145,7 @@ const Header = () => {
                             : ''
                         }`}
                       >
-                        Video Animation and Production
+                        Video Animation
                       </div>
                     </Link>
                   </li>

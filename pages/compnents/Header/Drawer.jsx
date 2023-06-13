@@ -88,7 +88,7 @@ const Drawer = ({ setOpen }) => {
                                   : ''
                               }`}
                             >
-                              Web Design and Development
+                              Website
                             </div>
                           </Link>
                         </li>
@@ -102,7 +102,7 @@ const Drawer = ({ setOpen }) => {
                                   : ''
                               }`}
                             >
-                              Mobile App Design and Development
+                              Mobile Application
                             </div>
                           </Link>
                         </li>
@@ -129,7 +129,7 @@ const Drawer = ({ setOpen }) => {
                                   : ''
                               }`}
                             >
-                              Video Animation and Production
+                              Video Animation
                             </div>
                           </Link>
                         </li>

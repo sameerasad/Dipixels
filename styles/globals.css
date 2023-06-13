@@ -84,10 +84,6 @@ body {
   .styled-button button {
     font-size: 1em;
   }
-  .simple-button button:hover {
-    transform: none;
-    transition: none;
-  }
 }
 @media screen and (max-width: 400px) {
   .simple-button button {
@@ -145,7 +141,270 @@ body {
     align-items: center;
   }
 }
+/* HeroSection */
+.colorGreen {
+  color: #9add3a;
+  font-family: 'Monument Extended Regular';
+  text-transform: uppercase;
+}
+.colorGreen span {
+  color: #00f3f4;
+}
 
+.hero {
+  min-height: 550px;
+  min-height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .container {
+  display: flex;
+  align-items: center;
+  background-color: #010101;
+  min-height: 550px;
+  max-width: 85%;
+}
+
+.hero .heroContent h1 {
+  font-size: 70px;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.hero .heroContent p {
+  font-size: 24px;
+  line-height: 1.5em;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.container {
+  max-width: 85%;
+}
+.videoPlayReel {
+  position: relative;
+  width: 45%;
+}
+.heroReel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.playReel {
+  transform: translate(-50%, -50%);
+  font-size: 14x;
+  color: #9add3a;
+  width: 170px;
+  height: 170px;
+  border: 5px solid #9add3a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+.playReel h2 {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  font-family: Monument Extended Regular;
+}
+.playReel h2 span {
+  color: #00f3f4;
+}
+@media screen and (max-width: 1200px) {
+  .playReel {
+    transform: translate(-50%, -50%);
+    color: #9add3a;
+    width: 130px;
+    height: 130px;
+    border: 5px solid #9add3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    text-decoration: none;
+  }
+  .playReel h2 {
+    font-size: 12px;
+  }
+  .playReel h2 span {
+    color: #00f3f4;
+  }
+}
+@media screen and (max-width: 768px) {
+  .playReel {
+    width: 100px;
+    height: 100px;
+  }
+  .playReel h2 {
+    font-size: 10px;
+  }
+}
+
+/* Website-packages */
+.webPackage {
+  /* min-height: 1032px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.webpackages-section-content-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 9;
+  margin-top: -50px;
+}
+.webpackages-section-content-heading h1 {
+  color: #00f3f4;
+  font-size: 70px;
+  text-transform: uppercase;
+  font-family: 'Monument Extended Regular';
+}
+.webpackages-section-content-heading h1 span {
+  color: #9add3a;
+}
+.package-section-content-para {
+  margin-top: 2em;
+  text-align: center;
+}
+.package-section-content-para p {
+  font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+  .package-section-content-para p {
+    font-size: 1.2em;
+  }
+}
+
+.wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+.packagesCards {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+.packagesCards .card {
+  position: relative;
+  flex: 1 1 30%;
+  background-color: #171717;
+  border-radius: 21px;
+  min-height: 280px;
+  padding: 40px 30px;
+}
+
+.packagesCards .card .packagetitle h2 {
+  color: #9add3a;
+  width: 80%;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-family: 'Monument Extended Regular';
+}
+
+.packagePrice {
+  display: flex;
+  gap: 15px;
+}
+.packagePrice h4 {
+  color: #ffffff;
+  font-size: 46px;
+  font-weight: 600;
+}
+.packagePrice p {
+  color: #9add3a;
+  text-decoration: line-through;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.packageListing {
+  border-top: 2px solid #9add3a;
+  border-bottom: 1px solid #9add3a;
+  padding: 25px 0 25px 0;
+  margin: 25px 0 30px 0;
+}
+.packageListing ul {
+  margin: 0;
+  padding: 0;
+}
+.packageListing ul li {
+  margin-left: -15px;
+  list-style: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1rem;
+  font-weight: 600;
+}
+.packageListing ul li::before {
+  content: url('../public/assets/check-png.png');
+  transform: scale(0.35);
+  vertical-align: middle;
+  display: inline-block;
+}
+.packagecontact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.packagecontact .chatNow a {
+  color: #00f3f4;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.packagecontact h3 {
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #9add3a;
+  line-height: 34px;
+  font-family: 'Monument Extended Regular';
+}
+.packagecontact a {
+  font-size: 25px;
+  color: #fff;
+  line-height: 30px;
+  font-family: 'Monument Extended Regular';
+  text-decoration: none;
+}
+.packagecontact {
+  margin: 30px 0px 30px 0;
+}
+
+.packageListing {
+  height: 275px;
+  overflow-y: scroll;
+}
+
+.packageListing::-webkit-scrollbar {
+  width: 4px;
+}
+
+.packageListing::-webkit-scrollbar-thumb {
+  background-color: #00f3f4;
+  border-radius: 5px;
+}
+
+.packageListing::-webkit-scrollbar-track {
+  background-color: #2f2f2f;
+  border-radius: 5px;
+}
+
+.packageListing::-webkit-scrollbar-button {
+  background-color: #171717;
+  border-radius: 5px;
+}
+
+.packageListing::-webkit-scrollbar-button:hover {
+  background-color: #555;
+}
 
 /* Main-Heading */
 .main-heading {
@@ -297,7 +556,12 @@ body {
 .projectForm .field50 > div {
   flex: 1 1 48%;
 }
-
+/* .checkBoxesSection {
+  display: flex;
+  justify-content: space-between;
+  margin: 120px 0px 120px 0px;
+  flex-wrap: wrap;
+} */
 .checkBoxesSection .checkBoxLft {
   border: 1px solid #565656;
   border-right: 0;
@@ -395,6 +659,317 @@ body {
   .projectForm .field50 {
     gap: 10px;
   }
+}
+/* Empowering */
+.empowering {
+  background-image: url('../public/assets/empowering-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 1032px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mincontainer {
+  max-width: 60%;
+  margin: 0 auto;
+}
+.empowering .arrow-h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: -150px;
+  font-size: 90px;
+  font-weight: 400;
+  color: #00f3f4;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.empowering .arrow-h2 img.arrow {
+  width: 65px;
+}
+.stoke-h1 {
+  font-size: 180px;
+  font-weight: 400;
+  text-transform: uppercase;
+  -webkit-text-stroke: 3px rgba(213, 255, 64, 0.3);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.content-1 h1 {
+  margin-top: 50px;
+  font-size: 32px;
+  font-weight: 400;
+  color: #9add3a;
+  text-transform: uppercase;
+  line-height: 42px;
+  text-align: center;
+  font-family: 'Monument Extended Regular';
+}
+.content-2 p {
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 30px;
+  text-align: center;
+}
+
+/* Conunter */
+.counter .minContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+.counter {
+  padding: 120px 0 55px 0;
+}
+
+.counter .minContainer .counterItem {
+  flex: 1 1 25%;
+}
+.minContainer {
+  max-width: 85%;
+  margin: 0 auto;
+}
+.counter .counterItem h3 {
+  font-size: 44px;
+  font-weight: 500;
+  color: #9add3a;
+  margin-bottom: 10px;
+  font-family: 'Monument Extended Regular';
+}
+.counter .counterItem h5 {
+  font-size: 28px;
+  color: #fff;
+  font-family: 'Monument Extended Regular';
+}
+
+/* Our-Process */
+.brands {
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.brands::before {
+  content: url('../public/assets/bg-radiol.png');
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.brands .arrow-h2 {
+  margin-top: -100px;
+  font-size: 90px;
+  font-weight: 400;
+  color: #00f3f4;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.stoke-h1 {
+  font-size: 180px;
+  font-weight: 400;
+  text-transform: uppercase;
+  -webkit-text-stroke: 3px rgba(213, 255, 64, 0.3);
+  -webkit-text-fill-color: transparent;
+}
+
+.brands .arrow-h2 img.arrow {
+  width: 65px;
+  margin-left: 35px;
+}
+.description {
+  margin-top: 1em;
+  font-size: 24px;
+  line-height: 1.5em;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.processCards {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 10em;
+}
+.processCards .card {
+  flex: 1 1 22%;
+  background-color: #171717;
+  border-radius: 21px;
+  min-height: 280px;
+  padding: 20px 20px 30px 20px;
+}
+.processCards .card img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+.processCards .card h3 {
+  color: #00f3f4;
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-family: 'Monument Extended Regular';
+}
+.processCards .card p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/* Tabber */
+
+/* Contactus-Form */
+.contactus-form-section {
+  width: 100%;
+  background-image: url('../public/assets/getin-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactus-form-wrapper {
+  width: 100%;
+  max-width: 85%;
+}
+.contactus-form-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6em 0;
+}
+.contactus-form-content-left-section {
+  width: 45%;
+}
+.contactus-form-content-left-section-heading h1 {
+  font-size: 32px;
+  font-family: 'Monument Extended Regular';
+  color: #85dc0c;
+  text-transform: uppercase;
+}
+.contactus-form-content-left-section-heading h1 span {
+  color: #00f3f4;
+}
+.contactus-form-content-left-section-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+.contactus-form-content-left-section-icons-left {
+  display: flex;
+}
+.contactus-form-content-left-section-icons-left {
+  display: flex;
+  align-items: center;
+  width: 48%;
+  gap: 15px;
+}
+.contactus-form-content-left-section-icons-left-image {
+  background: #85dc0c;
+  /* width: 80px;
+  height: 80px; */
+  padding: 1em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+.contactus-form-content-left-section-icons-left-content h1 {
+  color: #00f3f4;
+  font-size: 18px;
+  font-family: 'Monument Extended Regular';
+  text-transform: uppercase;
+}
+.contactus-form-content-left-section-icons-left-content p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.para {
+  font-size: 24px;
+  margin-top: 2em;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.number {
+  color: #9add3a;
+  font-family: 'Monument Extended Regular';
+  font-size: 30px;
+}
+.horizontal-line {
+  border: none;
+  border-top: 2px solid #9add3a; /* Set the color of the line */
+  margin: 1.5em 0;
+}
+.social-media {
+  color: #00f3f4;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: 'Monument Extended Regular';
+}
+.contactus-form-content-left-section-social-media {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 1em;
+}
+.contactus-form-content-left-section-social-media-icon {
+  border: 2px solid #9add3a;
+  border-radius: 50%;
+  padding: 1em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.contactus-form-content-left-section-social-media-icon:hover {
+  background: #9add3a;
+}
+.contactus-form-content-right-section {
+  width: 45%;
+}
+.contactus-form-content-right-section-projectForm input {
+  width: 100%;
+  padding: 20px 20px 20px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #9add3a;
+  color: #fff;
+  outline: 0;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.projectForm input {
+  width: 100%;
+  padding: 20px 20px 20px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #9add3a;
+  color: #fff;
+  outline: 0;
+  font-size: 20px;
+  /* margin-top: 20px; */
+}
+.contactus-form-content-right-section-projectForm-fields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contactus-form-content-right-section-projectForm-fields-inputField {
+  width: 48%;
+}
+.projectForm input::placeholder {
+  font-size: 20px;
+  color: #707070;
 }
 
 /* Modal */

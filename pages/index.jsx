@@ -23,7 +23,7 @@ const projectData = [
     heading: 'Mobile App Design',
   },
   {
-    title: 'Logo Designing',
+    title: 'Logo Design',
     subtitle: '',
     description:
       'Create your brand’s identity with unique and attractive corporate design that define your purpose. Here’s our corporate design portfolio that showcases our most recent work.',

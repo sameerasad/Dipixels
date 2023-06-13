@@ -6,7 +6,7 @@
   padding: 100px 0 100px 0;
 }
 .container {
-  margin-top: -50px;
+  margin-top: -40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,6 +65,9 @@
   }
 }
 @media screen and (max-width: 800px) {
+  .container {
+    margin-top: -30px;
+  }
   .content {
     margin-top: 3em;
     gap: 10px;

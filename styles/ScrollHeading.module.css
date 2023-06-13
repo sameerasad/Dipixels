@@ -35,6 +35,9 @@
   justify-content: center;
   align-items: center;
 }
+/* .ul:hover {
+border: 2px solid #00f3f4;
+} */
 .ul li {
   list-style: none;
   float: left;
