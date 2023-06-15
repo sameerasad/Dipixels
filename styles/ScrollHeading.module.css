@@ -29,7 +29,10 @@
   display: flex;
   align-items: center;
 }
-
+.list a ul{
+  text-decoration: none;
+  color: #00f3f4;
+}
 .ul {
   display: flex;
   justify-content: center;

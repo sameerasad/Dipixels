@@ -50,6 +50,10 @@
  font-weight: 500;
  margin-top: 10px;
 }
+.dipixels_footer_content_contact h3 a{
+text-decoration: none;
+color: #ffffff;
+}
 .dipixels_footer_content_address {
  width: 25%;
 }
@@ -92,10 +96,10 @@
   color: #ffff;
 }
 @media (max-width: 800px) {
- /* .dipixels_footer_content_image {
-  width: 60%;
- } */
- ._dipixels_footer_center_line{
+  .dipixels_footer {
+    margin-top: 2em;
+    }
+ .dipixels_footer_center_line{
   display: none !important;
   margin-top: 0 !important;
  }

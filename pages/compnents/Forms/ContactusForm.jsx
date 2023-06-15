@@ -149,7 +149,12 @@ const ContactusForm = () => {
                     }
                   >
                     <h1>Email</h1>
-                    <p>info@dipixels.com</p>
+                    <p>
+                      {' '}
+                      <a href='mailto:info@dipixels.com'>
+                        info@dipixels.com
+                      </a>{' '}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -157,7 +162,7 @@ const ContactusForm = () => {
                 For Immediate Support, Feel Free To Call Us On
               </p>
               <h2 data-aos='fade-up' className={styles.number}>
-                4144003996
+                <a href='+14144003996'> 4144003996</a>
               </h2>
               <hr data-aos='fade-left' className={styles.horizontal_line} />
               <p className={styles.social_media}>social media</p>

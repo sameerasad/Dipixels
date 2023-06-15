@@ -96,6 +96,9 @@
     font-size: 18px;
     line-height: 1rem;
     font-weight: 600;
+    align-items: center;
+    display: flex;
+    line-height: 20px;
    }
    .packageListing ul li::before {
     content: url('../public/assets/check-png.png');

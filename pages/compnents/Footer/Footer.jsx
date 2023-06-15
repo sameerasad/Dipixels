@@ -26,7 +26,10 @@ const Footer = () => {
           <div className={styles.dipixels_footer_content}>
             <div className={styles.dipixels_footer_content_contact}>
               <p>contact us</p>
-              <h3>414 400 3996 info@dipixels.com</h3>
+              <h3>
+                <a href='tel:+1 414 400 3996'> 414 400 3996 </a>{' '}
+                <a href='mailto:info@dipixels.com'> info@dipixels.com </a>
+              </h3>
             </div>
 
             <div className={styles.dipixels_footer_content_address}>

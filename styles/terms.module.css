@@ -28,6 +28,9 @@
  }
 }
 @media screen and (max-width: 800px) {
+  .terms_wrapper{
+    margin-top: -30px;
+  }
   .terms_section{
     margin-top: 6em !important;
   }

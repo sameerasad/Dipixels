@@ -5,11 +5,12 @@ import Heading from '../Heading/Heading'
 const Privacy = () => {
   return (
     <>
+    <div className='privacy_section'>
       <div className={styles.terms_section} style={{ marginTop: '10em' }}>
         <div className={styles.terms_wrapper}>
-          <div className='terms-main-heading'>
+          <div className='privacy-main-heading'>
             <h1>What kind of details do we gather?</h1>
-            <div className='terms-main-heading-image'>
+            <div className='privacy-main-heading-image'>
               <img src='/assets/arrow-up-right.png' alt='' />
             </div>
           </div>
@@ -30,9 +31,9 @@ const Privacy = () => {
 
       <div className={styles.terms_section}>
         <div className={styles.terms_wrapper}>
-          <div className='terms-main-heading'>
+          <div className='privacy-main-heading'>
             <h1>How is the information protected?</h1>
-            <div className='terms-main-heading-image'>
+            <div className='privacy-main-heading-image'>
               <img src='/assets/arrow-up-right.png' alt='' />
             </div>
           </div>
@@ -49,9 +50,9 @@ const Privacy = () => {
 
       <div className={styles.terms_section}>
         <div className={styles.terms_wrapper}>
-          <div className='terms-main-heading'>
+          <div className='privacy-main-heading'>
             <h1>Why do we ask for your information?</h1>
-            <div className='terms-main-heading-image'>
+            <div className='privacy-main-heading-image'>
               <img src='/assets/arrow-up-right.png' alt='' />
             </div>
           </div>
@@ -70,9 +71,9 @@ const Privacy = () => {
 
       <div className={styles.terms_section} style={{ marginBottom: '5em' }}>
         <div className={styles.terms_wrapper}>
-          <div className='terms-main-heading'>
+          <div className='privacy-main-heading'>
             <h1>Do we use this information for trading purposes?</h1>
-            <div className='terms-main-heading-image'>
+            <div className='privacy-main-heading-image'>
               <img src='/assets/arrow-up-right.png' alt='' />
             </div>
           </div>
@@ -84,6 +85,7 @@ const Privacy = () => {
             </p>
           </div>
         </div>
+      </div>
       </div>
     </>
   )

@@ -10,7 +10,7 @@ import WebsitePackages from "./compnents/WebsitePackages/WebsitePackages";
 import ScrollHeadings from "./compnents/Scroll/ScrollHeadings";
 import WebsitePackagesCard from "./compnents/WebsitePackages/WebsitePackagesCard";
 import Video from "../public/assets/video/VideoAnimation.mp4";
-import styles from "../public/assets/video/VideoAnimation.mp4";
+import styles from '../styles/portfolio.module.css'
 import HeroContactus from "./compnents/HeroSection/HeroContactus";
 
 const VideoPortfolioData = [
@@ -37,11 +37,6 @@ const VideoPortfolioData = [
 const AnimationDataPackage = [
   {
     id: 1,
-    listItem1: "3 Basic Animation Designs",
-    listItem2: "Free Color Options",
-    listItem3: "Free Icons",
-    listItem4: "2 to 3 Business Days Rotation",
-    listItem5: "10 Revisions",
     title: "STARTER ANIMATION DESIGN",
     packageBlue: "PACKAGE",
     regularPrice: "$49",
@@ -53,14 +48,16 @@ const AnimationDataPackage = [
     chatNowLink: "#",
     btnTxt: "get in touch",
     btnLink: "#",
+    listItems: [
+      "3 Basic Animation Designs",
+      "Free Color Options",
+      "Free Icons",
+      "2 to 3 Business Days Rotation",
+      "10 Revisions",
+    ],
   },
   {
     id: 2,
-    listItem1: "5 High Quality Animation Designs",
-    listItem2: "Free Color Options",
-    listItem3: "Free Icons",
-    listItem4: "Free Invoice Design",
-    listItem5: "Unlimited Revisions",
     title: "STANDARD ANIMATION DESIGN",
     packageBlue: "PACKAGE",
     regularPrice: "$199",
@@ -72,6 +69,13 @@ const AnimationDataPackage = [
     chatNowLink: "#",
     btnTxt: "get in touch",
     btnLink: "#",
+    listItems: [
+      "5 High Quality Animation Designs",
+      "Free Color Options",
+      "Free Icons",
+      "Free Invoice Design",
+      "Unlimited Revisions",
+    ],
   },
   {
     id: 3,
@@ -79,12 +83,6 @@ const AnimationDataPackage = [
     packageBlue: "PACKAGE",
     regularPrice: "$299",
     salePrice: " $459",
-    listItem1: "10 Premium Logo Designs",
-    listItem2: "Free Color Options",
-    listItem3: "Free Icons",
-    listItem4: "Free Invoice Design",
-    listItem5: "Unlimited Revisions",
-    title: "STANDARD LOGO DESIGN",
     speakWithUs: "Speak with us",
     contactNumber: "414 400 3996",
     contactNumberLink: "#",
@@ -92,8 +90,16 @@ const AnimationDataPackage = [
     chatNowLink: "#",
     btnTxt: "get in touch",
     btnLink: "#",
+    listItems: [
+      "10 Premium Logo Designs",
+      "Free Color Options",
+      "Free Icons",
+      "Free Invoice Design",
+      "Unlimited Revisions",
+    ],
   },
 ];
+
 
 const videoAnimationProduction = () => {
   const marqueeText = "Portfolio";

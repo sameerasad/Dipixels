@@ -9,42 +9,35 @@ import HeroContactus from "./compnents/HeroSection/HeroContactus";
 
 const projectData = [
   {
-    title: "712 Creative website",
-    subtitle: "Redesign & Development",
+    title: 'Design & Development',
+    subtitle: '',
     description:
-      "To increase website engagement, the best way is to provide your users with stand-out UI/UX designs. A good user interface and experience will not only make your users happy, but also benefit you in making a distinctive business identity.",
-    // image1: '/assets/Portfolio1.jpeg',
-    // image2: '/assets/Portfolio2.jpeg',
-    heading: "Design & Development",
+      'We offer comprehensive design and development services to help businesses establish a strong online presence and deliver exceptional digital experiences. Our expert team of designers, developers, and strategists work collaboratively to create visually stunning, user-friendly, and technically robust solutions that align with your business goals.',
+    heading: 'Website Design',
   },
   {
-    title: "Innovative Mobile Apps",
-    subtitle: "Redesign & Development",
+    title: 'Design & Development',
+    subtitle: '',
     description:
-      "DiPixels enlightens to provide you with a slick, smooth, and responsive user interface while significantly reducing load time. We stuff your business with faster and cheaper ways to build apps in React Native.",
-    // image1: '/assets/Portfolio3.jpeg',
-    // image2: '/assets/Portfolio4.jpeg',
-    heading: "Mobile App Development",
+      'At Dipixels, we specialize in developing high-quality, user-centric mobile applications that elevate your brand, drive customer engagement, and boost business growth. We stuff your business with faster and cheaper ways to build apps in React Native and flutter.',
+    heading: 'Mobile App Design',
   },
   {
-    title: "Innovative Logo Designs",
-    subtitle: "Logo Design",
+    title: 'Logo Design',
+    subtitle: '',
     description:
-      "Create your brand’s identity with unique and attractive corporate design that define your purpose. Here’s our corporate design portfolio that showcases our most recent work.",
-    heading: "Logo Design",
-    // image1: '/assets/Portfolio3.jpeg',
-    // image2: '/assets/Portfolio4.jpeg',
+      'Create your brand’s identity with unique and attractive corporate design that define your purpose. Here’s our corporate design portfolio that showcases our most recent work.',
+    heading: 'Logo Design',
   },
   {
-    title: "Video animation and ",
-    subtitle: "Production",
+    title: 'animation and Production',
+    subtitle: '',
     description:
-      "At Dipixels, we bring you the most advanced and promising video animation technology and production. Our work speaks more than anything. Visit our portfolio and convince yourself of our incredible work.",
-    heading: "Video Animation",
-    // image1: '/assets/Portfolio3.jpeg',
-    // image2: '/assets/Portfolio4.jpeg',
+      "In today's digital landscape, video animation has emerged as a powerful tool for businesses to effectively communicate their brand, products, and ideas. At Dipixels, we specialize in creating captivating and visually stunning video animations that leave a lasting impression on your audience and help you stand out in the crowded digital space.",
+    heading: 'Video Animation',
   },
-];
+]
+
 
 const work = () => {
   return (

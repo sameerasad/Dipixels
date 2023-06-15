@@ -58,7 +58,7 @@ const Drawer = ({ setOpen }) => {
                     className={styles.service_dropdown}
                     onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                   >
-                    <Link href='/services' passHref>
+                    {/* <Link href='/services' passHref> */}
                       <div
                         className={`${styles.nav_link} ${
                           router.pathname === '/services' ? styles.active : ''
@@ -72,7 +72,7 @@ const Drawer = ({ setOpen }) => {
                           height='10'
                         />
                       </div>
-                    </Link>
+                    {/* </Link> */}
                     {isDropdownOpen && (
                       <ul
                         data-aos={animate}

@@ -1,6 +1,6 @@
 .portfolio_section {
   margin-top: 5em;
-  height: 200px;
+  /* height: 200px; */
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -68,6 +68,7 @@
   margin-top: 3em;
 }
 .portfolioContent_wrapper {
+  margin-top: 1em;
   max-width: 85%;
 }
 .websitepackagescard_wrapper {
@@ -95,6 +96,9 @@
   }
 }
 @media screen and (max-width: 800px) {
+  .portfolio_section_content {
+    margin-top: -30px;
+  }
   .portfolio_section {
     margin-top: 2em;
   }
@@ -115,11 +119,14 @@
   }
 }
 @media screen and (max-width: 425px) {
+  .portfolioContent_wrapper {
+    margin-top: 0;
+  }
   .portfolioContent_wrapper_section {
     margin-top: 0;
   }
 }
-@media screen and (max-width: 402px) {
+@media screen and (max-width: 400px) {
   .portfolioContent_wrapper_section {
     margin-top: 1em;
   }

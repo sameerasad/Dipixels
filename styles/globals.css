@@ -274,6 +274,11 @@ body {
 .package-section-content-para p {
   font-size: 24px;
 }
+@media screen and (max-width: 800px) {
+  .webpackages-section-content-heading {
+    margin-top: -30px;
+  }
+}
 @media screen and (max-width: 768px) {
   .package-section-content-para p {
     font-size: 1.2em;
@@ -341,8 +346,10 @@ body {
   list-style: none;
   color: #fff;
   font-size: 18px;
-  line-height: 1rem;
   font-weight: 600;
+  align-items: center;
+  display: flex;
+  line-height: 1em;
 }
 .packageListing ul li::before {
   content: url('../public/assets/check-png.png');
@@ -448,6 +455,30 @@ body {
 .terms-main-heading-image img {
   width: 65%;
 }
+.privacy_section {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+.privacy-main-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 9;
+}
+.privacy-main-heading h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+  color: #00f3f4;
+  font-family: 'Monument Extended Regular';
+}
+.privacy-main-heading-image {
+  margin-left: 10px;
+}
+.privacy-main-heading-image img {
+  width: 50%;
+}
 @media screen and (max-width: 1280px) {
   .main-heading h1 {
     font-size: 3em;
@@ -461,6 +492,12 @@ body {
   .terms-main-heading-image img {
     width: 45%;
   }
+  .privacy-main-heading h1 {
+    font-size: 2.5em;
+  }
+  .privacy-main-heading-image img {
+    width: 30px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .terms-main-heading-image {
@@ -468,6 +505,9 @@ body {
   }
   .terms-main-heading h1 {
     font-size: 2.5em;
+  }
+  .privacy-main-heading h1 {
+    font-size: 2em;
   }
 }
 
@@ -493,6 +533,18 @@ body {
   }
   .main-heading-image {
     display: none;
+  }
+  .privacy-main-heading {
+    text-align: center;
+  }
+  .privacy-main-heading h1 {
+    font-size: 1.5em;
+  }
+  .privacy-main-heading-image {
+    display: none;
+  }
+  .privacy_section {
+    gap: 0em;
   }
 }
 @media screen and (max-width: 375px) {

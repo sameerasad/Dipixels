@@ -33,16 +33,11 @@ const WebsitePackagesCard = ({ dataPackage }) => {
               </div>
 
               <div data-aos='flip-right' className={styles.packageListing}>
-                <ul>
-                  <li>{item.listItem1}</li>
-                  <li>{item.listItem2}</li>
-                  <li>{item.listItem3}</li>
-                  <li>{item.listItem4}</li>
-                  <li>{item.listItem5}</li>
-
-                  {item?.listItem6 && <li>{item?.listItem6}</li>}
-                  {item?.listItem7 && <li>{item?.listItem7}</li>}
-                </ul>
+              <ul>
+            {item.listItems.map((listItem, index) => (
+              <li key={index}>{listItem}</li>
+            ))}
+          </ul>
               </div>
 
               <div className={styles.packagecontact}>

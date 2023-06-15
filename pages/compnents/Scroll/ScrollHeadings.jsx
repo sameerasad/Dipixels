@@ -18,7 +18,7 @@ const ScrollHeadings = () => {
         </div>
 
         {/* <Waves/> */}
-        <div>
+        <div className='list'>
           <Link href='./start-project'>
           <ul className={styles.ul}>
             <li>s</li>

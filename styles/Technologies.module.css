@@ -47,6 +47,9 @@
     padding-bottom: 1em;
     margin-top: 1em;
   }
+  .Technologies_section_content {
+  margin-top: -30px !important;
+  }
   .Technologies_section_wrapper{
     padding-top: 1em;
   }
