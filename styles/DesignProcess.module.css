@@ -89,7 +89,7 @@
 }
 @media screen and (max-width: 800px) {
   .design_process_section_content {
-  margin-top: -30px;
+  margin-top: -20px;
   }
   .design_process_content_card:hover {
     box-shadow: none;

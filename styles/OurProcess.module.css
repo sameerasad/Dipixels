@@ -63,7 +63,7 @@
 }
 @media (max-width: 800px) {
   .our_process_content{
-    margin-top: -30px !important;
+    margin-top: -20px !important;
   }
   .processCards .card:hover {
     box-shadow: none;
