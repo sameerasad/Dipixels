@@ -466,6 +466,7 @@ body {
   align-items: center;
   position: relative;
   z-index: 9;
+  text-align: center;
 }
 .privacy-main-heading h1 {
   text-transform: uppercase;

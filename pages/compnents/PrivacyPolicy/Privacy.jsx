@@ -10,9 +10,9 @@ const Privacy = () => {
         <div className={styles.terms_wrapper}>
           <div className='privacy-main-heading'>
             <h1>What kind of details do we gather?</h1>
-            <div className='privacy-main-heading-image'>
+            {/* <div className='privacy-main-heading-image'>
               <img src='/assets/arrow-up-right.png' alt='' />
-            </div>
+            </div> */}
           </div>
 
           <div className={styles.terms_wrapper_content}>
@@ -33,9 +33,9 @@ const Privacy = () => {
         <div className={styles.terms_wrapper}>
           <div className='privacy-main-heading'>
             <h1>How is the information protected?</h1>
-            <div className='privacy-main-heading-image'>
+            {/* <div className='privacy-main-heading-image'>
               <img src='/assets/arrow-up-right.png' alt='' />
-            </div>
+            </div> */}
           </div>
           <div className={styles.terms_wrapper_content}>
             <p>
@@ -52,9 +52,9 @@ const Privacy = () => {
         <div className={styles.terms_wrapper}>
           <div className='privacy-main-heading'>
             <h1>Why do we ask for your information?</h1>
-            <div className='privacy-main-heading-image'>
+            {/* <div className='privacy-main-heading-image'>
               <img src='/assets/arrow-up-right.png' alt='' />
-            </div>
+            </div> */}
           </div>
           <div className={styles.terms_wrapper_content}>
             <p>
@@ -73,9 +73,9 @@ const Privacy = () => {
         <div className={styles.terms_wrapper}>
           <div className='privacy-main-heading'>
             <h1>Do we use this information for trading purposes?</h1>
-            <div className='privacy-main-heading-image'>
+            {/* <div className='privacy-main-heading-image'>
               <img src='/assets/arrow-up-right.png' alt='' />
-            </div>
+            </div> */}
           </div>
           <div className={styles.terms_wrapper_content}>
             <p>
