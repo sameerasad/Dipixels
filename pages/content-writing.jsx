@@ -113,7 +113,7 @@ const contentWriting = () => {
   const company = 'portfolio'
   const title = 'content writing'
   const description =
-    'Website content plays an important role in attracting audiences and increasing business engagement. Dipixels creates unique, informative, and engaging content that comprehensively provide content that visitors are interested in when browsing your site. The quality level of your content affects how long your visitors stay on your site, how many pages they visit, and whether their attention is diverted immediately. Our professional content writers can fulfil your expectations of quality and SEO-driven content, that enhances your distinctive identity in the market.'
+    'Website content plays an important role in attracting audiences and increasing business engagement. Dipixels creates unique, informative, and engaging content that comprehensively provide content that visitors are interested in when browsing your site. The quality level of your content affects how long your visitors stay on your site, how many pages they visit, and whether their attention is diverted immediately.'
   const packagesHeading = 'content writing'
   const packagesDescription =
     'Want reliable written content for your business, blog, or website? Avail the best content writing packages today and let us do the work for you.'
@@ -128,11 +128,14 @@ const contentWriting = () => {
           videoLink={Video}
         />
         <Technologies />
+        
         <DesignProcess title={title} description={description} />
+        <div className={styles.packagesSection}>
         <WebsitePackages
           packagesHeading={packagesHeading}
           packagesDescription={packagesDescription}
         />
+        </div>
         <div
           style={{
             width: '100%',

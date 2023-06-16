@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import styles from '../../../styles/Header.module.css'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
@@ -14,23 +14,27 @@ const Header = () => {
   const router = useRouter()
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const [open, setOpen] = useState(false)
-  // const windowSize = useWindowSize()
-
-  // useEffect(() => {
-  //   if (windowSize.width > 768) {
-  //     setOpen(false)
-  //   }
-  // }, [windowSize])
-
-  // const toggleDropdown = () =>{
-  //   if(windowSize.width<=768){
-  //     setOpen((prevState) => !prevState)
-  //   }
-  // }
+  const drawerRef = useRef(null)
 
   useEffect(() => {
-    AOS.init({ duration: 1400 })
-  }, [])
+    AOS.init({ duration: 1400 });
+
+    const handleClickOutside = (event) => {
+      if (
+        drawerRef.current &&
+        !drawerRef.current.contains(event.target) &&
+        !triggerRef.current.contains(event.target)
+      ) {
+        setOpen(false);
+      }
+    };
+
+    window.addEventListener('click', handleClickOutside);
+
+    return () => {
+      window.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
 
   return (
     <>
@@ -76,9 +80,7 @@ const Header = () => {
                   router.pathname === '/services' ? styles.active : ''
                 }`}
               >
-                {/* <Link href='/services' passHref> */}
-                  {' '}
-                  Services{' '}
+                {/* <Link href='/services' passHref> */} Services{' '}
                 {/* </Link> */}
                 <Image
                   src={DropdownArrow}
@@ -227,7 +229,7 @@ const Header = () => {
               }}
             />
           </div>
-          {open ? <Drawer setOpen={setOpen} open={open} /> : null}
+          {open ? <Drawer setOpen={setOpen} open={open}  ref={drawerRef} /> : null}
         </div>
       </div>
     </>

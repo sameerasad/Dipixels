@@ -59,10 +59,10 @@ const Drawer = ({ setOpen }) => {
                     onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                   >
                     {/* <Link href='/services' passHref> */}
-                      <div
+                      <div 
                         className={`${styles.nav_link} ${
                           router.pathname === '/services' ? styles.active : ''
-                        }`}
+                        } ${styles.accordion}`}
                       >
                         Services
                         <Image
