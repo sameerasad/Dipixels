@@ -638,9 +638,6 @@ body {
   border-radius: 0px 20px 20px 0px;
   padding: 10px 0px 0 0px;
 }
-.checkBoxesSection input:checked ~ label {
-  color: #9add3a;
-}
 
 .checkBoxesSection label {
   color: #fff;
@@ -692,7 +689,9 @@ body {
   background: transparent;
   border: 2px solid #00f3f4;
 }
-
+.checkBoxesSection input:checked ~ label {
+  color: #9add3a;
+}
 [type='checkbox'] {
   appearance: none;
   border-radius: 4px;

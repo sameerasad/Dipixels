@@ -93,7 +93,6 @@ const Technologies = () => {
           }}
         >
           <Link href='./start-project'>
-            {' '}
             <Button>Start Project</Button>
           </Link>
         </div>

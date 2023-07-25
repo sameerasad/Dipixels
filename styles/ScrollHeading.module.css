@@ -29,7 +29,7 @@
   display: flex;
   align-items: center;
 }
-.list a ul{
+.list a ul {
   text-decoration: none;
   color: #00f3f4;
 }
@@ -50,7 +50,11 @@ border: 2px solid #00f3f4;
   font-family: 'Monument Extended Regular';
   transition: 0.8s;
 }
-.ul li img{
+.ul a {
+  display: flex;
+  align-items: center;
+}
+.ul li img {
   width: 50px;
   margin-left: 10px;
   display: flex;
@@ -72,11 +76,11 @@ border: 2px solid #00f3f4;
     padding: 0;
   }
   .ul li {
-  font-size: 3em;
+    font-size: 3em;
   }
-  .ul li img{
+  .ul li img {
     width: 35px;
-}
+  }
 }
 
 @media (min-width: 801px) {
@@ -109,31 +113,31 @@ border: 2px solid #00f3f4;
   }
   .ul li {
     font-size: 2.5em;
-    }
-    .ul li img{
-      width: 30px;
-      margin-left: 5px;
+  }
+  .ul li img {
+    width: 30px;
+    margin-left: 5px;
   }
 }
 @media (max-width: 580px) {
   .ul li {
     font-size: 2em;
-    }
-    .ul li img{
-      width: 25px;
+  }
+  .ul li img {
+    width: 25px;
   }
 }
 @media (max-width: 440px) {
   .ul li {
     font-size: 1.5em;
-    }
-    .ul li img{
-      width: 20px;
-      margin-left: 0px;
+  }
+  .ul li img {
+    width: 20px;
+    margin-left: 0px;
   }
 }
 @media (max-width: 440px) {
-  .ul li img{
-   display: none;
-}
+  .ul li img {
+    display: none;
+  }
 }

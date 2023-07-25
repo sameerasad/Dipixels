@@ -19,8 +19,8 @@ const ScrollHeadings = () => {
 
         {/* <Waves/> */}
         <div className='list'>
-          <Link href='./start-project'>
           <ul className={styles.ul}>
+          <Link href='./start-project'>
             <li>s</li>
             <li>t</li>
             <li>a</li>
@@ -39,8 +39,8 @@ const ScrollHeadings = () => {
             <li>
               <img src='/assets/arrow-up-right.png' alt='' />{' '}
             </li>
-          </ul>
           </Link>
+          </ul>
         </div>
 
         <div className={`${styles.headingScroll} ${styles.second}`}>
