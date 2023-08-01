@@ -372,7 +372,7 @@ const SeoDataPackage = [
       'Pages Indexed on Google',
       'Keyword Density',
       'Anchor Text Linking',
-      'ALnding Page Creation',
+      'Landing Page Creation',
       'Google Analytics Set Up',
       'Google Webmaster Set Up',
       'Customise 404 Error',
