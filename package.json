@@ -12,15 +12,18 @@
     "@next/font": "^13.4.2",
     "aos": "^3.0.0-beta.6",
     "axios": "^1.4.0",
+    "install": "^0.13.0",
     "next": "13.4.2",
     "next-videos": "1.4.1",
     "nodemailer": "^6.9.3",
+    "npm": "^10.1.0",
     "react": "^18.2.0",
     "react-animated-cursor": "^2.7.0",
     "react-animated-text": "^0.1.4",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.1",
     "sharp": "^0.32.1",
+    "sitemap": "^7.1.1",
     "swiper": "^9.3.2"
   },
   "devDependencies": {
